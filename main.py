@@ -171,7 +171,14 @@ with open(f'{document_qid}.csv', 'w', newline='') as file:
         for item in znalezione_role:
             writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[rola][0], p_list[rola][1]], 'S51', document_qid)
 
-
+    #byty w dokumencie
+    for tag in ['persName', 'affiliation']:
+        refs = []
+        result = soup.find_all(tag)
+        for i in result:
+            if (i['ref'].split('-'))[-1] not in refs:
+                refs.append((i['ref'].split('-'))[-1])
+                writer.writerow([document_qid, 'P27', (i['ref'].split('-'))[-1]])
 
 
     #Kto jest czyim familiarisem/neposem?
