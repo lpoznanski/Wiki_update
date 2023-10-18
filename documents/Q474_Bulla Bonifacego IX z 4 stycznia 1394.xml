@@ -1,0 +1,61 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="label">Bulla Bonifacego IX z 4 stycznia 1394</title>
+            <title type="description">Prawo odpuszczenia grzechów w godzinie śmierci dla Lutki, żony Krystyna z
+               Zagórzyc</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centrum Studiów Mediewistycznych</publisher>
+            <date when="2023"/>
+            <idno>Q474</idno>
+            <availability>
+               <licence>CC....</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness ana="cop." source="RL_34">AAV, Reg. Lat., vol. 34, f. 172v<locus scheme="modern">f. 172v</locus>
+               </witness>
+            </listWit>
+            <listBibl type="editions">
+               <bibl type="regest">BP 3, nr 353</bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Papież Bonifacy IX przyznaje Lutce, żonie Krystyna z Zagórzyc, łaskę, by w obliczu
+               śmierci wybrany przez nią spowiednik mógł jeden raz udzielić jej mocą władzy
+               apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami.</p>
+         </abstract>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="bulla"/>
+            <catRef scheme="rodzaj_sprawy" target="odpuszczenie"/>
+            <catRef scheme="formularz" target="provenit"/>
+         </textClass>
+         <creation>
+            <date when="1394-01-04" when-custom="2 non. ian., a. p. 5">4 ianuarii 1394</date>
+            <placeName ref="Q31">Roma, apud Sanctum Petrum</placeName>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+                <persName ref="va-Q10" type="wystawca">Bonifacius</persName> etc., dilecte in Christo filie <persName type="odbiorca tytulatura beneficjent_łaski" ref="va-Q436">Luthke, dilecti filii <persName ref="va-Q437" type="mąż">Cristini de Zageizicze</persName>
+            uxori, <region ref="va-Q372" type="">Cracouiensis diocesis</region>
+                </persName>, salutem etc. Provenit <choice>
+                    <sic>etc.</sic>
+                    <corr>Hinc est, quod nos ...., ut confessor tuus, quem duxeris eligendum, omnium peccatorum tuorum, .... semel tantum in mortis articulo plenam remissionem tibi .... auctoritate apostolica concedere valeat, devocioni tue tenore presencium indulgemus; sic tamen, quod ....</corr>
+                </choice>  Datum <placeName ref="va-Q31" type="miejsce_wystawienia_dokumentu">Rome apud
+            Sanctum Petrum</placeName>, <date type="document_issued" when="1394-01-04">secundo non. ianuarii, anno quinto</date>. <handShift/> <note type="document_fee" place="in_line">
+                    <persName ref="va-Q30" type="magister_registrów">N(icolaus). <measure quantity="14">XIIII</measure>. de
+            Ben(even)to</persName>.</note>
+            </p>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,24 @@
+Q5278,P1,Q402
+Q5278,P24,Q392
+Q5278,P19,Q434
+Q5278,P11,"Papież Bonifacy IX przyznaje Hilli, żonie Bernarda z Anhausen, łaskę, by w obliczu
+               śmierci wybrany przez nią spowiednik mógł jeden raz udzielić jej mocą władzy
+               apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami."
+Q5278,P8,xxx
+Q5278,P12,+1394-03-13T00:00:00Z/11
+Q5278,P13,do wiki
+Q5278,P17,"Thainer, Vetera Monumenta, nr 1",P18,Q385
+Q5278,P17,"Bullarium Poloniae, vol. 5, nr 1",P18,Q386
+Q5278,P17,"Repertorium Germanicum, vol. 8, nr 204",P18,Q386
+Q5278,P22,Q10
+Q5278,P23,Q448
+Q448,P38,"Hille, dilecti filii Bernardi de Ahusen
+uxori, Warmiensis diocesis"
+Q5278,P31,Q30
+Q5278,P30,14
+Q448,P56,Q446,S51,Q5278
+Q446,P33,Q448,S51,Q5278
+Q5278,P27,Q10
+Q5278,P27,Q448
+Q5278,P27,Q446
+Q5278,P27,Q30
