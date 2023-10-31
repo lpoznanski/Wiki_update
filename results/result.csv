@@ -9,6 +9,8 @@ Q476,P17,"""MVB 5, nr 759""",P18,Q386,S51,Q476
 Q476,P22,Q10,S51,Q476
 Q442,P38,"""Margarete, relicte quondam Iohannis de Sitten civis Wratislauiensis""",S51,Q476
 Q476,P34,"""N(icolaus). XIIII. de Ben(even)to.""",P31,Q30,P30,14,S51,Q476
+Q442,P56,Q443,S51,Q476,S51,Q476
+Q443,P33,Q442,S51,Q476,S51,Q476
 Q476,P27,Q10,S51,Q476
 Q476,P27,Q442,S51,Q476
 Q476,P27,Q443,S51,Q476
@@ -28,6 +30,34 @@ Q475,P27,Q10,S51,Q475
 Q475,P27,Q441,S51,Q475
 Q475,P27,Q30,S51,Q475
 Q475,P27,Q149,S51,Q475
+Q470,P1,Q402,S51,Q470,,,,,,,,,,,,
+Q470,P24,Q392,S51,Q470
+Q470,P19,Q434,S51,Q470
+Q470,P11,"""Papież Bonifacy IX poleca oficjałowi naumburskiemu, by mocą władzy apostolskiej udzielił Mikołajowi Kalow, mistrzowi sztuk i bakałarzowi medycyny, ekspektatywy na kanonię większą w kapitule miśnieńskiej, pomimo że Mikołaj posiada już kanonię lubuską oraz kanonię w kolegiacie NMP w Wurzen.""",S51,Q470
+Q470,P8,"""ASV, Reg. Lat., vol. 6, f. 258v-259v (or. f.
+                     CCLVIII-CCLVIIII)""",P20,Q388,P14,Q382,P16,"""258v-259v""",P16,"""CCLVIII-CCLVIIII""",S51,Q470
+Q470,P12,+1389-11-13T00:00:00Z/11,S51,Q470
+Q470,P13,Q31,S51,Q470
+Q470,P17,"""MPV 8, nr 39""",P18,Q385,S51,Q470
+Q470,P17,"""RG 2, nr 05764""",P18,Q386,S51,Q470
+Q470,P22,Q10,S51,Q470
+Q470,P23,Q432,S51,Q470
+Q470,P25,Q423,S51,Q470
+Q470,P52,Q430,S51,Q470
+Q423,P38,"""Nicolaum Kalow, canonicum Lubucensem, qui, ut asserit, magister in artibus et bacallarius in medicina existit""",S51,Q470
+Q423,P42,Q426,S51,Q470
+Q423,P42,Q424,S51,Q470
+Q470,P34,"""C(ancellaria)""",S51,Q470
+Q470,P34,"""N(icolaus). XXI. de Ben(even)to.""",P31,Q30,P30,21,S51,Q470
+Q432,P29,Q416,S51,Q470
+Q470,P27,Q10,S51,Q470
+Q470,P27,Q423,S51,Q470
+Q470,P27,Q30,S51,Q470
+Q470,P27,Q432,S51,Q470
+Q470,P27,Q429,S51,Q470
+Q470,P27,Q430,S51,Q470
+Q470,P27,Q469,S51,Q470
+Q470,P27,Q427,S51,Q470
 Q474,P1,Q402,S51,Q474,,,,,,,,,,,,
 Q474,P24,Q406,S51,Q474
 Q474,P19,Q403,S51,Q474
@@ -41,6 +71,8 @@ Q474,P23,Q436,S51,Q474
 Q474,P25,Q436,S51,Q474
 Q436,P38,"""Luthke, dilecti filii Cristini de Zageizicze uxori, Cracouiensis diocesis""",S51,Q474
 Q474,P34,"""N(icolaus). XIIII. de Ben(even)to.""",P31,Q30,P30,14,S51,Q474
+Q436,P56,Q437,S51,Q474,S51,Q474
+Q437,P33,Q436,S51,Q474,S51,Q474
 Q436,P2,Q372,S51,Q474
 Q474,P27,Q10,S51,Q474
 Q474,P27,Q436,S51,Q474
@@ -57,6 +89,8 @@ Q400,P17,"""BP 3, nr 349 (false sub data 9 XI 1393)""",P18,Q385,S51,Q400
 Q400,P22,Q10,S51,Q400
 Q400,P23,Q404,S51,Q400
 Q400,P34,"""N(icolaus). XIIII. de Ben(even)to.""",P31,Q30,P30,14,S51,Q400
+Q404,P56,Q413,S51,Q400,S51,Q400
+Q413,P33,Q404,S51,Q400,S51,Q400
 Q404,P2,Q372,S51,Q400
 Q400,P27,Q10,S51,Q400
 Q400,P27,Q404,S51,Q400
@@ -89,29 +123,3 @@ Q381,P27,Q118,S51,Q381
 Q381,P27,Q398,S51,Q381
 Q381,P27,Q149,S51,Q381
 Q381,P27,Q146,S51,Q381
-Q470,P1,Q402,S51,Q470,,,,,,,,,,,,
-Q470,P24,Q392,S51,Q470
-Q470,P19,Q434,S51,Q470
-Q470,P11,"""Papież Bonifacy IX poleca oficjałowi naumburskiemu, by mocą władzy apostolskiej udzielił Mikołajowi Kalow, mistrzowi sztuk i bakałarzowi medycyny, ekspektatywy na kanonię większą w kapitule miśnieńskiej, pomimo że Mikołaj posiada już kanonię lubuską oraz kanonię w kolegiacie NMP w Wurzen.""",S51,Q470
-Q470,P8,"""ASV, Reg. Lat., vol. 6, f. 258v-259v (or. f.
-                     CCLVIII-CCLVIIII)""",P20,Q388,P14,Q382,P16,"""258v-259v""",P16,"""CCLVIII-CCLVIIII""",S51,Q470
-Q470,P12,+1389-11-13T00:00:00Z/11,S51,Q470
-Q470,P13,Q31,S51,Q470
-Q470,P17,"""MPV 8, nr 39""",P18,Q385,S51,Q470
-Q470,P17,"""RG 2, nr 05764""",P18,Q386,S51,Q470
-Q470,P22,Q10,S51,Q470
-Q470,P52,Q430,S51,Q470
-Q423,P38,"""Nicolaum Kalow, canonicum Lubucensem, qui, ut asserit, magister in artibus et bacallarius in medicina existit""",S51,Q470
-Q423,P42,Q426,S51,Q470
-Q423,P42,Q424,S51,Q470
-Q470,P34,"""C(ancellaria)""",S51,Q470
-Q470,P34,"""N(icolaus). XXI. de Ben(even)to.""",P31,Q30,P30,21,S51,Q470
-Q432,P29,Q416,S51,Q470
-Q470,P27,Q10,S51,Q470
-Q470,P27,Q423,S51,Q470
-Q470,P27,Q30,S51,Q470
-Q470,P27,Q432,S51,Q470
-Q470,P27,Q429,S51,Q470
-Q470,P27,Q430,S51,Q470
-Q470,P27,Q469,S51,Q470
-Q470,P27,Q427,S51,Q470

@@ -24,8 +24,8 @@ with open(f'results/result.csv', 'w', newline='') as file:
 
         # tags_of_interest = ['persName', 'placeName', 'orgName', 'affiliation', 'date', 'education', 'note']
 
-        def format_multiline(str):
-            return '"' + str + '"'
+        # def format_multiline(str):
+        #     return '"' + str + '"'
 
         def format_string(str):
             return '"' + str + '"'
@@ -58,7 +58,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
         }
 
         reverse_p_list = {
-            'mąz': 'P33',
+            'maz': 'P33',
             'ojciec': 'P58',
             'zona': 'P56',
             'dziecko': 'P57',
