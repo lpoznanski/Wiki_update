@@ -25,7 +25,10 @@ with open(f'results/result.csv', 'w', newline='') as file:
         # tags_of_interest = ['persName', 'placeName', 'orgName', 'affiliation', 'date', 'education', 'note']
 
         def format_multiline(str):
-            return '"""' + str + '"""'
+            return '"' + str + '"'
+
+        def format_string(str):
+            return '"' + str + '"'
 
         p_list = {
             'beneficjent_laski': 'P25',
@@ -34,11 +37,11 @@ with open(f'results/result.csv', 'w', newline='') as file:
             'education': 'P42',
             'przedmiot_nadania': 'P52',
             'osoba_w_sporze': ['P29', 'Q471'],
-            'zmarły_w_kurii': ['P29', 'Q472'],
+            'zmarly_w_kurii': ['P29', 'Q472'],
             'rezygnacja_z_beneficjum': ['P29', 'Q473'],
-            'mąż': 'P56',
+            'maz': 'P56',
             'ojciec': 'P57',
-            'żona': 'P33',
+            'zona': 'P33',
             'dziecko': 'P58',
             'nepos': 'P59',
             'familiaris': 'P60',
@@ -46,17 +49,18 @@ with open(f'results/result.csv', 'w', newline='') as file:
             'odbiorca': 'P23',
             'egzekutor': ['P29', 'Q416'],
             'taksa_dokumentu': 'P30',
-            'magister_registrow': 'P31',
+            'pracownik_kurii': 'P31',
             'nota_marginalna': 'P34',
             'miejsce_wystawienia_dokumentu': 'P13',
             'data_dokumentu': 'P12',
-            'tytulatura': 'P38'
+            'tytulatura': 'P38',
+            'diecezja': 'P2'
         }
 
         reverse_p_list = {
-            'mąż': 'P33',
+            'mąz': 'P33',
             'ojciec': 'P58',
-            'żona': 'P56',
+            'zona': 'P56',
             'dziecko': 'P57',
             'posiadane_beneficjum': 'P35',
             'posiadana_ekspektatywa_na_beneficjum': 'P28'
@@ -109,17 +113,17 @@ with open(f'results/result.csv', 'w', newline='') as file:
 
         regest = soup.teiHeader.profileDesc.abstract.p.string
         regest = ' '.join(regest.split())
-        writer.writerow([document_qid, 'P11', format_multiline(regest)])
+        writer.writerow([document_qid, 'P11', format_string(regest)])
 
         zrodlo = soup.sourceDesc.listWit.witness
         folia = []
         for element in [item.string.split('f. ')[-1] for item in zrodlo.find_all('locus')]:
-            folia.append('S16')
-            folia.append(format_multiline(element))
-        volumen = ['S14', volumeny[zrodlo['source']]]
-        forma_zachowania = ['S20', formy_zachowania[zrodlo['ana']]]
+            folia.append('P16')
+            folia.append(format_string(element))
+        volumen = ['P14', volumeny[zrodlo['source']]]
+        forma_zachowania = ['P20', formy_zachowania[zrodlo['ana']]]
         # byty_w_sygnaturze
-        writer.writerow([document_qid, 'P8', format_multiline(zrodlo.contents[0])] + forma_zachowania + volumen + folia)
+        writer.writerow([document_qid, 'P8', format_string(zrodlo.contents[0])] + forma_zachowania + volumen + folia)
 
         data_dokumentu = soup.teiHeader.profileDesc.creation.date['when']
         formatted_date = '+' + data_dokumentu + 'T00:00:00Z/11'
@@ -130,7 +134,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
 
         wydania = soup.find_all('bibl')
         for item in wydania:
-            writer.writerow([document_qid, 'P17', format_multiline(item.string), 'P18', typy_edycji[item['type'][0]]])
+            writer.writerow([document_qid, 'P17', format_string(item.string), 'P18', typy_edycji[item['type'][0]]])
 
 
         #tekst
@@ -160,24 +164,29 @@ with open(f'results/result.csv', 'w', newline='') as file:
 
         tytulatury = soup.find_all(type='tytulatura')
         for item in tytulatury:
-            writer.writerow([(item['ref'].split('-'))[-1], p_list['tytulatura'], format_multiline(' '.join(''.join([element for element in item.descendants if type(element)==bs4.element.NavigableString]).split()))])
+            writer.writerow([(item['ref'].split('-'))[-1], p_list['tytulatura'], format_string(' '.join(''.join([element for element in item.descendants if type(element)==bs4.element.NavigableString]).split()))])
 
         education_info = soup.find_all(type='education')
         for item in education_info:
             writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['education'], (item['ref'].split('-'))[-1]])
 
-        magister_registrow = soup.find(type='magister_registrów')
-        writer.writerow([document_qid, p_list['magister_registrow'], (magister_registrow['ref'].split('-'))[-1]])
-
-        taksa_dokumentu = soup.find(type='magister_registrów').measure['quantity']
-        writer.writerow([document_qid, p_list['taksa_dokumentu'], taksa_dokumentu])
+        # pracownik_kurii = soup.find(type='pracownik_kurii')
+        # writer.writerow([document_qid, p_list['pracownik_kurii'], (pracownik_kurii['ref'].split('-'))[-1]])
+        #
+        # taksa_dokumentu = soup.find(type='magister_registrów').measure['quantity']
+        # writer.writerow([document_qid, p_list['taksa_dokumentu'], taksa_dokumentu])
 
         noty_marginalne = soup.find_all('note')
         for nota in noty_marginalne:
             if nota['place'] in ['left_margin', 'right_margin', 'upper-margin', 'lower-margin']:
-                writer.writerow([document_qid, p_list['nota_marginalna'], format_multiline(nota.string)])
+                writer.writerow([document_qid, p_list['nota_marginalna'], format_string(nota.string)])
 
-        for relacja_rodzinna in ['mąż', 'ojciec', 'żona', 'dziecko']:
+        document_fee = soup.find(type='document_fee')
+        pracownik_kurii = soup.find(type='pracownik_kurii')
+        taksa_dokumentu = soup.find(type='pracownik_kurii').measure['quantity']
+        writer.writerow([document_qid, p_list['nota_marginalna'], format_string(' '.join(''.join([element for element in document_fee.descendants if type(element)==bs4.element.NavigableString]).split())), p_list['pracownik_kurii'], (pracownik_kurii['ref'].split('-'))[-1], p_list['taksa_dokumentu'], taksa_dokumentu])
+
+        for relacja_rodzinna in ['maz', 'ojciec', 'zona', 'dziecko']:
             znalezione_relacje = soup.find_all(type=relacja_rodzinna)
             for item in znalezione_relacje:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[relacja_rodzinna], (item['ref'].split('-'))[-1], 'S51', document_qid])
@@ -194,13 +203,17 @@ with open(f'results/result.csv', 'w', newline='') as file:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[status_beneficjow], (item['ref'].split('-'))[-1]], 'S51', document_qid)
                 writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list[status_beneficjow], (item.parent['ref'].split('-'))[-1]], 'S51', document_qid)
 
-        for rola in ['osoba_w_sporze', 'zmarły_w_kurii', 'rezygnacja_z_beneficjum', 'egzekutor']:
+        for rola in ['osoba_w_sporze', 'zmarly_w_kurii', 'rezygnacja_z_beneficjum', 'egzekutor']:
             znalezione_role = soup.find_all(type=rola)
             for item in znalezione_role:
                 writer.writerow([(item['ref'].split('-'))[-1], p_list[rola][0], p_list[rola][1], 'S51', document_qid])
 
+        diecezje = soup.find_all(type='diecezja')
+        for item in diecezje:
+            writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['diecezja'], (item['ref'].split('-'))[-1]])
+
         #byty w dokumencie
-        for tag in ['persName', 'affiliation']:
+        for tag in ['persName', 'affiliation', 'settlement']:
             refs = []
             result = soup.find_all(tag)
             for i in result:
@@ -211,19 +224,14 @@ with open(f'results/result.csv', 'w', newline='') as file:
 
         #Kto jest czyim familiarisem/neposem?
         #Jak będzie tagowana tytulatura i education?
-        #Problem z tytulaturą
         #Jak z beneficjami?
         #trzeba ogarnąć catRef, żeby attr były spójne"
         #byty w sygnaturze - skąd wziąć?
         #role? Muszą być powiązane z osobą
-
-        # new_dataFrame = pd.read_csv(f'results/{document_qid}.csv')
-        # new_excel = pd.ExcelWriter(f'results/{document_qid}.xlsx')
-        # new_dataFrame.to_excel(new_excel, index=False)
-        # new_excel.save()
+        #czy będziemy używać collection w końcu?
 
 #zapisywanie do xls
 cvsDataframe = pd.read_csv('results/result.csv')
 resultExcelFile = pd.ExcelWriter('result.xlsx')
-cvsDataframe.to_excel(resultExcelFile, index=False)
+cvsDataframe.to_excel(resultExcelFile, index=False, header=False)
 resultExcelFile._save()

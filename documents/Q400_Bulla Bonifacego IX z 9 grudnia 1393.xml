@@ -48,13 +48,13 @@
       <body>
          <p>
                 <persName ref="va-Q10" type="wystawca">Bonifacius</persName> etc., dilecte in Christo filie <persName ref="va-Q404" type="odbiorca">Katherine, relicte quondam <persName ref="va-Q413" type="mąż">Peszkonis dicti de
-            Florencia laici</persName>, vidue <region ref="va-Q372" type="">Cracouiensis diocesis</region>
+            Florencia laici</persName>, vidue <region ref="va-Q372" type="diecezja">Cracouiensis diocesis</region>
                 </persName>, salutem etc. Provenit <choice>
                     <sic>etc.</sic>
                     <corr>Hinc est, quod nos ...., ut confessor tuus, quem duxeris eligendum, omnium peccatorum tuorum, .... semel tantum in mortis articulo plenam remissionem tibi .... auctoritate apostolica concedere valeat, devocioni tue tenore presencium indulgemus; sic tamen, quod ....</corr>
                 </choice> Datum <placeName ref="va-Q31" type="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date when="1393-11-09">quinto id. decembris, anno quinto</date>. <handShift/>
             <note type="document_fee" place="in_line">
-                    <persName ref="va-Q30" type="magister_registrów">N(icolaus). <measure quantity="14">XIIII</measure>. de Ben(even)to</persName>.</note>
+                    <persName ref="va-Q30" type="pracownik_kurii">N(icolaus). <measure quantity="14">XIIII</measure>. de Ben(even)to</persName>.</note>
             </p>
       </body>
    </text>

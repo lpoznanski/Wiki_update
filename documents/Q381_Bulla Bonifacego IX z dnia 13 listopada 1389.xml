@@ -52,14 +52,14 @@
    <text>
       <body>
          <p> <note place="left_margin">C(ancellaria)</note> <persName ref="va-Q10" type="wystawca">Bonifacius</persName> etc., dilecto filio <affiliation ref="va-Q391" type="odbiorca">custodi ecclesie Gneznensis</affiliation> salutem
-            etc. Dignum arbitramur etc. Volentes itaque dilectum filium <persName ref="va-Q393" type="beneficjent_łaski">Nicolaum Penanszconis,
+            etc. Dignum arbitramur etc. Volentes itaque dilectum filium <persName ref="va-Q393" type="beneficjent_laski">Nicolaum Penanszconis,
             <affiliation ref="va-Q142" type="posiadane_beneficjum">canonicum Gneznensem</affiliation>, qui, ut asseritur, de <state ref="va-Q417" type="">nobili genere ex utroque parente procreatus
             existit</state>
                 </persName>, apud nos de nobilitate generis, vite ac morum honestate aliisque probitatis et
             virtutum meritis multipliciter commendatum, horum intuitu favore prosequi gracioso,
             discrecioni tue per apostolica scripta mandamus, quatenus, si post diligentem
             examinacionem eundem Nicolaum ad hoc ydoneum esse reppereris, super quo tuam
-            conscienciam oneramus, eidem Nicolao de <affiliation ref="va-Q394" type="przedmiot_nadania">canonicatu ecclesie Lanciciensis, <region ref="va-Q139" type="">Gneznensis
+            conscienciam oneramus, eidem Nicolao de <affiliation ref="va-Q394" type="przedmiot_nadania">canonicatu ecclesie Lanciciensis, <region ref="va-Q139" type="diecezja">Gneznensis
             diocesis</region>
                 </affiliation>, cum plenitudine iuris canonici auctoritate nostra provideas, faciens ipsum
             Nicolaum vel procuratorem suum eius nomine in eadem ecclesia in canonicum recipi et in
@@ -123,7 +123,7 @@
             post acceptacionem predictam donacioni apostolice cum interposicione decreti duxissemus
             specialiter reservandam. Datum <placeName ref="va-Q31" type="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="document_issued" when="1389-11-13">idus novembris, pontificatus
             nostri anno primo</date>. <handShift/> <note type="document_fee" place="in_line">
-                    <persName ref="va-Q30" type="magister_registrów">N(icolaus). <measure quantity="24">XXIIII</measure>. de Ben(even)to</persName>.</note> </p>
+                    <persName ref="va-Q30" type="pracownik_kurii">N(icolaus). <measure quantity="24">XXIIII</measure>. de Ben(even)to</persName>.</note> </p>
       </body>
    </text>
 </TEI>

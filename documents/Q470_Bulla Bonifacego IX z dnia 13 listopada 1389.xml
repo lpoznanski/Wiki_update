@@ -123,7 +123,7 @@
             huiusmodi donacioni apostolice cum interposicione decreti duxissemus specialiter
             reservandam. Datum <placeName ref="va-Q31" type="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="document_issued" when="1389-12-11">idus novembris, anno primo</date>. <handShift/>
                 <note type="document_fee" place="in_line">
-                    <persName ref="va-Q30" type="magister_registrów">N(icolaus). <measure quantity="21">XXI</measure>. de Ben(even)to</persName>.</note> </p>
+                    <persName ref="va-Q30" type="pracownik_kurii">N(icolaus). <measure quantity="21">XXI</measure>. de Ben(even)to</persName>.</note> </p>
       </body>
    </text>
 </TEI>
