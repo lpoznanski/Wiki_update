@@ -126,7 +126,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
         writer.writerow([document_qid, 'P8', format_string(zrodlo.contents[0])] + forma_zachowania + volumen + folia + ['S51', document_qid])
 
         data_dokumentu = soup.teiHeader.profileDesc.creation.date['when']
-        formatted_date = '+' + data_dokumentu + 'T00:00:00Z/11'
+        formatted_date = '+' + data_dokumentu + 'T00:00:00Z/11/J'
         writer.writerow([document_qid, 'P12', formatted_date, 'S51', document_qid])
 
         miejsce_wystawienia = soup.teiHeader.profileDesc.creation.placeName['ref']
