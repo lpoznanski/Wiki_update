@@ -3,7 +3,7 @@ Q476,P24,Q406,S51,Q476
 Q476,P19,Q403,S51,Q476
 Q476,P11,"""Papież Bonifacy IX przyznaje Małgorzacie, wdowie po mieszczaninie wrocławskim Johannesie von Sitten, łaskę, by w obliczu śmierci wybrany przez nią spowiednik mógł jeden raz udzielić jej mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami.""",S51,Q476
 Q476,P8,"""AAV, Reg. Lat., vol. 34, f. 185v""",P20,Q388,P14,Q401,P16,"""185v""",S51,Q476
-Q476,P12,+1394-04-23T00:00:00Z/11,S51,Q476
+Q476,P12,+1394-04-23T00:00:00Z/11/J,S51,Q476
 Q476,P13,Q31,S51,Q476
 Q476,P17,"""MVB 5, nr 759""",P18,Q386,S51,Q476
 Q476,P22,Q10,S51,Q476
@@ -20,12 +20,14 @@ Q475,P24,Q406,S51,Q475
 Q475,P19,Q403,S51,Q475
 Q475,P11,"""Papież Bonifacy IX przyznaje Pawłowi s. Nankera z Wierzchoniowa, kanonikowi krakowskiemu, łaskę, by w obliczu śmierci wybrany przez Pawła spowiednik mógł jeden raz udzielić mu mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami.""",S51,Q475
 Q475,P8,"""AAV, Reg. Lat., vol. 34, f. 172v""",P20,Q388,P14,Q401,P16,"""172v""",S51,Q475
-Q475,P12,+1394-01-06T00:00:00Z/11,S51,Q475
+Q475,P12,+1394-01-06T00:00:00Z/11/J,S51,Q475
 Q475,P13,Q31,S51,Q475
 Q475,P17,"""BP 3, nr 354""",P18,Q386,S51,Q475
 Q475,P22,Q10,S51,Q475
 Q475,P23,Q441,S51,Q475
 Q475,P34,"""N(icolaus). XIIII. de Ben(even)to""",P31,Q30,P30,14,S51,Q475
+Q441,P53,Q149,S51,Q475
+Q149,P35,Q441,S51,Q475
 Q475,P27,Q10,S51,Q475
 Q475,P27,Q441,S51,Q475
 Q475,P27,Q30,S51,Q475
@@ -36,7 +38,7 @@ Q470,P19,Q434,S51,Q470
 Q470,P11,"""Papież Bonifacy IX poleca oficjałowi naumburskiemu, by mocą władzy apostolskiej udzielił Mikołajowi Kalow, mistrzowi sztuk i bakałarzowi medycyny, ekspektatywy na kanonię większą w kapitule miśnieńskiej, pomimo że Mikołaj posiada już kanonię lubuską oraz kanonię w kolegiacie NMP w Wurzen.""",S51,Q470
 Q470,P8,"""ASV, Reg. Lat., vol. 6, f. 258v-259v (or. f.
                      CCLVIII-CCLVIIII)""",P20,Q388,P14,Q382,P16,"""258v-259v""",P16,"""CCLVIII-CCLVIIII""",S51,Q470
-Q470,P12,+1389-11-13T00:00:00Z/11,S51,Q470
+Q470,P12,+1389-11-13T00:00:00Z/11/J,S51,Q470
 Q470,P13,Q31,S51,Q470
 Q470,P17,"""MPV 8, nr 39""",P18,Q385,S51,Q470
 Q470,P17,"""RG 2, nr 05764""",P18,Q386,S51,Q470
@@ -49,6 +51,14 @@ Q423,P42,Q426,S51,Q470
 Q423,P42,Q424,S51,Q470
 Q470,P34,"""C(ancellaria)""",S51,Q470
 Q470,P34,"""N(icolaus). XXI. de Ben(even)to.""",P31,Q30,P30,21,S51,Q470
+Q423,P53,Q429,S51,Q470
+Q429,P35,Q423,S51,Q470
+Q423,P53,Q429,S51,Q470
+Q429,P35,Q423,S51,Q470
+Q423,P53,Q427,S51,Q470
+Q427,P35,Q423,S51,Q470
+Q423,P54,Q430,S51,Q470
+Q430,P28,Q423,S51,Q470
 Q432,P29,Q416,S51,Q470
 Q470,P27,Q10,S51,Q470
 Q470,P27,Q423,S51,Q470
@@ -63,7 +73,7 @@ Q474,P24,Q406,S51,Q474
 Q474,P19,Q403,S51,Q474
 Q474,P11,"""Papież Bonifacy IX przyznaje Lutce, żonie Krystyna z Zagórzyc, łaskę, by w obliczu śmierci wybrany przez nią spowiednik mógł jeden raz udzielić jej mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami.""",S51,Q474
 Q474,P8,"""AAV, Reg. Lat., vol. 34, f. 172v""",P20,Q388,P14,Q401,P16,"""172v""",S51,Q474
-Q474,P12,+1394-01-04T00:00:00Z/11,S51,Q474
+Q474,P12,+1394-01-04T00:00:00Z/11/J,S51,Q474
 Q474,P13,Q31,S51,Q474
 Q474,P17,"""BP 3, nr 353""",P18,Q386,S51,Q474
 Q474,P22,Q10,S51,Q474
@@ -83,7 +93,7 @@ Q400,P24,Q406,S51,Q400
 Q400,P19,Q403,S51,Q400
 Q400,P11,"""Papież Bonifacy IX przyznaje Katarzynie, wdowie po Paszku z Kleparza, łaskę, by w obliczu śmierci wybrany przez nią spowiednik mógł jeden raz udzielić jej mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami.""",S51,Q400
 Q400,P8,"""AAV, Reg. Lat., vol. 34, f. 172v""",P20,Q388,P14,Q401,P16,"""172v""",S51,Q400
-Q400,P12,+1393-12-09T00:00:00Z/11,S51,Q400
+Q400,P12,+1393-12-09T00:00:00Z/11/J,S51,Q400
 Q400,P13,Q31,S51,Q400
 Q400,P17,"""BP 3, nr 349 (false sub data 9 XI 1393)""",P18,Q385,S51,Q400
 Q400,P22,Q10,S51,Q400
@@ -101,7 +111,7 @@ Q381,P24,Q392,S51,Q381
 Q381,P19,Q387,S51,Q381
 Q381,P11,"""Papież Bonifacy IX poleca kustoszowi gnieźnieńskiemu, by mocą władzy apostolskiej udzielił szlachetnemu Mikołajowi Pieniążkowi z Węchadłowa i Witowic ekspektatywy na kanonię łęczycką, pomimo że Mikołaj posiada już kanonię gnieźnieńską i archidiakonat łęczycki, a ponadto otrzymał niedawno papieskie ekspektatywy na prałaturę w kapitule łęczyckiej (pod warunkiem opuszczenia archidiakonatu w razie jej objęcia) oraz na kanonię krakowską, a dzisiaj otrzymał także papieską ekspektatywę na kanonię uniejowską.""",S51,Q381
 Q381,P8,"""AAV, Reg. Lat., vol. 6, f. 257r-258v (or. f. CCLVII-CCLVIII)""",P20,Q388,P14,Q382,P16,"""257r-258v""",P16,"""CCLVII-CCLVIII""",S51,Q381
-Q381,P12,+1389-11-13T00:00:00Z/11,S51,Q381
+Q381,P12,+1389-11-13T00:00:00Z/11/J,S51,Q381
 Q381,P13,Q31,S51,Q381
 Q381,P17,"""MPV 8, nr 31""",P18,Q385,S51,Q381
 Q381,P17,"""BP 3, nr 111""",P18,Q386,S51,Q381
@@ -112,6 +122,8 @@ Q381,P25,Q393,S51,Q381
 Q381,P52,Q394,S51,Q381
 Q381,P34,"""C(ancellaria)""",S51,Q381
 Q381,P34,"""N(icolaus). XXIIII. de Ben(even)to.""",P31,Q30,P30,24,S51,Q381
+Q393,P53,Q142,S51,Q381
+Q142,P35,Q393,S51,Q381
 Q394,P2,Q139,S51,Q381
 Q381,P27,Q10,S51,Q381
 Q381,P27,Q393,S51,Q381

@@ -189,8 +189,8 @@ with open(f'results/result.csv', 'w', newline='') as file:
         for relacja_rodzinna in ['maz', 'ojciec', 'zona', 'dziecko']:
             znalezione_relacje = soup.find_all(type=relacja_rodzinna)
             for item in znalezione_relacje:
-                writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[relacja_rodzinna], (item['ref'].split('-'))[-1], 'S51', document_qid, 'S51', document_qid])
-                writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list[relacja_rodzinna], (item.parent['ref'].split('-'))[-1], 'S51', document_qid, 'S51', document_qid])
+                writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[relacja_rodzinna], (item['ref'].split('-'))[-1], 'S51', document_qid])
+                writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list[relacja_rodzinna], (item.parent['ref'].split('-'))[-1], 'S51', document_qid])
 
         for dalsza_relacja in ['nepos', 'familiaris']:
             znalezione_dalsze_relacje = soup.find_all(type=dalsza_relacja)
@@ -198,7 +198,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[dalsza_relacja], (item['ref'].split('-'))[-1]], 'S51', document_qid)
 
         for status_beneficjow in ['posiadane_beneficjum', 'posiadana_ekspektatywa_na_beneficjum']:
-            znalezione = soup.find_all(type=relacja_rodzinna)
+            znalezione = soup.find_all(type=status_beneficjow)
             for item in znalezione:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[status_beneficjow], (item['ref'].split('-'))[-1], 'S51', document_qid])
                 writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list[status_beneficjow], (item.parent['ref'].split('-'))[-1], 'S51', document_qid])
