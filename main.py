@@ -123,7 +123,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
         volumen = ['P14', volumeny[zrodlo['source']]]
         forma_zachowania = ['P20', formy_zachowania[zrodlo['ana']]]
         # byty_w_sygnaturze
-        writer.writerow([document_qid, 'P8', format_string(zrodlo.contents[0])] + forma_zachowania + volumen + folia + ['S51', document_qid])
+        writer.writerow([document_qid, 'P8', format_string(' '.join(zrodlo.contents[0].split()))] + forma_zachowania + volumen + folia + ['S51', document_qid])
 
         data_dokumentu = soup.teiHeader.profileDesc.creation.date['when']
         formatted_date = '+' + data_dokumentu + 'T00:00:00Z/11/J'

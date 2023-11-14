@@ -50,7 +50,7 @@
    </teiHeader>
    <text>
       <body>
-         <p> <note place="left_margin">C(ancellaria)</note> <persName ref="va-Q10" type="wystawca">Bonifacius</persName> etc., dilecto filio <affiliation ref="va-Q391" type="odbiorca">custodi ecclesie Gneznensis</affiliation> salutem
+         <p> <note place="left_margin">C(ancellaria)</note> <persName ref="va-Q10" type="wystawca">Bonifacius</persName> etc., dilecto filio <affiliation type="odbiorca egzekutor" ref="va-Q391">custodi ecclesie Gneznensis</affiliation> salutem
             etc. Dignum arbitramur etc. Volentes itaque dilectum filium <persName ref="va-Q393" type="beneficjent_laski">Nicolaum Penanszconis,
             <affiliation ref="va-Q142" type="posiadane_beneficjum">canonicum Gneznensem</affiliation>, qui, ut asseritur, de <state ref="va-Q417" type="">nobili genere ex utroque parente procreatus
             existit</state>
@@ -59,7 +59,7 @@
             discrecioni tue <section type="formularz">per apostolica scripta</section> mandamus, quatenus, <section type="formularz">si post diligentem
             examinacionem eundem Nicolaum ad hoc ydoneum esse reppereris, super quo tuam
             conscienciam oneramus</section>, eidem Nicolao de <persName ref="va-Q393" type="">
-                    <affiliation ref="va-Q394" type="przedmiot_nadania">canonicatu ecclesie Lanciciensis, <region type="diecezja" ref="va-Q139">Gneznensis
+                    <affiliation type="przedmiot_nadania posiadana_ekspektatywa_na_beneficjum" ref="va-Q394">canonicatu ecclesie Lanciciensis, <region type="diecezja" ref="va-Q139">Gneznensis
             diocesis</region>
                     </affiliation>,</persName> cum plenitudine iuris canonici auctoritate nostra provideas, <section type="formularz">faciens ipsum
             Nicolaum vel procuratorem suum eius nomine in eadem ecclesia in canonicum recipi et in
@@ -110,14 +110,14 @@
             gracia seu graciis in eadem ecclesia litteras nostras duxerimus concedendas; nos enim
             tam illas, quam presentes effectum sortiri volumus quacumque constitucione apostolica
             contraria non obstante;</section> aut quod idem Nicolaus <persName ref="va-Q393" type="">
-                    <affiliation ref="va-Q142" type="">canonicatum et prebendam in Gneznensi</affiliation>
+                    <affiliation type=" posiadane_beneficjum" ref="va-Q142">canonicatum et prebendam in Gneznensi</affiliation>
                 </persName> cum
-<persName ref="va-Q393" type="">            <affiliation ref="va-Q398" type="">archidiaconatu Lanciciensi</affiliation>
+<persName ref="va-Q393" type="">            <affiliation type=" posiadane_beneficjum" ref="va-Q398">archidiaconatu Lanciciensi</affiliation>
                 </persName> in eadem noscitur obtinere et nuper sibi de dignitate,
             personatu vel officio in eadem, per cuiusquidem dignitatis, personatus vel officii
             assecucionem dictum archidiaconatum dimittere tenetur ac <persName ref="va-Q393" type="">
-                    <affiliation ref="va-Q149" type="">in Cracouiens</affiliation>i</persName> et hodie <persName ref="va-Q393" type="">
-                    <affiliation ref="va-Q146" type="">in
+                    <affiliation type=" posiadana_ekspektatywa_na_beneficjum" ref="va-Q149">in Cracouiens</affiliation>i</persName> et hodie <persName ref="va-Q393" type="">
+                    <affiliation type=" posiadana_ekspektatywa_na_beneficjum" ref="va-Q146">in
             Une(o)wiensi</affiliation>
                 </persName>, dicte diocesis, ecclesiis per alias nostras litteras de canonicatibus sub
             expectacionibus prebendarum graciose mandavimus provideri. <section type="formularz">Nos enim, si dictus Nicolaus

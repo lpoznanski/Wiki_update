@@ -46,7 +46,7 @@
    <text>
       <body>
          <p>
-                <persName ref="va-Q10" type="wystawca">Bonifacius</persName> etc., dilecte in Christo filie <persName ref="va-Q404" type="odbiorca">Katherine, relicte quondam <persName ref="va-Q413" type="maz">Peszkonis dicti de
+                <persName ref="va-Q10" type="wystawca">Bonifacius</persName> etc., dilecte in Christo filie <persName type="odbiorca tytulatura beneficjent_laski" ref="va-Q404">Katherine, relicte quondam <persName ref="va-Q413" type="maz">Peszkonis dicti de
             Florencia laici</persName>, vidue <region type=" diecezja" ref="va-Q372">Cracouiensis diocesis</region>
                 </persName>, salutem etc. Provenit <choice>
                     <sic>etc.</sic>

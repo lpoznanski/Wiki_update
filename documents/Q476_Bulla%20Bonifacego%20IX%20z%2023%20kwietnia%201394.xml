@@ -46,7 +46,7 @@
    <text>
       <body>
          <p>
-                <persName ref="va-Q10" type="wystawca">Bonifacius</persName> etc., dilecte in Christo filie <persName ref="va-Q442" type="tytulatura">Margarete, relicte quondam <persName ref="va-Q443" type="maz">Iohannis de Sitten
+                <persName ref="va-Q10" type="wystawca">Bonifacius</persName> etc., dilecte in Christo filie <persName type="tytulatura odbiorca beneficjent_laski" ref="va-Q442">Margarete, relicte quondam <persName ref="va-Q443" type="maz">Iohannis de Sitten
 <state ref="va-Q444" type="">            civis Wratislauiensis</state>
                     </persName>
                 </persName>, salutem etc. Provenit <choice>
