@@ -116,7 +116,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
         writer.writerow([document_qid, 'P14', formatted_date, 'S3', document_qid])
 
         miejsce_wystawienia = soup.teiHeader.profileDesc.creation.placeName['ref']
-        writer.writerow([document_qid, 'P15', miejsce_wystawienia, 'S3', document_qid])
+        writer.writerow([document_qid, 'P15', miejsce_wystawienia.split('-')[-1], 'S3', document_qid])
 
         wydania = soup.find_all('bibl')
         for item in wydania:
