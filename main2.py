@@ -20,7 +20,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
         content = "".join(content)
         soup = bs(content, "xml", multi_valued_attributes=type_is_multi)
 
-        document_qid = soup.publicationStmt.idno.string
+        document_qid = soup.TEI['xml:id']
 
         # tags_of_interest = ['persName', 'placeName', 'orgName', 'affiliation', 'date', 'education', 'note']
 
@@ -132,27 +132,27 @@ with open(f'results/result.csv', 'w', newline='') as file:
         #         print(child)
         #         print(child['type'])
 
-        wystawcy = soup.find_all(type='wystawca')
+        wystawcy = soup.find_all(ana='wystawca')
         for item in wystawcy:
             writer.writerow([document_qid, p_list['wystawca'], (item['ref'].split('-'))[-1], 'S3', document_qid])
 
-        odbiorcy = soup.find_all(type='odbiorca')
+        odbiorcy = soup.find_all(ana='odbiorca')
         for item in odbiorcy:
             writer.writerow([document_qid, p_list['odbiorca'], (item['ref'].split('-'))[-1], 'S3', document_qid])
 
-        beneficjenci_laski = soup.find_all(type='beneficjent_laski')
+        beneficjenci_laski = soup.find_all(ana='beneficjent_laski')
         for item in beneficjenci_laski:
             writer.writerow([document_qid, p_list['beneficjent_laski'], (item['ref'].split('-'))[-1],'S3', document_qid])
 
-        przedmioty_nadania = soup.find_all(type='przedmiot_nadania')
+        przedmioty_nadania = soup.find_all(ana='przedmiot_nadania')
         for item in przedmioty_nadania:
             writer.writerow([document_qid, p_list['przedmiot_nadania'], (item['ref'].split('-'))[-1], 'S3', document_qid])
 
-        tytulatury = soup.find_all(type='tytulatura')
+        tytulatury = soup.find_all(ana='tytulatura')
         for item in tytulatury:
             writer.writerow([(item['ref'].split('-'))[-1], p_list['tytulatura'], format_string(' '.join(''.join([element for element in item.descendants if type(element)==bs4.element.NavigableString]).split())), 'S3', document_qid])
 
-        education_info = soup.find_all(type='education')
+        education_info = soup.find_all(ana='education')
         for item in education_info:
             writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['education'], (item['ref'].split('-'))[-1], 'S3', document_qid])
 
@@ -168,38 +168,38 @@ with open(f'results/result.csv', 'w', newline='') as file:
                 writer.writerow([document_qid, p_list['nota_marginalna'], format_string(nota.string), 'S3', document_qid])
 
         document_fee = soup.find(type='document_fee')
-        pracownik_kurii = soup.find(type='urzednik_kurialny')
-        taksa_dokumentu = soup.find(type='urzednik_kurialny').measure['quantity']
+        pracownik_kurii = soup.find(ana='urzednik_kurialny')
+        taksa_dokumentu = soup.find(ana='urzednik_kurialny').measure['quantity']
         writer.writerow([document_qid, p_list['nota_marginalna'], format_string(' '.join(''.join([element for element in document_fee.descendants if type(element)==bs4.element.NavigableString]).split())), p_list['urzednik_kurialny'], (pracownik_kurii['ref'].split('-'))[-1], p_list['taksa_dokumentu'], taksa_dokumentu, 'S3', document_qid])
 
         for relacja_rodzinna in ['wspolmalzonek', 'ojciec', 'dziecko']:
-            znalezione_relacje = soup.find_all(type=relacja_rodzinna)
+            znalezione_relacje = soup.find_all(ana=relacja_rodzinna)
             for item in znalezione_relacje:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[relacja_rodzinna], (item['ref'].split('-'))[-1], 'S3', document_qid])
                 writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list[relacja_rodzinna], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
 
         for dalsza_relacja in ['nepos', 'familiaris']:
-            znalezione_dalsze_relacje = soup.find_all(type=dalsza_relacja)
+            znalezione_dalsze_relacje = soup.find_all(ana=dalsza_relacja)
             for item in znalezione_dalsze_relacje:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[dalsza_relacja], (item['ref'].split('-'))[-1]], 'S3', document_qid)
 
         for status_beneficjow in ['zajmowane_stanowisko', 'informacje_o_posiadaniu_stanowiska']:
-            znalezione = soup.find_all(type=status_beneficjow)
+            znalezione = soup.find_all(ana=status_beneficjow)
             for item in znalezione:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[status_beneficjow], (item['ref'].split('-'))[-1], 'S3', document_qid])
                 writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list[status_beneficjow], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
 
         for rola in ['osoba_w_sporze', 'zmarly_w_kurii', 'rezygnacja_z_beneficjum', 'egzekutor']:
-            znalezione_role = soup.find_all(type=rola)
+            znalezione_role = soup.find_all(ana=rola)
             for item in znalezione_role:
                 writer.writerow([(item['ref'].split('-'))[-1], p_list[rola][0], p_list[rola][1], 'S3', document_qid])
 
         for status in ['pochodzenie_spoleczne', 'stopien_swiecen', 'rola_spoleczna']:
-            statusy = soup.find_all(type=status)
+            statusy = soup.find_all(ana=status)
             for item in statusy:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[status], (item['ref'].split('-'))[-1], 'S3', document_qid])
 
-        diecezje = soup.find_all(type='diecezja')
+        diecezje = soup.find_all(ana='diecezja')
         for item in diecezje:
             writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['diecezja'], (item['ref'].split('-'))[-1], 'S3', document_qid])
 
