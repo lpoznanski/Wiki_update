@@ -16,9 +16,9 @@ with open(f'results/result.csv', 'w', newline='') as file:
         with open('documents/' + doc, "r") as file:
             content = file.readlines()
 
-        type_is_multi = {'*': 'type'}
+        ana_is_multi = {'*': 'ana'}
         content = "".join(content)
-        soup = bs(content, "xml", multi_valued_attributes=type_is_multi)
+        soup = bs(content, "xml", multi_valued_attributes=ana_is_multi)
 
         document_qid = soup.TEI['xml:id']
 
@@ -107,7 +107,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
             folia.append('P13')
             folia.append(format_string(element))
         volumen = ['P12', volumeny[zrodlo['source']]]
-        forma_zachowania = ['P11', formy_zachowania[zrodlo['ana']]]
+        forma_zachowania = ['P11', formy_zachowania[zrodlo['ana'][0]]]
         # byty_w_sygnaturze
         writer.writerow([document_qid, 'P10', format_string(zrodlo.contents[0])] + forma_zachowania + volumen + folia + ['S3', document_qid])
 
@@ -120,7 +120,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
 
         wydania = soup.find_all('bibl')
         for item in wydania:
-            writer.writerow([document_qid, 'P16', format_string(item.string), 'P17', typy_edycji[item['type'][0]], 'S3', document_qid])
+            writer.writerow([document_qid, 'P16', format_string(item.string), 'P17', typy_edycji[item['type']], 'S3', document_qid])
 
 
         #tekst
@@ -152,6 +152,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
         for item in tytulatury:
             writer.writerow([(item['ref'].split('-'))[-1], p_list['tytulatura'], format_string(' '.join(''.join([element for element in item.descendants if type(element)==bs4.element.NavigableString]).split())), 'S3', document_qid])
 
+
         education_info = soup.find_all(ana='education')
         for item in education_info:
             writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['education'], (item['ref'].split('-'))[-1], 'S3', document_qid])
@@ -172,7 +173,21 @@ with open(f'results/result.csv', 'w', newline='') as file:
         taksa_dokumentu = soup.find(ana='urzednik_kurialny').measure['quantity']
         writer.writerow([document_qid, p_list['nota_marginalna'], format_string(' '.join(''.join([element for element in document_fee.descendants if type(element)==bs4.element.NavigableString]).split())), p_list['urzednik_kurialny'], (pracownik_kurii['ref'].split('-'))[-1], p_list['taksa_dokumentu'], taksa_dokumentu, 'S3', document_qid])
 
-        for relacja_rodzinna in ['wspolmalzonek', 'ojciec', 'dziecko']:
+        malzonkowie = soup.find_all(ana='wspolmalzonek')
+        for item in malzonkowie:
+            try:
+                if item['type']:
+                    writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['wspolmalzonek'], (item['ref'].split('-'))[-1], 'P38', format_string(item['type']), 'S3', document_qid])
+                    writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list['wspolmalzonek'], (item.parent['ref'].split('-'))[-1], 'P38', format_string(item['type']), 'S3', document_qid])
+                else:
+                    writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['wspolmalzonek'], (item['ref'].split('-'))[-1], 'S3', document_qid])
+                    writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list['wspolmalzonek'], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
+            except KeyError:
+                writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['wspolmalzonek'], (item['ref'].split('-'))[-1], 'S3', document_qid])
+                writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list['wspolmalzonek'], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
+
+
+        for relacja_rodzinna in ['ojciec', 'dziecko']:
             znalezione_relacje = soup.find_all(ana=relacja_rodzinna)
             for item in znalezione_relacje:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[relacja_rodzinna], (item['ref'].split('-'))[-1], 'S3', document_qid])
