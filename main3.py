@@ -17,9 +17,10 @@ with open(f'results/result.csv', 'w', newline='') as file:
             content = file.readlines()
 
         ana_is_multi = {'*': 'ana'}
+        source_is_multi = {'*': 'source'}
         content = "".join(content)
         soup = bs(content, "xml", multi_valued_attributes=ana_is_multi)
-
+        soup_meta = bs(content, "xml", multi_valued_attributes=source_is_multi)
         document_qid = soup.TEI['xml:id']
 
         # tags_of_interest = ['persName', 'placeName', 'orgName', 'affiliation', 'date', 'education', 'note']
@@ -38,9 +39,9 @@ with open(f'results/result.csv', 'w', newline='') as file:
             'informacje_o_posiadaniu_stanowiska': 'P33',
             'education': 'P31',
             'przedmiot_nadania': 'P34',
-            # 'osoba_w_sporze': ['P29', 'Q471'],
-            # 'zmarly_w_kurii': ['P29', 'Q472'],
-            # 'rezygnacja_z_beneficjum': ['P29', 'Q473'],
+            'osoba_w_sporze': 'Q657',
+            # 'zmarly_w_kurii': 'Q',
+            # 'rezygnacja_z_beneficjum': 'Q',
             'wspolmalzonek': 'P4',
             'ojciec': 'P27',
             'dziecko': 'P28',
@@ -48,7 +49,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
             'familiaris': 'P30',
             'wystawca': 'P18',
             'odbiorca': 'P19',
-            'egzekutor': ['P39', 'Q424'],
+            'egzekutor': 'Q424',
             'taksa_dokumentu': 'P23',
             'urzednik_kurialny': 'P22',
             'nota_marginalna': 'P21',
@@ -87,52 +88,37 @@ with open(f'results/result.csv', 'w', newline='') as file:
         # with open(f'results/{document_qid}.csv', 'w', newline='') as file:
         #     writer = csv.writer(file)
 
-        #metadane
-        #P55
         typ = soup.find(scheme="forma_dokumentu")['target']
-        writer.writerow([document_qid, 'P1', typ, 'S3', document_qid, '', '', '', '', '', '', '', '', '', '', '', ''])
+        writer.writerow([document_qid, 'P55', typ, '', '', '', '', '', '', '', '', '', '', '', '', '', ''])
 
-        #bez zmian
         rodzaj_laski = soup.find(scheme="rodzaj_sprawy")['target']
-        writer.writerow([document_qid, 'P7', rodzaj_laski, 'S3', document_qid])
+        writer.writerow([document_qid, 'P7', rodzaj_laski])
 
-        #bez zmian
         formularz = soup.find(scheme="formularz")['target']
-        writer.writerow([document_qid, 'P8', formularz, 'S3', document_qid])
+        writer.writerow([document_qid, 'P8', formularz])
 
-        #bez zmian
         regest = soup.teiHeader.profileDesc.abstract.p.string
         regest = ' '.join(regest.split())
-        writer.writerow([document_qid, 'P9', format_string(regest), 'S3', document_qid])
+        writer.writerow([document_qid, 'P9', format_string(regest)])
 
-        #całkowicie inaczej w witness będzie Q manifestacji + nowe P54 i odwrotne P53
-        zrodlo = soup.sourceDesc.listWit.children
-        for item in zrodlo:
-            print(item)
-        folia = []
-        for element in [item.string.split('f. ')[-1] for item in zrodlo.find_all('locus')]:
-            folia.append('P13')
-            folia.append(format_string(element))
-        volumen = ['P12', volumeny[zrodlo['source']]]
-        forma_zachowania = ['P11', formy_zachowania[zrodlo['ana'][0]]]
+        zrodla = soup_meta.sourceDesc.listWit.children
+        print(zrodla)
+        for zrodlo in zrodla:
+            print(zrodlo)
+            for wit in zrodlo['source']:
+                writer.writerow([document_qid, 'P54', zrodlo['source']])
+                writer.writerow([zrodlo['source'], 'P53', document_qid])
 
-        #tego nie będzie!
-        # byty_w_sygnaturze
-        writer.writerow([document_qid, 'P10', format_string(zrodlo.contents[0])] + forma_zachowania + volumen + folia + ['S3', document_qid])
-
-        #tak samo
         data_dokumentu = soup.teiHeader.profileDesc.creation.date['when']
         formatted_date = '+' + data_dokumentu + 'T00:00:00Z/11/J'
-        writer.writerow([document_qid, 'P14', formatted_date, 'S3', document_qid])
+        writer.writerow([document_qid, 'P14', formatted_date])
 
-        #tak samo
         miejsce_wystawienia = soup.teiHeader.profileDesc.creation.placeName['ref']
-        writer.writerow([document_qid, 'P15', miejsce_wystawienia.split('-')[-1], 'S3', document_qid])
+        writer.writerow([document_qid, 'P15', miejsce_wystawienia.split('-')[-1]])
 
-        #tak samo
         wydania = soup.find_all('bibl')
         for item in wydania:
-            writer.writerow([document_qid, 'P16', format_string(item.string), 'P17', typy_edycji[item['type']], 'S3', document_qid])
+            writer.writerow([document_qid, 'P16', format_string(item.string), 'P17', typy_edycji[item['type']]])
 
 
         #tekst
@@ -144,32 +130,26 @@ with open(f'results/result.csv', 'w', newline='') as file:
         #         print(child)
         #         print(child['type'])
 
-        #idzie do osoby w inny sposób wystawca Q536
         wystawcy = soup.find_all(ana='wystawca')
         for item in wystawcy:
-            writer.writerow([document_qid, p_list['wystawca'], (item['ref'].split('-'))[-1], 'S3', document_qid])
+            writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q536', 'S3', document_qid])
 
-        #P39 Q537
         odbiorcy = soup.find_all(ana='odbiorca')
         for item in odbiorcy:
-            writer.writerow([document_qid, p_list['odbiorca'], (item['ref'].split('-'))[-1], 'S3', document_qid])
+            writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q537', 'S3', document_qid])
 
-        #P39 Q538
         beneficjenci_laski = soup.find_all(ana='beneficjent_laski')
         for item in beneficjenci_laski:
-            writer.writerow([document_qid, p_list['beneficjent_laski'], (item['ref'].split('-'))[-1],'S3', document_qid])
+            writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q538', 'S3', document_qid])
 
-        #P656 tak samo jak z wystawcą, odbiorcą etc.
         przedmioty_nadania = soup.find_all(ana='przedmiot_nadania')
         for item in przedmioty_nadania:
-            writer.writerow([document_qid, p_list['przedmiot_nadania'], (item['ref'].split('-'))[-1], 'S3', document_qid])
+            writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q656', 'S3', document_qid])
 
-        #bez zmian
         tytulatury = soup.find_all(ana='tytulatura')
         for item in tytulatury:
             writer.writerow([(item['ref'].split('-'))[-1], p_list['tytulatura'], format_string(' '.join(''.join([element for element in item.descendants if type(element)==bs4.element.NavigableString]).split())), 'S3', document_qid])
 
-        #bez zmian
         education_info = soup.find_all(ana='education')
         for item in education_info:
             writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['education'], (item['ref'].split('-'))[-1], 'S3', document_qid])
@@ -180,19 +160,20 @@ with open(f'results/result.csv', 'w', newline='') as file:
         # taksa_dokumentu = soup.find(type='magister_registrów').measure['quantity']
         # writer.writerow([document_qid, p_list['taksa_dokumentu'], taksa_dokumentu])
 
-        #idzie do manifestacji - witness! w przyszłości może się zdarzyć, że jest kilka maifestacji...
-        noty_marginalne = soup.find_all('note')
-        for nota in noty_marginalne:
-            if nota['place'] in ['left_margin', 'right_margin', 'upper-margin', 'lower-margin']:
-                writer.writerow([document_qid, p_list['nota_marginalna'], format_string(nota.string), 'S3', document_qid])
+        #???
+        # noty_marginalne = soup.find_all('note')
+        # for nota in noty_marginalne:
+        #     if nota['place'] in ['left_margin', 'right_margin', 'upper-margin', 'lower-margin']:
+        #         writer.writerow([document_qid, p_list['nota_marginalna'], format_string(nota.string), 'S3', document_qid])
 
 
         document_fee = soup.find(type='document_fee')
         pracownik_kurii = soup.find(ana='urzednik_kurialny')
         taksa_dokumentu = soup.find(ana='urzednik_kurialny').measure['quantity']
-        writer.writerow([document_qid, p_list['nota_marginalna'], format_string(' '.join(''.join([element for element in document_fee.descendants if type(element)==bs4.element.NavigableString]).split())), p_list['urzednik_kurialny'], (pracownik_kurii['ref'].split('-'))[-1], p_list['taksa_dokumentu'], taksa_dokumentu, 'S3', document_qid])
+        zrodlo = soup.sourceDesc.listWit.witness
+        for wit in zrodlo['source']:
+            writer.writerow([zroldo['source'], p_list['nota_marginalna'], format_string(' '.join(''.join([element for element in document_fee.descendants if type(element)==bs4.element.NavigableString]).split())), p_list['urzednik_kurialny'], (pracownik_kurii['ref'].split('-'))[-1], p_list['taksa_dokumentu'], taksa_dokumentu])
 
-        #bez zmian
         malzonkowie = soup.find_all(ana='wspolmalzonek')
         for item in malzonkowie:
             try:
@@ -206,39 +187,34 @@ with open(f'results/result.csv', 'w', newline='') as file:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['wspolmalzonek'], (item['ref'].split('-'))[-1], 'S3', document_qid])
                 writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list['wspolmalzonek'], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
 
-        #bez zmian
         for relacja_rodzinna in ['ojciec', 'dziecko']:
             znalezione_relacje = soup.find_all(ana=relacja_rodzinna)
             for item in znalezione_relacje:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[relacja_rodzinna], (item['ref'].split('-'))[-1], 'S3', document_qid])
                 writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list[relacja_rodzinna], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
 
-        #bez zmian
         for dalsza_relacja in ['nepos', 'familiaris']:
             znalezione_dalsze_relacje = soup.find_all(ana=dalsza_relacja)
             for item in znalezione_dalsze_relacje:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[dalsza_relacja], (item['ref'].split('-'))[-1]], 'S3', document_qid)
 
-        #bez zmian
         for status_beneficjow in ['zajmowane_stanowisko', 'informacje_o_posiadaniu_stanowiska']:
             znalezione = soup.find_all(ana=status_beneficjow)
             for item in znalezione:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[status_beneficjow], (item['ref'].split('-'))[-1], 'S3', document_qid])
                 writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list[status_beneficjow], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
 
-        #charakter wystąpienia!! Q657 (osoba w sporze), Q424 (egzekutor)
+        #rezygnacja? zmarły?
         for rola in ['osoba_w_sporze', 'zmarly_w_kurii', 'rezygnacja_z_beneficjum', 'egzekutor']:
             znalezione_role = soup.find_all(ana=rola)
             for item in znalezione_role:
-                writer.writerow([(item['ref'].split('-'))[-1], p_list[rola][0], p_list[rola][1], 'S3', document_qid])
+                writer.writerow([(item['ref'].split('-'))[-1], 'P39', p_list[rola], 'S3', document_qid])
 
-        #bez zmian
         for status in ['pochodzenie_spoleczne', 'stopien_swiecen', 'rola_spoleczna']:
             statusy = soup.find_all(ana=status)
             for item in statusy:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[status], (item['ref'].split('-'))[-1], 'S3', document_qid])
 
-        #bez zmian
         diecezje = soup.find_all(ana='diecezja')
         for item in diecezje:
             writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['diecezja'], (item['ref'].split('-'))[-1], 'S3', document_qid])
@@ -246,12 +222,13 @@ with open(f'results/result.csv', 'w', newline='') as file:
         #byty w dokumencie - nie dawać dzieci!! na razie bez dzieci, a potem zobaczymy
         for tag in ['persName', 'affiliation', 'settlement']:
             refs = []
-            result = soup.find_all(tag)
+            result = soup.body.p.children
             for i in result:
-                if (i['ref'].split('-'))[-1] not in refs:
-                    refs.append((i['ref'].split('-'))[-1])
-                    writer.writerow([document_qid, 'P24', (i['ref'].split('-'))[-1], 'S3', document_qid])
-                    writer.writerow([(i['ref'].split('-'))[-1], 'P26', document_qid,'S3', document_qid])
+                if i.name == tag:
+                    if (i['ref'].split('-'))[-1] not in refs:
+                        refs.append((i['ref'].split('-'))[-1])
+                        writer.writerow([document_qid, 'P24', (i['ref'].split('-'))[-1], 'S3', document_qid])
+                        writer.writerow([(i['ref'].split('-'))[-1], 'P26', document_qid,'S3', document_qid])
 
         #Kto jest czyim familiarisem/neposem?
         #Jak będzie tagowana tytulatura i education?
