@@ -39,7 +39,8 @@ with open(f'results/result.csv', 'w', newline='') as file:
             'informacje_o_posiadaniu_stanowiska': 'P33',
             'education': 'P31',
             'przedmiot_nadania': 'P34',
-            'osoba_w_sporze': 'Q657',
+            # 'osoba_w_sporze': '',
+            'stopien_swiecen': 'P35',
             # 'zmarly_w_kurii': 'Q',
             # 'rezygnacja_z_beneficjum': 'Q',
             'wspolmalzonek': 'P4',
@@ -57,7 +58,8 @@ with open(f'results/result.csv', 'w', newline='') as file:
             'data_dokumentu': 'P14',
             'tytulatura': 'P25',
             'diecezja': 'P2',
-            'pochodzenie_spoleczne': 'P37'
+            'pochodzenie_spoleczne': 'P37',
+            'rola_spoleczna': 'P36'
         }
 
         reverse_p_list = {
@@ -101,13 +103,11 @@ with open(f'results/result.csv', 'w', newline='') as file:
         regest = ' '.join(regest.split())
         writer.writerow([document_qid, 'P9', format_string(regest)])
 
-        zrodla = soup_meta.sourceDesc.listWit.children
-        print(zrodla)
+        zrodla = soup_meta.find_all('witness')
         for zrodlo in zrodla:
-            print(zrodlo)
             for wit in zrodlo['source']:
-                writer.writerow([document_qid, 'P54', zrodlo['source']])
-                writer.writerow([zrodlo['source'], 'P53', document_qid])
+                writer.writerow([document_qid, 'P54', wit])
+                writer.writerow([wit, 'P53', document_qid])
 
         data_dokumentu = soup.teiHeader.profileDesc.creation.date['when']
         formatted_date = '+' + data_dokumentu + 'T00:00:00Z/11/J'
@@ -172,7 +172,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
         taksa_dokumentu = soup.find(ana='urzednik_kurialny').measure['quantity']
         zrodlo = soup.sourceDesc.listWit.witness
         for wit in zrodlo['source']:
-            writer.writerow([zroldo['source'], p_list['nota_marginalna'], format_string(' '.join(''.join([element for element in document_fee.descendants if type(element)==bs4.element.NavigableString]).split())), p_list['urzednik_kurialny'], (pracownik_kurii['ref'].split('-'))[-1], p_list['taksa_dokumentu'], taksa_dokumentu])
+            writer.writerow([zrodlo['source'], p_list['nota_marginalna'], format_string(' '.join(''.join([element for element in document_fee.descendants if type(element)==bs4.element.NavigableString]).split())), p_list['urzednik_kurialny'], (pracownik_kurii['ref'].split('-'))[-1], p_list['taksa_dokumentu'], taksa_dokumentu])
 
         malzonkowie = soup.find_all(ana='wspolmalzonek')
         for item in malzonkowie:

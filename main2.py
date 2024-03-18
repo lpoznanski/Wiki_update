@@ -41,6 +41,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
             # 'osoba_w_sporze': ['P29', 'Q471'],
             # 'zmarly_w_kurii': ['P29', 'Q472'],
             # 'rezygnacja_z_beneficjum': ['P29', 'Q473'],
+            'stopien_swiecen': 'P35',
             'wspolmalzonek': 'P4',
             'ojciec': 'P27',
             'dziecko': 'P28',
