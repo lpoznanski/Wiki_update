@@ -106,7 +106,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
         zrodla = soup_meta.find_all('witness')
         for zrodlo in zrodla:
             for wit in zrodlo['source']:
-                writer.writerow([document_qid, 'P54', wit])
+                writer.writerow([document_qid, 'P54', wit, 'P11', formy_zachowania[zrodlo['ana']]])
                 writer.writerow([wit, 'P53', document_qid])
 
         data_dokumentu = soup.teiHeader.profileDesc.creation.date['when']
@@ -170,16 +170,16 @@ with open(f'results/result.csv', 'w', newline='') as file:
         document_fee = soup.find(type='document_fee')
         pracownik_kurii = soup.find(ana='urzednik_kurialny')
         taksa_dokumentu = soup.find(ana='urzednik_kurialny').measure['quantity']
-        zrodlo = soup.sourceDesc.listWit.witness
+        zrodlo = soup_meta.sourceDesc.listWit.witness
         for wit in zrodlo['source']:
-            writer.writerow([zrodlo['source'], p_list['nota_marginalna'], format_string(' '.join(''.join([element for element in document_fee.descendants if type(element)==bs4.element.NavigableString]).split())), p_list['urzednik_kurialny'], (pracownik_kurii['ref'].split('-'))[-1], p_list['taksa_dokumentu'], taksa_dokumentu])
+            writer.writerow([wit, p_list['nota_marginalna'], format_string(' '.join(''.join([element for element in document_fee.descendants if type(element)==bs4.element.NavigableString]).split())), p_list['urzednik_kurialny'], (pracownik_kurii['ref'].split('-'))[-1], p_list['taksa_dokumentu'], taksa_dokumentu])
 
         malzonkowie = soup.find_all(ana='wspolmalzonek')
         for item in malzonkowie:
             try:
                 if item['type']:
                     writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['wspolmalzonek'], (item['ref'].split('-'))[-1], 'P38', format_string(item['type']), 'S3', document_qid])
-                    writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list['wspolmalzonek'], (item.parent['ref'].split('-'))[-1], 'P38', format_string(item['type']), 'S3', document_qid])
+                    writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list['wspolmalzonek'], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
                 else:
                     writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['wspolmalzonek'], (item['ref'].split('-'))[-1], 'S3', document_qid])
                     writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list['wspolmalzonek'], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
