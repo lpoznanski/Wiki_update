@@ -16,10 +16,12 @@
          </publicationStmt>
          <sourceDesc>
             <listWit>
-               <witness ana="cop." source="Q614"/>
+               <witness ana="cop." source="va-Q614">AAV, Reg. Lat., vol. 34, f. 194r<locus scheme="modern">f. 194r</locus>
+               </witness>
             </listWit>
             <listBibl type="editions">
-               <bibl type="regest">MVB 5, nr 791; RG 2, nr 01598</bibl>
+               <bibl type="regest">MVB 5, nr 791</bibl>
+               <bibl type="regest">RG 2, nr 01598</bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -27,7 +29,12 @@
          <abstract>
             <p>Papież Bonifacy IX przyznaje Elżbiecie, żonie mieszczanina wrocławskiego Mikołaja Neumarkta, łaskę, by w obliczu śmierci wybrany przez nią spowiednik mógł jeden raz udzielić jej mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami.</p>
          </abstract>
-         <textClass><catRef scheme="forma_dokumentu" target="Q263"/><catRef scheme="rodzaj_sprawy" target="Q428"/><catRef scheme="formularz" target="Q352"/></textClass>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="va-Q263"/>
+            <catRef scheme="typ_laski" target="va-Q428"/>
+            <catRef scheme="formularz" target="va-Q352"/>
+            <catRef scheme="sprawa" target="va-Q888"/>
+         </textClass>
          <creation>
             <date when="1394-08-13" when-custom="id. aug.,a. p. 5">13 augusti 1394</date>
             <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>

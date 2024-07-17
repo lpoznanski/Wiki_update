@@ -90,14 +90,20 @@ with open(f'results/result.csv', 'w', newline='') as file:
         # with open(f'results/{document_qid}.csv', 'w', newline='') as file:
         #     writer = csv.writer(file)
 
-        typ = soup.find(scheme="forma_dokumentu")['target']
-        writer.writerow([document_qid, 'P55', typ, '', '', '', '', '', '', '', '', '', '', '', '', '', ''])
+        writer.writerow(['', '', '','', '', '', '', '', '', '', '', '', '', '', '', '', ''])
 
-        rodzaj_laski = soup.find(scheme="rodzaj_sprawy")['target']
-        writer.writerow([document_qid, 'P7', rodzaj_laski])
+        typ = soup.find(scheme="forma_dokumentu")['target']
+        writer.writerow([document_qid, 'P55', typ.split("-")[-1], '', '', '', '', '', '', '', '', '', '', '', '', '', ''])
+
+        rodzaj_laski = soup.find(scheme="typ_laski")['target']
+        writer.writerow([document_qid, 'P7', rodzaj_laski.split("-")[-1]])
 
         formularz = soup.find(scheme="formularz")['target']
-        writer.writerow([document_qid, 'P8', formularz])
+        writer.writerow([document_qid, 'P8', formularz.split("-")[-1]])
+
+        sprawa = soup.find(scheme="sprawa")['target']
+        writer.writerow([document_qid, 'P57', sprawa.split("-")[-1]])
+        writer.writerow([sprawa.split("-")[-1], 'P57', document_qid])
 
         regest = soup.teiHeader.profileDesc.abstract.p.string
         regest = ' '.join(regest.split())
@@ -106,8 +112,8 @@ with open(f'results/result.csv', 'w', newline='') as file:
         zrodla = soup_meta.find_all('witness')
         for zrodlo in zrodla:
             for wit in zrodlo['source']:
-                writer.writerow([document_qid, 'P54', wit, 'P11', formy_zachowania[zrodlo['ana']]])
-                writer.writerow([wit, 'P53', document_qid])
+                writer.writerow([document_qid, 'P54', wit.split("-")[-1]])
+                writer.writerow([wit.split("-")[-1], 'P53', document_qid])
 
         data_dokumentu = soup.teiHeader.profileDesc.creation.date['when']
         formatted_date = '+' + data_dokumentu + 'T00:00:00Z/11/J'
@@ -172,7 +178,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
         taksa_dokumentu = soup.find(ana='urzednik_kurialny').measure['quantity']
         zrodlo = soup_meta.sourceDesc.listWit.witness
         for wit in zrodlo['source']:
-            writer.writerow([wit, p_list['nota_marginalna'], format_string(' '.join(''.join([element for element in document_fee.descendants if type(element)==bs4.element.NavigableString]).split())), p_list['urzednik_kurialny'], (pracownik_kurii['ref'].split('-'))[-1], p_list['taksa_dokumentu'], taksa_dokumentu])
+            writer.writerow([wit.split("-")[-1], p_list['nota_marginalna'], format_string(' '.join(''.join([element for element in document_fee.descendants if type(element)==bs4.element.NavigableString]).split())), p_list['urzednik_kurialny'], (pracownik_kurii['ref'].split('-'))[-1], p_list['taksa_dokumentu'], taksa_dokumentu])
 
         malzonkowie = soup.find_all(ana='wspolmalzonek')
         for item in malzonkowie:

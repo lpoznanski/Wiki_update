@@ -16,7 +16,8 @@
          </publicationStmt>
          <sourceDesc>
             <listWit>
-               <witness ana="cop." source="Q615"/>
+               <witness ana="cop." source="va-Q615">AAV, Reg. Lat., vol. 34, f. 195v<locus scheme="modern">195v</locus>
+               </witness>
             </listWit>
             <listBibl type="editions">
                <bibl type="regest">BP 3, nr 394</bibl>
@@ -27,7 +28,12 @@
          <abstract>
             <p>Papież Bonifacy IX przyznaje Aleksandrze, żonie księcia mazowieckiego Siemowita IV, łaskę, by w obliczu śmierci wybrany przez nią spowiednik mógł jeden raz udzielić jej mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami.</p>
          </abstract>
-         <textClass><catRef scheme="forma_dokumentu" target="Q263"/><catRef scheme="rodzaj_sprawy" target="Q428"/><catRef scheme="formularz" target="Q352"/></textClass>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="va-Q263"/>
+            <catRef scheme="typ_laski" target="va-Q428"/>
+            <catRef scheme="formularz" target="va-Q352"/>
+            <catRef scheme="sprawa" target="va-Q889"/>
+         </textClass>
          <creation>
             <date when="1394-09-13" when-custom="id. sep.,a. p. 5">13 septembris 1394</date>
             <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
