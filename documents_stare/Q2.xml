@@ -17,7 +17,9 @@
          </publicationStmt>
          <sourceDesc>
             <listWit>
-               <witness ana="cop." source="RL_34">AAV, Reg. Lat., vol. 34, f. 188r et f. 188v (cancellata)<locus scheme="modern">f. 188r et f. 188v (cancellata)</locus>
+               <witness ana="cop." source="va-Q608">AAV, Reg. Lat., vol. 34, f. 188r et f. 188v (cancellata)<locus scheme="modern">f. 188r et f. 188v (cancellata)</locus>
+               </witness>
+               <witness ana="cop." source="va-Q609">AAV, Reg. Lat., vol. 34, f. 188v (cancellata)<locus scheme="modern">f. 188v (cancellata)</locus>
                </witness>
             </listWit>
             <listBibl type="editions">

@@ -17,7 +17,7 @@
          </publicationStmt>
          <sourceDesc>
             <listWit>
-               <witness ana="cop." source="RL_34">AAV, Reg. Lat., vol. 34, f. 194v<locus scheme="modern">f. 194v</locus>
+               <witness ana="cop." source="va-Q601">AAV, Reg. Lat., vol. 34, f. 194v<locus scheme="modern">f. 194v</locus>
                </witness>
             </listWit>
             <listBibl type="editions">
@@ -45,10 +45,9 @@
       <body>
          <p>
                 <persName ref="va-Q249" ana="wystawca">Bonifacius</persName> etc., venerabili fratri <persName ref="va-Q127" ana="odbiorca beneficjent_laski tytulatura">Iohanni, <affiliation ana="zajmowane_stanowisko" ref="va-Q259">episcopo Caminensi</affiliation>
-                </persName>, salutem etc. Provenit etc. <supplied source="Q352" resp="edytor" cert="hipotetyczna">Hinc est, quod nos ...., ut confessor tuus, quem duxeris eligendum, omnium peccatorum tuorum .... semel tantum in mortis articulo plenam remissionem tibi .... auctoritate apostolica concedere valeat, devocioni tue tenore presencium indulgemus; sic tamen, quod ....</supplied>  Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="data_" when="1394-08-08">sexto id. augusti, anno quinto</date>. <handShift/> <note type="document_fee" place="in_line">N(icolaus. <measure quantity="14" ana="taksa_dokumentu">XIIII</measure>. de Ben(even)to.</note>
-                <persName ref="va-Q66" ana="urzednik_kurialny">  
-         </persName>
-            </p>
+                </persName>, salutem etc. Provenit etc. <supplied source="Q352" resp="edytor" cert="hipotetyczna">Hinc est, quod nos ...., ut confessor tuus, quem duxeris eligendum, omnium peccatorum tuorum .... semel tantum in mortis articulo plenam remissionem tibi .... auctoritate apostolica concedere valeat, devocioni tue tenore presencium indulgemus; sic tamen, quod ....</supplied>  Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="data_" when="1394-08-08">sexto id. augusti, anno quinto</date>. <handShift/> <note type="document_fee" place="in_line">
+                    <persName ref="va-Q66" ana="urzednik_kurialny">N(icolaus. <measure quantity="14" ana="taksa_dokumentu">XIIII</measure>. de Ben(even)to</persName>.</note>  
+         </p>
       </body>
    </text>
 </TEI>

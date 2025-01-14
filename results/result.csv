@@ -1,26 +1,22 @@
 ,,,,,,,,,,,,,,,,
-Q12,P7,Q428,,,,,,,,,,,,,,
-Q12,P8,Q352
-Q12,P57,Q907
-Q907,P57,Q12
-Q12,P9,"""Papież Bonifacy IX przyznaje Katarzynie z Krakowa, wdowie po Janie Kranczu, łaskę, by w obliczu śmierci wybrany przez nią spowiednik mógł jeden raz udzielić jej mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami."""
-Q12,P54,Q618
-Q618,P53,Q12
-Q12,P14,+1396-11-09T00:00:00Z/11/J
-Q12,P15,Q67
-Q12,P16,"""BP 3, nr 462""",P17,Q425
-Q249,P39,Q536,S3,Q12
-Q146,P39,Q537,S3,Q12
-Q146,P39,Q538,S3,Q12
-Q146,P25,"""Catherine, relicte quondam Iohannis Kranch, vidue Cracouiensi""",S3,Q12
-Q618,P21,"""N(icolaus). XIIII. de Ben(even)to.""",P22,Q66,P23,14
-Q146,P4,Q145,P38,"""zmarły zmarły""",S3,Q12
-Q145,P4,Q146,S3,Q12
-Q145,P39,Q630,S3,Q12
-Q145,P37,Q260,S3,Q12
-Q146,P37,Q260,S3,Q12
-Q146,P36,Q300,S3,Q12
-Q12,P24,Q249
-Q249,P26,Q12
-Q12,P24,Q146
-Q146,P26,Q12
+Q18,P7,Q429,,,,,,,,,,,,,,
+Q18,P8,Q355
+Q18,P57,Q940
+Q940,P57,Q18
+Q18,P9,"""Papież Bonifacy IX udziela prezbiterowi Janowi s. Mikołaja Malkow z Prus przywileju posiadania ołtarza przenośnego."""
+Q18,P54,Q939
+Q939,P53,Q18
+Q18,P14,+1393-12-17T00:00:00Z/11/J
+Q18,P15,Q67
+Q18,P16,"""RG 2, col. 710, nr 04598""",P17,Q425
+Q249,P39,Q536,S3,Q18
+Q82,P39,Q537,S3,Q18
+Q82,P39,Q538,S3,Q18
+Q82,P25,"""Iohanni Nicolai Malkow de Prussia, presbytero Culmensis diocesis""",S3,Q18
+Q939,P21,"""N(icolaus). X. de Ben(even)to.""",P22,Q66,P23,10
+Q82,P35,Q253,S3,Q18
+Q82,P2,Q192,S3,Q18
+Q18,P24,Q249
+Q249,P26,Q18
+Q18,P24,Q82
+Q82,P26,Q18

@@ -46,9 +46,9 @@
       <body>
          <p>
                 <persName ref="va-Q249" ana="wystawca">Bonifacius</persName> etc., dilecto filio <persName ref="va-Q86" ana="odbiorca beneficjent_laski tytulatura">Nicolao de Boleslavia<roleName ref="va-Q254" ana="pochodzenie_spoleczne"> </roleName>                </persName>et dilecte in Christo filie <persName ref="va-Q87" ana="odbiorca beneficjent_laski tytulatura">Veronice, <persName ref="va-Q86" ana="wspolmalzonek">eius</persName> uxori, <roleName ana="pochodzenie_spoleczne" ref="va-Q254"> civibus Wratislauiensibus</roleName>
-                </persName>, salutem etc. Provenit etc. <supplied source="Q352" resp="edytor" cert="hipotetyczna">Hinc est, quod nos ...., ut confessor tuus, quem duxeris eligendum, omnium peccatorum tuorum .... semel tantum in mortis articulo plenam remissionem tibi .... auctoritate apostolica concedere valeat, devocioni tue tenore presencium indulgemus; sic tamen, quod ....</supplied>  Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="data_" when="1394-06-22">X kal. iulii, anno quinto</date>.<persName ref="va-Q66" ana="urzednik_kurialny"> <handShift/> <note type="document_fee" place="in_line">N(icolaus). <measure quantity="16" ana="taksa_dokumentu">XVI</measure>. de Ben(even)to.</note>
+                </persName>, salutem etc. Provenit etc. <supplied source="Q352" resp="edytor" cert="hipotetyczna">Hinc est, quod nos ...., ut confessor tuus, quem duxeris eligendum, omnium peccatorum tuorum .... semel tantum in mortis articulo plenam remissionem tibi .... auctoritate apostolica concedere valeat, devocioni tue tenore presencium indulgemus; sic tamen, quod ....</supplied>  Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="data_" when="1394-06-22">X kal. iulii, anno quinto</date>.<handShift/> <note type="document_fee" place="in_line">
+                    <persName ref="va-Q66" ana="urzednik_kurialny">N(icolaus). <measure quantity="16" ana="taksa_dokumentu">XVI</measure>. de Ben(even)to</persName>.</note>
          
-         </persName> 
          
          </p>
       </body>

@@ -17,8 +17,10 @@
          </publicationStmt>
          <sourceDesc>
             <listWit>
-               <witness ana="cop." source="RL_34">AAV, Reg. Lat., vol. 34, f. 178r et 213r (cancellata)<locus scheme="modern">f. 178r et 213r (cancellata)</locus>
+               <witness ana="cop." source="va-Q606">AAV, Reg. Lat., vol. 34, f. 178r<locus scheme="modern">f. 178r</locus>
                </witness>
+               <witness ana="cop" source="va-Q607">AAV, Reg. Lat., vol. 34, f. 213r (cancellata)<locus scheme="modern">f. 213r</locus>
+                    </witness>
             </listWit>
             <listBibl type="editions">
                <bibl type="regest">RG 2, col. 528, nr 03414</bibl>
@@ -49,6 +51,7 @@
                     <persName ref="va-Q66" ana="urzednik_kurialny">N(icolaus). <measure quantity="14" ana="taksa_dokumentu">XIIII</measure>. de Ben(even)to</persName>. </note>
             
          </p>
+         <div type="notes"/>
       </body>
    </text>
 </TEI>

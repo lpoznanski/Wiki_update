@@ -1,0 +1,57 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q38">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="label">Bulla Bonifacego IX z dnia 4 maja 1397</title>
+            <title type="description">Przywilej dla Piotra z Michałkowa i jego żony zezwalający, by wybrani przez nich spowiednicy mogli udzielić im w obliczu śmierci pełnego odpuszczenia grzechów</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centrum Studiów Mediewistycznych</publisher>
+            <date when="2023"/>
+            <idno>https://va.wiki.kul.pl/wiki/Item:Q38</idno>
+            <availability>
+               <licence>CC....</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness ana="cop." source="va-Q1047">AAV, Reg. Lat., vol. 45, f. 173r<locus scheme="modern">f. 173r</locus>
+               </witness>
+            </listWit>
+            <listBibl type="editions">
+               <bibl type="regest">BP 3, nr 490</bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Papież Bonifacy IX przyznaje szlachetnemu Piotrowi z Michałkowa i jego żonie łaskę, by w obliczu śmierci wybrani przez nich spowiednicy mogli jeden raz udzielić im mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami.</p>
+         </abstract>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="va-Q263"/>
+            <catRef scheme="rodzaj_sprawy" target="va-Q428"/>
+            <catRef scheme="formularz" target="va-Q352"/>
+            <catRef scheme="sprawa" target="va-Q1048"/>
+         </textClass>
+         <creation>
+            <date when="1397-05-04" when-custom="4 no. mai.,a. p. 8">4 maii 1397</date>
+            <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+                <persName ref="va-Q249" ana="wystawca">Bonifacius</persName> etc., dilecto filio <persName ref="va-Q205" ana="odbiorca beneficjent_laski tytulatura">
+                    <roleName ref="va-Q108" ana="pochodzenie_spoleczne">nobili viro</roleName> Petro de Michalkowo<region ref="va-Q232" ana="diecezja"> </region>
+                    <roleName ref="va-Q251" ana="stopien_swiecen">domicello</roleName>
+                </persName> et dilecte in Christo filie <persName ref="va-Q421" ana="odbiorca beneficjent_laski tytulatura">
+                    <roleName ref="va-Q108" ana="pochodzenie_spoleczne">nobili mulieri</roleName> . . <persName ref="va-Q205" ana="wspolmalzonek" type="">eius</persName> uxori inpresenciarum existenti, <region ref="va-Q232" ana="diecezja">Plocensis diocesis</region>
+                </persName>, salutem etc. Provenit etc. <supplied source="Q352" resp="edytor" cert="hipotetyczna">Hinc est, quod nos ...., ut confessor tuus, quem duxeris eligendum, omnium peccatorum tuorum .... semel tantum in mortis articulo plenam remissionem tibi .... auctoritate apostolica concedere valeat, devocioni tue tenore presencium indulgemus; sic tamen, quod ....</supplied>  Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="data_" when="1397-05-04">quarto nonis maii, anno octavo</date>. <handShift/> <note type="document_fee" place="in_line">
+                    <persName ref="va-Q66" ana="urzednik_kurialny">N(icolaus). <measure quantity="16" ana="taksa_dokumentu">XVI</measure>. de Ben(even)to</persName>.</note>
+            </p>
+      </body>
+   </text>
+</TEI>
