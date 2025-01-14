@@ -1,0 +1,55 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q57">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="label">Bulla Bonifacego IX z dnia 30 maja 1398</title>
+            <title type="description">Przywilej dla Lutka, plebana kościoła parafialnego w Czerwińsku, zezwalający, by wybrany przez Lutka spowiednik mógł udzielić mu w obliczu śmierci pełnego odpuszczenia grzechów</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centrum Studiów Mediewistycznych</publisher>
+            <date when="2023"/>
+            <idno>https://va.wiki.kul.pl/wiki/Item:Q57</idno>
+            <availability>
+               <licence>CC....</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness ana="cop." source="va-Q1085">AAV, Reg. Lat., vol. 58, f. 145v<locus scheme="modern">f. 145v</locus>
+               </witness>
+               
+            </listWit>
+            <listBibl type="editions">
+               <bibl type="regest">BP 3, nr 546</bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Papież Bonifacy IX przyznaje Lutkowi, plebanowi kościoła parafialnego w Czerwińsku, łaskę, by w obliczu śmierci wybrany przez Lutka spowiednik mógł jeden raz udzielić mu mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami.</p>
+         </abstract>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="va-Q263"/>
+            <catRef scheme="rodzaj_sprawy" target="va-Q428"/>
+            <catRef scheme="formularz" target="va-Q352"/>
+            <catRef scheme="sprawa" target="va-Q1086"/>
+         </textClass>
+         <creation>
+            <date when="1398-05-30" when-custom="3 kl. iun.,a. p. 9">30 maii 1398</date>
+            <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+                <persName ref="va-Q249" ana="wystawca">Bonifacius</persName> etc., dilecto filio <persName ref="va-Q235" ana="odbiorca beneficjent_laski tytulatura">Lutkoni, <affiliation ref="va-Q237" ana="zajmowane_stanowisko">rectori parrochialis ecclesie in Czirwensko, <region ref="va-Q232" ana="diecezja">Plocensis diocesis</region>
+                    </affiliation>
+                </persName>, salutem etc. Provenit etc. <supplied source="Q352" resp="edytor" cert="hipotetyczna">Hinc est, quod nos ...., ut confessor tuus, quem duxeris eligendum, omnium peccatorum tuorum .... semel tantum in mortis articulo plenam remissionem tibi .... auctoritate apostolica concedere valeat, devocioni tue tenore presencium indulgemus; sic tamen, quod ....</supplied>  Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="data_" when="1398-05-30">tercio kal. iunii, anno nono</date>. <handShift/> <note type="document_fee" place="in_line">
+                    <persName ref="va-Q66" ana="urzednik_kurialny">N(icolaus). <measure quantity="14" ana="taksa_dokumentu">XIIII</measure>. de Ben(even)to</persName>.</note>
+            </p>
+      </body>
+   </text>
+</TEI>

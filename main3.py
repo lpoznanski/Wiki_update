@@ -92,11 +92,11 @@ with open(f'results/result.csv', 'w', newline='') as file:
 
         writer.writerow(['', '', '','', '', '', '', '', '', '', '', '', '', '', '', '', ''])
 
-        typ = soup.find(scheme="forma_dokumentu")['target']
-        writer.writerow([document_qid, 'P55', typ.split("-")[-1], '', '', '', '', '', '', '', '', '', '', '', '', '', ''])
+        #typ = soup.find(scheme="forma_dokumentu")['target']
+        #writer.writerow([document_qid, 'P55', typ.split("-")[-1], '', '', '', '', '', '', '', '', '', '', '', '', '', ''])
 
-        rodzaj_laski = soup.find(scheme="typ_laski")['target']
-        writer.writerow([document_qid, 'P7', rodzaj_laski.split("-")[-1]])
+        rodzaj_laski = soup.find(scheme="rodzaj_sprawy")['target']
+        writer.writerow([document_qid, 'P7', rodzaj_laski.split("-")[-1], '', '', '', '', '', '', '', '', '', '', '', '', '', ''])
 
         formularz = soup.find(scheme="formularz")['target']
         writer.writerow([document_qid, 'P8', formularz.split("-")[-1]])
@@ -124,8 +124,10 @@ with open(f'results/result.csv', 'w', newline='') as file:
 
         wydania = soup.find_all('bibl')
         for item in wydania:
-            writer.writerow([document_qid, 'P16', format_string(item.string), 'P17', typy_edycji[item['type']]])
-
+            if item.string:
+                writer.writerow([document_qid, 'P16', format_string(item.string), 'P17', typy_edycji[item['type']]])
+            else:
+                pass
 
         #tekst
 
@@ -175,7 +177,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
 
         document_fee = soup.find(type='document_fee')
         pracownik_kurii = soup.find(ana='urzednik_kurialny')
-        taksa_dokumentu = soup.find(ana='urzednik_kurialny').measure['quantity']
+        taksa_dokumentu = soup.find(ana='taksa_dokumentu')['quantity']
         zrodlo = soup_meta.sourceDesc.listWit.witness
         for wit in zrodlo['source']:
             writer.writerow([wit.split("-")[-1], p_list['nota_marginalna'], format_string(' '.join(''.join([element for element in document_fee.descendants if type(element)==bs4.element.NavigableString]).split())), p_list['urzednik_kurialny'], (pracownik_kurii['ref'].split('-'))[-1], p_list['taksa_dokumentu'], taksa_dokumentu])
@@ -186,9 +188,13 @@ with open(f'results/result.csv', 'w', newline='') as file:
                 if item['type']:
                     writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['wspolmalzonek'], (item['ref'].split('-'))[-1], 'P38', format_string(item['type']), 'S3', document_qid])
                     writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list['wspolmalzonek'], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
+                    #charakter wystąpienia - zmarły współmałżonek
+                    writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q630', 'S3', document_qid])
                 else:
                     writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['wspolmalzonek'], (item['ref'].split('-'))[-1], 'S3', document_qid])
                     writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list['wspolmalzonek'], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
+                    #charakter wystąpienia - współmałżonek
+                    writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q2074', 'S3', document_qid])
             except KeyError:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['wspolmalzonek'], (item['ref'].split('-'))[-1], 'S3', document_qid])
                 writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list['wspolmalzonek'], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
@@ -198,11 +204,13 @@ with open(f'results/result.csv', 'w', newline='') as file:
             for item in znalezione_relacje:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[relacja_rodzinna], (item['ref'].split('-'))[-1], 'S3', document_qid])
                 writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list[relacja_rodzinna], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
+                #charakter wystąpienia - zmarły ojciec
+                writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q2075', 'S3', document_qid])
 
         for dalsza_relacja in ['nepos', 'familiaris']:
             znalezione_dalsze_relacje = soup.find_all(ana=dalsza_relacja)
             for item in znalezione_dalsze_relacje:
-                writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[dalsza_relacja], (item['ref'].split('-'))[-1]], 'S3', document_qid)
+                writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[dalsza_relacja], (item['ref'].split('-'))[-1], 'S3', document_qid])
 
         for status_beneficjow in ['zajmowane_stanowisko', 'informacje_o_posiadaniu_stanowiska']:
             znalezione = soup.find_all(ana=status_beneficjow)
@@ -233,8 +241,10 @@ with open(f'results/result.csv', 'w', newline='') as file:
                 if i.name == tag:
                     if (i['ref'].split('-'))[-1] not in refs:
                         refs.append((i['ref'].split('-'))[-1])
-                        writer.writerow([document_qid, 'P24', (i['ref'].split('-'))[-1], 'S3', document_qid])
-                        writer.writerow([(i['ref'].split('-'))[-1], 'P26', document_qid,'S3', document_qid])
+                        # writer.writerow([document_qid, 'P24', (i['ref'].split('-'))[-1], 'S3', document_qid])
+                        writer.writerow([document_qid, 'P24', (i['ref'].split('-'))[-1]])
+                        # writer.writerow([(i['ref'].split('-'))[-1], 'P26', document_qid,'S3', document_qid])
+                        writer.writerow([(i['ref'].split('-'))[-1], 'P26', document_qid])
 
         #Kto jest czyim familiarisem/neposem?
         #Jak będzie tagowana tytulatura i education?

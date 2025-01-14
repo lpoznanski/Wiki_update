@@ -1,0 +1,70 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q305">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="label">Bulla Bonifacego IX z dnia 1 marca 1399</title>
+            <title type="description">Przywilej dla Mikołaja Lynse, honorowego kapelana papieskiego,
+               zezwalający, by wybrany przez Mikołaha spowiednik mógł udzielić mu w obliczu śmierci
+               pełnego odpuszczenia grzechów</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centrum Studiów Mediewistycznych</publisher>
+            <date when="2023"/>
+            <idno>https://va.wiki.kul.pl/wiki/Item:Q305</idno>
+            <availability>
+               <licence>CC....</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness ana="cop." source="va-Q1239">AAV, Instr. Misc., vol. 5433, f. [1v]<locus scheme="modern">f. [1v]</locus>
+               </witness>
+
+            </listWit>
+            <listBibl type="editions">
+               <bibl type="regest"/>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Papież Bonifacy IX przyznaje profesowi franciszkanów Mikołajowi Lynse, honorowemu
+               kapelanowi papieskiemu, łaskę, by w obliczu śmierci wybrany przez Mikołaja spowiednik
+               mógł udzielać mu mocą władzy apostolskiej pełnego odpuszczenia grzechów tyle razy,
+               ilekroć zaistnieje taka potrzeba, pod określonymi warunkami.</p>
+         </abstract>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="va-Q263"/>
+            <catRef scheme="rodzaj_sprawy" target="va-Q428"/>
+            <catRef scheme="formularz" target="va-Q354"/>
+            <catRef scheme="sprawa" target="va=Q1240"/>
+         </textClass>
+         <creation>
+            <date when="1399-03-01" when-custom="kl. mar.,a. p. 10">1 martii 1399</date>
+            <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+                <persName ref="va-Q249" ana="wystawca">Bonifacius</persName> etc., dilecto filio <persName ref="va-Q363" ana="odbiorca beneficjent_laski tytulatura">Nicolao Lynse, <roleName ref="va-Q414" ana="rola_spoleczna">ordinis fratrum minorum professori</roleName>,
+<affiliation ref="va-Q366" ana="zajmowane_stanowisko">            capellano nostro</affiliation>
+                </persName>, salutem etc. Provenit etc. <app>
+               <rdg source="Q305">etc. usque ibi</rdg>
+               <rdg source="Q354" resp="edytor" cert="hipotetyczna">Hinc est, quod nos ...., ut
+                  confessor tuus, quem duxeris eligendum, omnium peccatorum tuorum ....</rdg>
+            </app> tociens quociens tibi placuerit et fuerit oportunum <app>
+               <rdg source="Q305">etc.</rdg>
+               <rdg source="Q354" resp="edytor" cert="hipotetyczna">in mortis articulo plenam
+                  remissionem tibi .... auctoritate apostolica concedere valeat, devocioni tue
+                  tenore presencium indulgemus; sic tamen, quod ....</rdg>
+            </app> Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="data_" when="1399-03-01">kal. marcii, anno decimo</date>. <handShift/>
+                <note type="document_fee" place="in_line">
+                    <measure quantity="0" ana="taksa_dokumentu">De mandato</measure>. <persName ref="va-Q66" ana="urzednik_kurialny">N(icolaus) de Ben(even)to</persName>.</note>
+            </p>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,65 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q304">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="label">Bulla Bonifacego IX z dnia 9 sierpnia 1398</title>
+            <title type="description">Przywilej posiadania ołtarza przenośnego dla Szczepana z
+               Bechcic i jego żony Elżbiety</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centrum Studiów Mediewistycznych</publisher>
+            <date when="2023"/>
+            <idno>https://va.wiki.kul.pl/wiki/Item:Q304</idno>
+            <availability>
+               <licence>CC....</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness ana="cop." source="va-Q1241">AAV, Reg. Lat., vol. 58, f. 179r<locus scheme="modern">f. 179r</locus>
+               </witness>
+
+            </listWit>
+            <listBibl type="editions">
+               <bibl type="regest"/>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Papież Bonifacy IX udziela szlachetnemu Szczepanowi z Bechcic i jego żonie Elżbiecie
+               przywileju posiadania ołtarza przenośnego.</p>
+         </abstract>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="va-Q263"/>
+            <catRef scheme="rodzaj_sprawy" target="va-Q429"/>
+            <catRef scheme="formularz" target="va-Q355"/>
+            <catRef scheme="sprawa" target="va-Q1242"/>
+            
+         </textClass>
+         <creation>
+            <date when="1398-08-09" when-custom="5 id. aug.,a. p. 9">9 augusti 1398</date>
+            <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+                <persName ref="va-Q249" ana="wystawca">Bonifacius</persName> etc., dilecto filio <persName ref="va-Q359" ana="odbiorca beneficjent_laski tytulatura">
+                    <roleName ana="pochodzenie_spoleczne" ref="va-Q108">nobili viro</roleName>
+                    <region ref="va-Q362" ana="diecezja"> </region>Stephano de Branchczycze <roleName ref="va-Q251" ana="stopien_swiecen">domicello</roleName>
+                </persName> et dilecte
+            in Christo filie <persName ref="va-Q361" ana="odbiorca beneficjent_laski tytulatura">
+                    <roleName ana="pochodzenie_spoleczne" ref="va-Q108">nobili mulieri</roleName> Elizabeth, <persName ref="va-Q359" ana="wspolmalzonek">eius</persName> uxori, <region ref="va-Q362" ana="diecezja">Gneznensis diocesis</region>
+                </persName>, salutem etc.
+            Sincere etc. <supplied source="Q355" resp="edytor" cert="hipotetyczna">Hinc est, quod nos ...., ut liceat tibi habere altare portatile ...., devocioni tue tenore presencium indulgemus.</supplied> Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum
+            Petrum</placeName>, <date type="data_" when="1398-08-09">quinto id. augusti, anno nono</date>. <handShift/>
+                <note type="document_fee" place="in_line">
+                    <persName ref="va-Q66" ana="urzednik_kurialny">N(icolaus). <measure quantity="12" ana="taksa_dokumentu">XII</measure>. de Ben(even)to</persName>.</note>
+            </p>
+      </body>
+   </text>
+</TEI>

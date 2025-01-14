@@ -1,0 +1,66 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q1286">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="label">Bulla papieża Bonifacego IX z dnia 29 listopada 1403</title>
+            <title type="description">Przywilej papieski dla Jana Clusnicza ze Świdnicy i jego żony Katarzyny zezwalający, by w ich obecności można było odprawiać mszę świętą w miejscach objętych interdyktem
+            </title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centrum Studiów Mediewistycznych</publisher>
+            <date when="2024"/>
+            <idno>https://va.wiki.kul.pl/wiki/Item:Q1286</idno>
+            <availability>
+               <licence>CC....</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness ana="cop." source="va-Q1284">AAV, Reg. Lat., vol. 118, f. 217r (olim f. 227)<locus scheme="modern">217r (olim f. 227)</locus>
+               </witness>
+            </listWit>
+            <listBibl type="editions">
+               <bibl type="regest">MVB 5, nr 2146</bibl>
+               <bibl type="regest">RG 2, col. 591, nr 03848</bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Papież Bonifacy IX zezwala, by w obecności Jana Clusnicza ze Świdnicy i jego żony Katarzyny można było odprawiać mszę świętą w miejscach objętych interdyktem.</p>
+         </abstract>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="va-Q263"/>
+            <catRef scheme="rodzaj_sprawy" target="va-Q950"/>
+            <catRef scheme="formularz" target="va-Q949"/>
+            <catRef scheme="sprawa" target="va-Q1285"/>
+         </textClass>
+         <creation>
+            <date when="1403-11-29" when-custom="3 kal. dec.,a. p. 15">29 novembris 1403</date>
+            <placeName ref="Q67">Roma, apud Sanctum Petrum</placeName>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+            <note resp="scriba" place="in_marg">C<supplied resp="edytor" cert="hipotetyczna">ancellaria</supplied>
+                </note>
+         </p>
+         <p>
+                <persName ref="va-Q249" ana="wystawca" type="">Bonifacius</persName> etc., dilecto filio <persName ref="va-Q1271" ana="odbiorca beneficjent_laski tytulatura">Iohanni Clusnitz de Swydenicz <roleName ref="va-Q251" ana="stopien_swiecen">laico</roleName>
+                    <region ref="va-Q256" ana="diecezja"/>
+                </persName> et dilecte in Christo filie <persName ref="va-Q1272" type="">Catherine, <persName ref="va-Q1271" ana="wspolmalzonek" type="">eius</persName> uxori, <region ref="va-Q256" ana="diecezja">Wratislauiensis diocesis</region>
+                    <roleName ref="va-Q251" ana="stopien_swiecen"/>
+                </persName>, salutem etc. Devocionis  <supplied source="Q949" resp="edytor" cert="hipotetyczna">vestre sinceritas</supplied> etc. 
+            <supplied source="Q949" resp="edytor" cert="hipotetyczna">Vestris itaque supplicacionibus inclinati vobis .... indulgemus, ut, si forsan ad loca ecclesiastico interdicto supposita vos contigerit declinare, liceat vobis in illis .... in vestra et eciam familiarium vestrorum domesticorum presencia missam et alia divina officia facere celebrari ....</supplied>
+            Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="data_ " when="1403-11-29">tercio kal. decembris, <supplied source="Q949" resp="edytor" cert="hipotetyczna">pontificatus nostri</supplied> anno quinto decimo</date>. 
+            <handShift/>
+                <note type="document_fee" place="in_line" source="va-Q1286">
+                    <persName ref="va-Q223" ana="urzednik_kurialny" type="">Iac(obus). <measure quantity="12" ana="taksa_dokumentu">XII</measure>. de Teram(o)</persName>.</note>
+         </p> 
+      </body>
+   </text>
+</TEI>

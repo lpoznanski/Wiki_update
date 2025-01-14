@@ -1,106 +1,26 @@
 ,,,,,,,,,,,,,,,,
-Q10,P55,Q263,,,,,,,,,,,,,,
-Q10,P7,Q428
-Q10,P8,Q352
-Q10,P57,Q902
-Q902,P57,Q10
-Q10,P9,"""Papież Bonifacy IX przyznaje Arnoldowi ze Starego Gromadzyna, prepozytowi płockiemu, łaskę, by w obliczu śmierci wybrany przez Arnolda spowiednik mógł jeden raz udzielić mu mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami."""
-Q10,P54,Q616
-Q616,P53,Q10
-Q10,P14,+1394-10-26T00:00:00Z/11/J
-Q10,P15,Q67
-Q10,P16,"""BP 3, nr 409""",P17,Q425
-Q249,P39,Q536,S3,Q10
-Q142,P39,Q537,S3,Q10
-Q142,P39,Q538,S3,Q10
-Q142,P25,"""Arnoldo Iacobi de Gromadzino, preposito ecclesie Plocensis""",S3,Q10
-Q616,P21,"""N(icolaus). XIIII. de Ben(even)to.""",P22,Q66,P23,14
-Q142,P32,Q140,S3,Q10
-Q140,P40,Q142,S3,Q10
-Q10,P24,Q249,S3,Q10
-Q249,P26,Q10,S3,Q10
-Q10,P24,Q142,S3,Q10
-Q142,P26,Q10,S3,Q10
-,,,,,,,,,,,,,,,,
-Q11,P55,Q263,,,,,,,,,,,,,,
-Q11,P7,Q428
-Q11,P8,Q352
-Q11,P57,Q903
-Q903,P57,Q11
-Q11,P9,"""Papież Bonifacy IX przyznaje Mikołajowi malarzowi i jego żonie Agnieszce, mieszczanom krakowskim, łaskę, by w obliczu śmierci wybrani przez nich spowiednicy mogli jeden raz udzielić im mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami."""
-Q11,P54,Q617
-Q617,P53,Q11
-Q11,P14,+1396-11-09T00:00:00Z/11/J
-Q11,P15,Q67
-Q11,P16,"""BP 3, nr 461""",P17,Q425
-Q249,P39,Q536,S3,Q11
-Q143,P39,Q537,S3,Q11
-Q144,P39,Q537,S3,Q11
-Q143,P39,Q538,S3,Q11
-Q144,P39,Q538,S3,Q11
-Q143,P25,"""Nicolao pictori laico""",S3,Q11
-Q144,P25,"""Agneti, eius uxori, civibus Cracouiensibus""",S3,Q11
-Q617,P21,"""N(icolaus). XVI. de Ben(even)to.""",P22,Q66,P23,16
-Q144,P4,Q143,S3,Q11
-Q143,P4,Q144,S3,Q11
-Q143,P37,Q260,S3,Q11
-Q144,P37,Q260,S3,Q11
-Q143,P35,Q251,S3,Q11
-Q11,P24,Q249,S3,Q11
-Q249,P26,Q11,S3,Q11
-Q11,P24,Q143,S3,Q11
-Q143,P26,Q11,S3,Q11
-Q11,P24,Q144,S3,Q11
-Q144,P26,Q11,S3,Q11
-,,,,,,,,,,,,,,,,
-Q8,P55,Q263,,,,,,,,,,,,,,
-Q8,P7,Q428
-Q8,P8,Q352
-Q8,P57,Q888
-Q888,P57,Q8
-Q8,P9,"""Papież Bonifacy IX przyznaje Elżbiecie, żonie mieszczanina wrocławskiego Mikołaja Neumarkta, łaskę, by w obliczu śmierci wybrany przez nią spowiednik mógł jeden raz udzielić jej mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami."""
-Q8,P54,Q614
-Q614,P53,Q8
-Q8,P14,+1394-08-13T00:00:00Z/11/J
-Q8,P15,Q67
-Q8,P16,"""MVB 5, nr 791""",P17,Q425
-Q8,P16,"""RG 2, nr 01598""",P17,Q425
-Q249,P39,Q536,S3,Q8
-Q132,P39,Q537,S3,Q8
-Q132,P39,Q538,S3,Q8
-Q132,P25,"""Elizabeth, uxori dilecti filii Nicolai Neumarct, civis Wratislauiensis""",S3,Q8
-Q614,P21,"""N(icolaus). XIIII. de Ben(even)to.""",P22,Q66,P23,14
-Q132,P4,Q131,S3,Q8
-Q131,P4,Q132,S3,Q8
-Q131,P37,Q254,S3,Q8
-Q8,P24,Q249,S3,Q8
-Q249,P26,Q8,S3,Q8
-Q8,P24,Q132,S3,Q8
-Q132,P26,Q8,S3,Q8
-,,,,,,,,,,,,,,,,
-Q9,P55,Q263,,,,,,,,,,,,,,
-Q9,P7,Q428
-Q9,P8,Q352
-Q9,P57,Q889
-Q889,P57,Q9
-Q9,P9,"""Papież Bonifacy IX przyznaje Aleksandrze, żonie księcia mazowieckiego Siemowita IV, łaskę, by w obliczu śmierci wybrany przez nią spowiednik mógł jeden raz udzielić jej mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami."""
-Q9,P54,Q615
-Q615,P53,Q9
-Q9,P14,+1394-09-13T00:00:00Z/11/J
-Q9,P15,Q67
-Q9,P16,"""BP 3, nr 394""",P17,Q425
-Q249,P39,Q536,S3,Q9
-Q135,P39,Q537,S3,Q9
-Q135,P39,Q538,S3,Q9
-Q135,P25,"""nobili mulieri Alexandre, dilecti filii nobilis viri Semouiti ducis Mazovie uxori""",S3,Q9
-Q615,P21,"""N(icolaus). XIIII. de Ben(even)to.""",P22,Q66,P23,14
-Q135,P4,Q136,S3,Q9
-Q136,P4,Q135,S3,Q9
-Q136,P32,Q137,S3,Q9
-Q137,P40,Q136,S3,Q9
-Q135,P37,Q108,S3,Q9
-Q136,P37,Q108,S3,Q9
-Q9,P24,Q249,S3,Q9
-Q249,P26,Q9,S3,Q9
-Q9,P24,Q135,S3,Q9
-Q135,P26,Q9,S3,Q9
+Q12,P7,Q428,,,,,,,,,,,,,,
+Q12,P8,Q352
+Q12,P57,Q907
+Q907,P57,Q12
+Q12,P9,"""Papież Bonifacy IX przyznaje Katarzynie z Krakowa, wdowie po Janie Kranczu, łaskę, by w obliczu śmierci wybrany przez nią spowiednik mógł jeden raz udzielić jej mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami."""
+Q12,P54,Q618
+Q618,P53,Q12
+Q12,P14,+1396-11-09T00:00:00Z/11/J
+Q12,P15,Q67
+Q12,P16,"""BP 3, nr 462""",P17,Q425
+Q249,P39,Q536,S3,Q12
+Q146,P39,Q537,S3,Q12
+Q146,P39,Q538,S3,Q12
+Q146,P25,"""Catherine, relicte quondam Iohannis Kranch, vidue Cracouiensi""",S3,Q12
+Q618,P21,"""N(icolaus). XIIII. de Ben(even)to.""",P22,Q66,P23,14
+Q146,P4,Q145,P38,"""zmarły zmarły""",S3,Q12
+Q145,P4,Q146,S3,Q12
+Q145,P39,Q630,S3,Q12
+Q145,P37,Q260,S3,Q12
+Q146,P37,Q260,S3,Q12
+Q146,P36,Q300,S3,Q12
+Q12,P24,Q249
+Q249,P26,Q12
+Q12,P24,Q146
+Q146,P26,Q12

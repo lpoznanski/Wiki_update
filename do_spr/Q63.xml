@@ -1,0 +1,53 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q63">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="label">Bulla Bonifacego IX z dnia 23 kwietnia 1394</title>
+            <title type="description">Przywilej dla Małgorzaty, wdowy po mieszczaninie wrocławskim Johannesie von Sitten, zezwalający, by wybrany przez Małgorzatę spowiednik mógł udzielić jej w obliczu śmierci pełnego odpuszczenia grzechów</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centrum Studiów Mediewistycznych</publisher>
+            <date when="2023"/>
+            <idno>https://va.wiki.kul.pl/wiki/Item:Q63</idno>
+            <availability>
+               <licence>CC....</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness ana="cop." source="va-Q1174">AAV, Reg. Lat., vol. 34, f. 185v<locus scheme="modern">f. 185v</locus>
+               </witness>
+               
+            </listWit>
+            <listBibl type="editions">
+               <bibl type="regest">MVB 5, nr 759</bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Papież Bonifacy IX przyznaje Małgorzacie, wdowie po mieszczaninie wrocławskim Johannesie von Sitten, łaskę, by w obliczu śmierci wybrany przez nią spowiednik mógł jeden raz udzielić jej mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami.</p>
+         </abstract>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="va-Q263"/>
+            <catRef scheme="rodzaj_sprawy" target="va-Q428"/>
+            <catRef scheme="formularz" target="va-Q352"/>
+            <catRef scheme="sprawa" target="va-Q1175"/>
+         </textClass>
+         <creation>
+            <date when="1394-04-23" when-custom="9 kl. mai.,a. p. 5">23 aprilis 1394</date>
+            <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+                <persName ref="va-Q249" ana="wystawca">Bonifacius </persName>etc., dilecte in Christo filie <persName ref="va-Q79" ana="odbiorca beneficjent_laski tytulatura">Margarete, <roleName ref="va-Q300" ana="rola_spoleczna">relicte</roleName> quondam <persName ref="va-Q78" ana="wspolmalzonek" type="zmarły">Iohannis de Sitten <roleName ref="va-Q254" ana="pochodzenie_spoleczne">civis Wratislauiensis</roleName>
+                    </persName>
+                </persName>, salutem etc. Provenit etc. [Hinc est, quod nos ...., ut confessor tuus, quem duxeris eligendum, omnium peccatorum tuorum, .... semel tantum in mortis articulo plenam remissionem tibi .... auctoritate apostolica concedere valeat, devocioni tue tenore presencium indulgemus; sic tamen, quod ....] Datum Rome apud Sanctum Petrum, nono kalendis maii, anno quinto. [alia manu:] N(icolaus). XIIII. de Ben(even)to.</p>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,62 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q1277">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="label">Bulla papieża Bonifacego IX z dnia 29 marca 1403</title>
+            <title type="description">Przywilej papieski dla mieszczanina brzeskiego Piotra Holczenera i jego żony Klary zezwalający, by w ich obecności można było odprawiać mszę świętą w miejscach objętych interdyktem
+            </title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centrum Studiów Mediewistycznych</publisher>
+            <date when="2024"/>
+            <idno>https://va.wiki.kul.pl/wiki/Item:Q1277</idno>
+            <availability>
+               <licence>CC....</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness ana="cop." source="va-Q1217">AAV, Reg. Lat., vol. 110, f. 161r (olim f. 175)<locus scheme="modern">161r (olim f. 175)</locus>
+               </witness>
+            </listWit>
+            <listBibl type="editions">
+               <bibl type="regest">MVB 5, nr 2073</bibl>
+               <bibl type="regest">RG 2, col. 979, nr 06399</bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Papież Bonifacy IX zezwala, by w obecności mieszczanina brzeskiego Piotra Holczenera i jego żony Klary można było odprawiać mszę świętą w miejscach objętych interdyktem.</p>
+         </abstract>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="va-Q263"/>
+            <catRef scheme="rodzaj_sprawy" target="va-Q950"/>
+            <catRef scheme="formularz" target="va-Q949"/>
+            <catRef scheme="sprawa" target="va-Q1276"/>
+         </textClass>
+         <creation>
+            <date when="1403-03-29" when-custom="4 kal. apr.,a. p. 14">29 martii 1403</date>
+            <placeName ref="Q67">Roma, apud Sanctum Petrum</placeName>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+                <persName ref="va-Q249" ana="wystawca" type="">Bonifacius</persName> etc., dilecto filio <persName ref="va-Q1264" ana="wystawca beneficjent_laski tytulatura">Petro Holczener, <roleName ref="va-Q1263" ana="pochodzenie_spoleczne">opidano opidi Bregensis</roleName>
+                    <roleName ref="va-Q251" ana="stopien_swiecen"/>
+                    <region ref="va-Q256" ana="diecezja"/>
+                </persName> et dilecte in Christo filie <persName ref="va-Q1266" ana="odbiorca beneficjent_laski" type="">Clare, <persName ref="va-Q1264" ana="wspolmalzonek" type="">eius</persName> uxori, <region ref="va-Q256" ana="diecezja">Wratislauiensis diocesis</region>
+                    <roleName ref="va-Q251" ana="stopien_swiecen"/>
+                </persName>, salutem etc. Devocionis <supplied source="Q949" resp="edytor" cert="hipotetyczna">vestre sinceritas</supplied> etc. 
+            <supplied source="Q949" resp="edytor" cert="hipotetyczna">Vestris itaque supplicacionibus inclinati vobis .... indulgemus, ut, si forsan ad loca ecclesiastico interdicto supposita vos contigerit declinare, liceat vobis in illis .... in vestra et eciam familiarium vestrorum domesticorum presencia missam et alia divina officia facere celebrari ....</supplied>
+            Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="data_ " when="1403-03-29">quarto kal. aprilis, <supplied source="Q949" resp="edytor" cert="hipotetyczna">pontificatus nostri</supplied> anno quarto decimo</date>. 
+            <handShift/>
+                <note type="document_fee" place="in_line" source="va-Q1277"> <persName ref="va-Q66" ana="urzednik_kurialny" type="">N(icolaus). <measure quantity="12" ana="taksa_dokumentu">XII</measure>. de Ben(even)to</persName>.</note>
+         </p> 
+      </body>
+   </text>
+</TEI>

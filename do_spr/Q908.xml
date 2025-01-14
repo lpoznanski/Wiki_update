@@ -1,0 +1,60 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q908">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="label">Bulla papieża Bonifacego IX z dnia 1 kwietnia 1397</title>
+            <title type="description">Przywilej posiadania ołtarza przenośnego dla Gerarda de Thonen
+            </title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centrum Studiów Mediewistycznych</publisher>
+            <date when="2024"/>
+            <idno>https://va.wiki.kul.pl/wiki/Item:Q908</idno>
+            <availability>
+               <licence>CC....</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness ana="cop." source="va-Q910">AAV, Reg. Lat., vol. 45, f. 226r<locus scheme="modern">226r</locus>
+               </witness>
+            </listWit>
+            <listBibl type="editions">
+               <bibl type="regest">MVB 5, nr 1103</bibl>
+               <bibl type="regest">RG 2, col. 332, nr 02140</bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Papież Bonifacy IX udziela mistrzowi Gerardowi de Thonen, pisarzowi papieskiemu,
+               przywileju posiadania ołtarza przenośnego. </p>
+         </abstract>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="va-Q263"/>
+            <catRef scheme="rodzaj_sprawy" target="va-Q429"/>
+            <catRef scheme="formularz" target="va-Q355"/>
+            <catRef scheme="sprawa" target="va-Q909"/>
+         </textClass>
+         <creation>
+            <date when="1397-04-01" when-custom="1 kal. apr. a. 8">1 aprilis 1397</date>
+            <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p> <persName ref="va-Q249" ana="wystawca" type="">Bonifacius</persName> etc., dilecto filio <persName ref="va-Q796" ana="odbiorca beneficjent_laski tytulatura" type="">magistro Gerhardo de Thonen, <affiliation ref="va-Q835" ana="zajmowane_stanowisko odbiorca beneficjent_laski familiaris tytulatura">
+                        <add place="m.d." resp="skryba">canonico</add> Wratislauiensi</affiliation>,
+            <affiliation ref="va-Q959" ana="zajmowane_stanowisko odbiorca beneficjent_laski familiaris tytulatura">scriptori</affiliation> et <roleName ref="va-Q967" ana="rola_spoleczna">familiari nostro</roleName>
+                </persName>, salutem etc. Sincere etc.<supplied source="Q355" resp="edytor" cert="hipotetyczna">Hinc est, quod nos ...., ut liceat tibi habere
+               altare portatile ...., devocioni tue tenore presencium indulgemus.</supplied>Datum
+            <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu odbiorca beneficjent_laski familiaris tytulatura">Rome apud Sanctum Petrum</placeName>, <date when="1397-04-01" type="data_ ">kal. aprilis, anno octavo</date>. <handShift/> <note type="document_fee" place="in_line" source="Q910">
+                    <measure quantity="0" ana="taksa_dokumentu">Pro socio</measure>. <persName ref="va-Q66" ana="urzednik_kurialny" type="">N(icolaus)
+            de Ben(even)to</persName>. </note>
+            </p>
+      </body>
+   </text>
+</TEI>

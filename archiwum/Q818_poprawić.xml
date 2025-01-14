@@ -1,0 +1,64 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q818">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="label">Bulla papieża Bonifacego IX z dnia 26 maja 1394</title>
+            <title type="description">Przywilej dla Krystyny wdowy po Janie z Schönfließ
+               zezwalający, by wybrany przez nią spowiednik mógł udzielić jej w obliczu śmierci
+               pełnego odpuszczenia grzechów</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centrum Studiów Mediewistycznych</publisher>
+            <date when="2024"/>
+            <idno>https://va.wiki.kul.pl/wiki/Item:Q818</idno>
+            <availability>
+               <licence>CC....</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness ana="cop." source="Q116">AAV, Reg. Lat., vol. 34, f. 188r (olim f.
+                     189)<locus scheme="modern">188r</locus>
+               </witness>
+            </listWit>
+            <listBibl type="editions">
+               <bibl type="regest">RG 2, col. 216, nr 01362</bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Papież Bonifacy IX przyznaje Krystynie, wdowie po Janie z Schönfließ, łaskę, by w
+               obliczu śmierci wybrany przez nią spowiednik mógł jeden raz udzielić jej mocą władzy
+               apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami.</p>
+         </abstract>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="Q263"/>
+            <catRef scheme="rodzaj_sprawy" target="Q428"/>
+            <catRef scheme="formularz" target="Q352"/>
+         </textClass>
+         <creation>
+            <date when="1394-05-26" when-custom="7 kal. iun. a. 5">26 maii 1394</date>
+            <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p> <persName ref="va-Q249" ana="wystawca">Bonifacius</persName> etc., dilecte in Christo filie <del>G</del> <persName ref="va-Q602" ana="odbiorca beneficjent_laski tytulatura">Cristine, relicte quondam
+            <persName ref="va-Q599" ana="wspolmalzonek" type="zmarły">Iohannis de Schonenflys <roleName ref="va-Q251" ana="stopien_swiecen">laici</roleName>
+                    </persName>, <roleName ref="va-Q300" ana="rola_spoleczna">vidue</roleName> <region ref="va-Q93" ana="diecezja">Warmiensis diocesis</region>
+                </persName>, salutem
+            etc. Provenit etc. <supplied source="Q352" resp="edytor" cert="hipotetyczna">Hinc est, quod nos ...., ut confessor tuus, quem duxeris eligendum,
+            omnium peccatorum tuorum .... semel tantum in mortis articulo plenam remissionem tibi
+            .... auctoritate apostolica concedere valeat, devocioni tue tenore presencium
+            indulgemus; sic tamen, quod ....</supplied> Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="data_" when="1394-05-26">septimo kal. iunii,
+            anno quinto</date>.<handShift/>
+                <note type="document_fee" place="in_line">
+                    <persName ref="va-Q66" ana="urzednik_kurialny">N(icolaus). <measure quantity="14" ana="taksa_dokumentu">XIIII</measure>. de Ben(even)to</persName>.</note>
+            </p>
+      </body>
+   </text>
+</TEI>

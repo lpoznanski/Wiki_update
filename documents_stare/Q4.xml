@@ -1,0 +1,57 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q4">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="label">Bulla Bonifacego IX z dnia 15 czerwca 1394</title>
+            <title type="description">Przywilej dla Elżbiety, wdowy po Piotrze z Prochowic, zezwalający, by wybrany przez Elżbietę spowiednik mógł udzielić jej w obliczu śmierci pełnego odpuszczenia grzechów</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centrum Studiów Mediewistycznych</publisher>
+            <date when="2023"/>
+            <idno>https://va.wiki.kul.pl/wiki/Item:Q4</idno>
+            <availability>
+               <licence>CC....</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness ana="cop." source="va-Q611">AAV, Reg. Lat., vol. 34, f. 189r<locus scheme="modern">f. 189r</locus>
+               </witness>
+            </listWit>
+            <listBibl type="editions">
+               <bibl type="regest">MVB 5, nr 778</bibl>
+               <bibl type="regest">RG 2, nr 01599</bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Papież Bonifacy IX przyznaje szlachetnej Elżbiecie, wdowie po Piotrze z Prochowic (Parchwic), łaskę, by w obliczu śmierci wybrany przez nią spowiednik mógł jeden raz udzielić jej mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami.</p>
+         </abstract>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="va-Q263"/>
+            <catRef scheme="rodzaj_sprawy" target="va-Q428"/>
+            <catRef scheme="formularz" target="va-Q352"/>
+            <catRef scheme="sprawa" target="va-Q883"/>
+         </textClass>
+         <creation>
+            <date when="1394-06-15" when-custom="7 kl. iul.,a. p. 5">15 iunii 1394</date>
+            <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+                <persName ref="va-Q249" ana="wystawca">Bonifacius</persName> etc., dilecte in Christo filie <persName ref="va-Q109" ana="odbiorca beneficjent_laski tytulatura">
+                    <roleName ana="pochodzenie_spoleczne" ref="va-Q108">nobili<region ref="va-Q256" ana="diecezja"> </region>mulieri</roleName> Elizabeth, <roleName ref="va-Q300" ana="rola_spoleczna">relicte</roleName> <persName ref="va-Q107" ana="wspolmalzonek" type="zmarły">quondam <roleName ana="pochodzenie_spoleczne" ref="va-Q108">nobilis viri</roleName> Petri de Parchwicz, <affiliation ref="va-Q327" ana="zajmowane_stanowisko">baronis de Parchwicz</affiliation>, <region ref="va-Q256" ana="diecezja">Wratislauiensis diocesis</region>
+                    </persName>
+                </persName>, salutem etc. Provenit etc. <supplied source="Q352" resp="edytor" cert="hipotetyczna">Hinc est, quod nos ...., ut confessor tuus, quem duxeris eligendum, omnium peccatorum tuorum .... semel tantum in mortis articulo plenam remissionem tibi .... auctoritate apostolica concedere valeat, devocioni tue tenore presencium indulgemus; sic tamen, quod ....</supplied>  Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="data_" when="1394-06-15">decimo septimo kal. iulii, anno quinto</date>. <handShift/> <note type="document_fee" place="in_line">
+                    <persName ref="va-Q66" ana="urzednik_kurialny">N(icolaus). <measure quantity="14" ana="taksa_dokumentu">XIIII</measure>. de Ben(even)to</persName>.
+         </note>
+            </p>
+      </body>
+   </text>
+</TEI>

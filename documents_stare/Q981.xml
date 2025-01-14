@@ -1,0 +1,65 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q981">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="label">Bulla papieża Bonifacego IX z dnia 2 sierpnia 1394</title>
+            <title type="description">Przywilej papieski dla Mikołaja Wójtowica z Opola zezwalający,
+               by w jego obecności można było odprawiać mszę świętą w miejscach objętych interdyktem
+            </title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centrum Studiów Mediewistycznych</publisher>
+            <date when="2024"/>
+            <idno>https://va.wiki.kul.pl/wiki/Item:Q981</idno>
+            <availability>
+               <licence>CC....</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness ana="cop." source="va-Q983">AAV, Reg. Lat., vol. 34, f. 238v (olim f.
+                  240)<locus scheme="modern">238v (olim f. 240)</locus>
+               </witness>
+            </listWit>
+            <listBibl type="editions">
+               <bibl type="regest">MVB 5, nr 789</bibl>
+               <bibl type="regest">RG 2, col. 875, nr 05716</bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Papież Bonifacy IX zezwala, by w obecności Mikołaja Wójtowica z Opola można było
+               odprawiać mszę świętą w miejscach objętych interdyktem.</p>
+         </abstract>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="va-Q263"/>
+            <catRef scheme="rodzaj_sprawy" target="va-Q950"/>
+            <catRef scheme="formularz" target="va-Q949"/>
+            <catRef scheme="sprawa" target="va-Q982"/>
+         </textClass>
+         <creation>
+            <date when="1394-08-02" when-custom="4 non. aug. a. 5">2 augusti 1394</date>
+            <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p> <persName ref="va-Q249" ana="wystawca" type="">Bonifacius</persName> etc., dilecto filio <persName ref="va-Q831" ana="odbiorca beneficjent_laski tytulatura" type="">Nicolao Advocati de Opol, <roleName ref="va-Q415" ana="rola_spoleczna">armigero</roleName> <region ref="va-Q256" ana="diecezja">Wratislauiensis
+            diocesis</region>
+                </persName>, salutem etc. Devocionis <supplied source="Q949" resp="edytor" cert="hipotetyczna">tue sinceritas</supplied> etc. <supplied source="Q949" resp="edytor" cert="hipotetyczna">Tuis itaque supplicacionibus inclinati .... tibi
+               .... indulgemus, ut, si forsan ad loca ecclesiastico interdicto supposita te
+               contigerit declinare, liceat tibi in illis .... in tua et eciam familiarium tuorum
+               domesticorum presencia missam et alia divina officia facere celebrari ....</supplied>
+            Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="data_ " when="1394-08-02">IIIIo non. augusti, pontificatus nostri anno quinto.</date>
+               <handShift/>
+                <note type="document_fee" place="in_line" source="Q983">
+                    <persName ref="va-Q66" ana="urzednik_kurialny" type="">N(icolaus). <measure quantity="10" ana="taksa_dokumentu">X.</measure> de
+               Ben(even)to</persName>.</note>
+         </p>
+      </body>
+   </text>
+</TEI>

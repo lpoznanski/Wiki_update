@@ -1,0 +1,55 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q879">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="label">Bulla papieża Bonifacego IX z dnia 29 listopada 1396</title>
+            <title type="description">Przywilej posiadania ołtarza przenośnego dla Adama Bessa z Kujaw</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centrum Studiów Mediewistycznych</publisher>
+            <date when="2024"/>
+            <idno>https://va.wiki.kul.pl/wiki/Item:Q879</idno>
+            <availability>
+               <licence>CC....</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness ana="cop." source="va-Q880">AAV, Reg. Lat., vol. 45, f. 217v<locus scheme="modern">217v</locus>
+               </witness>
+            </listWit>
+            <listBibl type="editions">
+               <bibl type="regest">MVB 5, nr 1051</bibl>
+               <bibl type="regest">RG 2, col. 37, nr 00250 <note resp="edytor">false sub anno 1397</note>
+                    </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Papież Bonifacy IX udziela Adamowi Bessowi z Kujaw przywileju posiadania ołtarza przenośnego.</p>
+         </abstract>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="va-Q263"/>
+            <catRef scheme="rodzaj_sprawy" target="va-Q429"/>
+            <catRef scheme="formularz" target="va-Q355"/>
+            <catRef scheme="sprawa" target="va-Q881"/>
+         </textClass>
+         <creation>
+            <date when="1396-11-29" when-custom="3 kal. dec. a. 8">29 novembris 1396</date>
+            <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+            <persName ref="va-Q249" ana="wystawca" type="">Bonifacius</persName> etc., dilecto filio <persName ref="va-Q629" ana="odbiorca beneficjent_laski tytulatura" type="">Ade Bess de Kuya, <roleName ref="va-Q415" ana="rola_spoleczna">armigero</roleName> <region ref="va-Q256" ana="diecezja">Wratislauiensis diocesis</region>
+                </persName>, salutem etc. Sincere devocionis etc.<supplied source="Q355" resp="edytor" cert="hipotetyczna">Hinc est, quod nos ...., ut liceat tibi habere altare portatile ...., devocioni tue tenore presencium indulgemus.</supplied>Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="data_ " when="1396-11-29">III kal. decembris, anno octavo</date>. <handShift/> <note type="document_fee" place="in_line" source="Q880">
+                    <persName ref="va-Q66" ana="urzednik_kurialny" type="">N(icolaus). <measure quantity="10" ana="taksa_dokumentu">X</measure>. de Ben(even)to</persName>.</note>
+         </p> 
+      </body>
+   </text>
+</TEI>

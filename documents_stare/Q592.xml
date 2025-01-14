@@ -1,0 +1,62 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q592">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="label">Bulla papieża Bonifacego IX z dnia 20 czerwca 1403</title>
+            <title type="description">Przywilej dla szlachetnej Beaty z Brzezia zezwalający, by wybrany przez nią spowiednicy mógł udzielić jej w obliczu śmierci pełnego odpuszczenia grzechów</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centrum Studiów Mediewistycznych</publisher>
+            <date when="2024"/>
+            <idno>https://va.wiki.kul.pl/wiki/Item:Q592</idno>
+            <availability>
+               <licence>CC....</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness ana="cop." source="va-Q1109">AAV, Reg. Lat., vol. 110, f. 143v<locus scheme="modern">f. 143v</locus>
+               </witness>
+            </listWit>
+            <listBibl type="editions">
+               <bibl type="regest">BP 3, nr 919</bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Papież Bonifacy IX przyznaje szlachetnej Beacie z Brzezia łaskę, by w obliczu śmierci wybrany przez nią spowiednik mógł jeden raz udzielić jej mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami.</p>
+         </abstract>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="va-Q263"/>
+            <catRef scheme="rodzaj_sprawy" target="va-Q428"/>
+            <catRef scheme="formularz" target="va-Q352"/>
+            <catRef scheme="sprawa" target="va-Q1110"/>
+         </textClass>
+         <creation>
+            <date when="1403-06-20" when-custom="12 kal. iul. a. 14">20 iunii 1403</date>
+            <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+                <del resp="skrypa">Bonifacius etc., dilecte <del>filie</del> in Christo filie Beate de
+                  <del>Bre</del> Brzesze</del>
+                <persName ref="va-Q249" ana="wystawca">Bonifacius</persName> etc., dilecte in Christo filie <persName ref="va-Q474" ana="odbiorca beneficjent_laski tytulatura">
+                    <roleName ref="va-Q108" ana="pochodzenie_spoleczne">nobili
+            mulieri</roleName> Beate <supplied resp="edytor">de</supplied> Brzesze, <roleName ref="va-Q977" ana="rola_spoleczna">domicelle</roleName> <region ref="va-Q264" ana="diecezja">Cracouiensis
+            diocesis</region>
+                </persName>, salutem etc. Provenit etc. <supplied source="Q352" resp="edytor" cert="hipotetyczna">Hinc est, quod nos ...., ut confessor tuus, quem duxeris
+               eligendum, omnium peccatorum tuorum .... semel tantum in mortis articulo plenam
+               remissionem tibi .... auctoritate apostolica concedere valeat, devocioni tue tenore
+               presencium indulgemus; sic tamen, quod ....</supplied> Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum
+            Petrum</placeName>, <date type="data_" when="1403-06-20">duodecimo kal. iulii, anno quarto decimo</date>. <handShift/> <note type="document_fee" place="in_line">
+                    <persName ref="va-Q223" ana="urzednik_kurialny">Iac(obus). <measure quantity="14" ana="taksa_dokumentu">XIIII</measure>. de
+            Teram(o)</persName>.</note> </p>
+      </body>
+   </text>
+</TEI>
