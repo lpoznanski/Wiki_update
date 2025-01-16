@@ -1,22 +1,1351 @@
 ,,,,,,,,,,,,,,,,
-Q18,P7,Q429,,,,,,,,,,,,,,
-Q18,P8,Q355
-Q18,P57,Q940
-Q940,P57,Q18
-Q18,P9,"""Papież Bonifacy IX udziela prezbiterowi Janowi s. Mikołaja Malkow z Prus przywileju posiadania ołtarza przenośnego."""
-Q18,P54,Q939
-Q939,P53,Q18
-Q18,P14,+1393-12-17T00:00:00Z/11/J
-Q18,P15,Q67
-Q18,P16,"""RG 2, col. 710, nr 04598""",P17,Q425
-Q249,P39,Q536,S3,Q18
-Q82,P39,Q537,S3,Q18
-Q82,P39,Q538,S3,Q18
-Q82,P25,"""Iohanni Nicolai Malkow de Prussia, presbytero Culmensis diocesis""",S3,Q18
-Q939,P21,"""N(icolaus). X. de Ben(even)to.""",P22,Q66,P23,10
-Q82,P35,Q253,S3,Q18
-Q82,P2,Q192,S3,Q18
-Q18,P24,Q249
-Q249,P26,Q18
-Q18,P24,Q82
-Q82,P26,Q18
+Q1002,P7,Q950,,,,,,,,,,,,,,
+Q1002,P8,Q949
+Q1002,P57,Q1003
+Q1003,P57,Q1002
+Q1002,P9,"""Papież Bonifacy IX zezwala, by w obecności Mikołaja Gosłowica z Opola i jego żony Elżbiety można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1002,P54,Q1004
+Q1004,P53,Q1002
+Q1002,P14,+1397-07-30T00:00:00Z/11/J
+Q1002,P15,Q67
+Q1002,P16,"""MVB 5, nr 1194""",P17,Q425
+Q249,P39,Q536,S3,Q1002
+Q839,P39,Q537,S3,Q1002
+Q840,P39,Q537,S3,Q1002
+Q839,P39,Q538,S3,Q1002
+Q840,P39,Q538,S3,Q1002
+Q839,P25,"""Nicolao Goslowicz de Opol laico""",S3,Q1002
+Q840,P25,"""Elizabeth, eius uxori, Wratislauiensis diocesis""",S3,Q1002
+Q1004,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q840,P4,Q839,S3,Q1002
+Q839,P4,Q840,S3,Q1002
+Q840,P35,Q251,S3,Q1002
+Q839,P35,Q251,S3,Q1002
+Q839,P35,Q251,S3,Q1002
+Q839,P2,Q256,S3,Q1002
+Q840,P2,Q256,S3,Q1002
+Q1002,P24,Q249
+Q249,P26,Q1002
+Q1002,P24,Q839
+Q839,P26,Q1002
+Q1002,P24,Q840
+Q840,P26,Q1002
+,,,,,,,,,,,,,,,,
+Q1005,P7,Q950,,,,,,,,,,,,,,
+Q1005,P8,Q949
+Q1005,P57,Q1006
+Q1006,P57,Q1005
+Q1005,P9,"""Papież Bonifacy IX zezwala, by w obecności Elżbiety, wdowy po Hanku z Gosławic, można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1005,P54,Q1007
+Q1007,P53,Q1005
+Q1005,P14,+1397-07-30T00:00:00Z/11/J
+Q1005,P15,Q67
+Q1005,P16,"""MVB 5, nr 1195""",P17,Q425
+Q1005,P16,"""RG 2, col. 251, nr 01590""",P17,Q425
+Q249,P39,Q536,S3,Q1005
+Q841,P39,Q537,S3,Q1005
+Q841,P39,Q538,S3,Q1005
+Q841,P25,"""Elizabeth, relicte quondam Hankonis de Goslowicz, mulieri Wratislauiensis diocesis""",S3,Q1005
+Q1007,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q841,P4,Q843,S3,Q1005
+Q843,P4,Q841,S3,Q1005
+Q841,P35,Q251,S3,Q1005
+Q843,P35,Q251,S3,Q1005
+Q843,P39,Q2074,S3,Q1005
+Q841,P36,Q300,S3,Q1005
+Q841,P2,Q256,S3,Q1005
+Q1005,P24,Q249
+Q249,P26,Q1005
+Q1005,P24,Q841
+Q841,P26,Q1005
+,,,,,,,,,,,,,,,,
+Q1008,P7,Q950,,,,,,,,,,,,,,
+Q1008,P8,Q949
+Q1008,P57,Q1009
+Q1009,P57,Q1008
+Q1008,P9,"""Papież Bonifacy IX zezwala, by w obecności Bernarda, księcia opolskiego, można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1008,P54,Q1010
+Q1010,P53,Q1008
+Q1008,P14,+1397-08-12T00:00:00Z/11/J
+Q1008,P15,Q67
+Q1008,P16,"""MVB 5, nr 1196""",P17,Q425
+Q1008,P16,"""RG 2, col. 124, nr 00763""",P17,Q425
+Q249,P39,Q536,S3,Q1008
+Q845,P39,Q537,S3,Q1008
+Q845,P39,Q538,S3,Q1008
+Q845,P25,"""nobili viro Bernhardo, duci Opoliensi""",S3,Q1008
+Q1010,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q845,P32,Q477,S3,Q1008
+Q477,P40,Q845,S3,Q1008
+Q845,P37,Q108,S3,Q1008
+Q1008,P24,Q249
+Q249,P26,Q1008
+Q1008,P24,Q845
+Q845,P26,Q1008
+,,,,,,,,,,,,,,,,
+Q1011,P7,Q950,,,,,,,,,,,,,,
+Q1011,P8,Q949
+Q1011,P57,Q1012
+Q1012,P57,Q1011
+Q1011,P9,"""Papież Bonifacy IX zezwala, by w obecności rycerza Henczka syna Świętopełka z Gorzowa Śląskiego (Landsbergu) i jego żony można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1011,P54,Q1013
+Q1013,P53,Q1011
+Q1011,P14,+1398-01-13T00:00:00Z/11/J
+Q1011,P15,Q67
+Q1011,P16,"""MVB 5, nr 1248""",P17,Q425
+Q1011,P16,"""RG 2, col. 493, nr 03196""",P17,Q425
+Q249,P39,Q536,S3,Q1011
+Q846,P39,Q537,S3,Q1011
+Q852,P39,Q537,S3,Q1011
+Q846,P39,Q538,S3,Q1011
+Q852,P39,Q538,S3,Q1011
+Q846,P25,"""Henczkoni Swantopelkonis de Lanczberg, militi Wratislauiensis diocesis""",S3,Q1011
+Q852,P25,""". . eius uxori""",S3,Q1011
+Q1013,P21,"""N(icolaus). XII. de Ben(even)to""",P22,Q66,P23,12,P58,Q2101
+Q852,P4,Q846,S3,Q1011
+Q846,P4,Q852,S3,Q1011
+Q852,P35,Q251,S3,Q1011
+Q846,P35,Q251,S3,Q1011
+Q846,P36,Q296,S3,Q1011
+Q846,P2,Q256,S3,Q1011
+Q1011,P24,Q249
+Q249,P26,Q1011
+Q1011,P24,Q846
+Q846,P26,Q1011
+Q1011,P24,Q852
+Q852,P26,Q1011
+,,,,,,,,,,,,,,,,
+Q1014,P7,Q950,,,,,,,,,,,,,,
+Q1014,P8,Q949
+Q1014,P57,Q1015
+Q1015,P57,Q1014
+Q1014,P9,"""Papież Bonifacy IX zezwala, by w obecności rycerza Szczepana Strail z Chechła (Chechlau) i jego żony można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1014,P54,Q1016
+Q1016,P53,Q1014
+Q1014,P14,+1398-01-13T00:00:00Z/11/J
+Q1014,P15,Q67
+Q1014,P16,"""MVB 5, nr 1249""",P17,Q425
+Q1014,P16,"""RG 2, col. 1063, nr 06933""",P17,Q425
+Q249,P39,Q536,S3,Q1014
+Q851,P39,Q537,S3,Q1014
+Q851,P39,Q538,S3,Q1014
+Q851,P25,"""Stephano Strail de Chechel, militi Wratislauiensis diocesis""",S3,Q1014
+Q1016,P21,"""N(icolaus). XII. de Ben(even)to""",P22,Q66,P23,12,P58,Q2101
+Q851,P36,Q296,S3,Q1014
+Q851,P2,Q256,S3,Q1014
+Q1014,P24,Q249
+Q249,P26,Q1014
+Q1014,P24,Q851
+Q851,P26,Q1014
+,,,,,,,,,,,,,,,,
+Q1017,P7,Q950,,,,,,,,,,,,,,
+Q1017,P8,Q949
+Q1017,P57,Q1018
+Q1018,P57,Q1017
+Q1017,P9,"""Papież Bonifacy IX zezwala, by w obecności szlachetnego Jana Slewicza można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1017,P54,Q1019
+Q1019,P53,Q1017
+Q1017,P14,+1398-03-04T00:00:00Z/11/J
+Q1017,P15,Q67
+Q1017,P16,"""MVB 5, nr 1261""",P17,Q425
+Q1017,P16,"""RG 2, col. 756, nr 04912""",P17,Q425
+Q249,P39,Q536,S3,Q1017
+Q854,P39,Q537,S3,Q1017
+Q854,P39,Q538,S3,Q1017
+Q854,P25,"""nobili viro Iohanni Slewicz, laico Wratislauiensis diocesis""",S3,Q1017
+Q1019,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q854,P37,Q108,S3,Q1017
+Q854,P35,,S3,Q1017
+Q854,P2,Q256,S3,Q1017
+Q1017,P24,Q249
+Q249,P26,Q1017
+Q1017,P24,Q854
+Q854,P26,Q1017
+,,,,,,,,,,,,,,,,
+Q1020,P7,Q950,,,,,,,,,,,,,,
+Q1020,P8,Q949
+Q1020,P57,Q1021
+Q1021,P57,Q1020
+Q1020,P9,"""Papież Bonifacy IX zezwala, by w obecności Jana zwanego Monch, mieszczanina opolskiego i jego żony Doroty można było odprawiać mszę świętą w miejscach objętych interdyktem"""
+Q1020,P54,Q1022
+Q1022,P53,Q1020
+Q1020,P14,+1398-03-26T00:00:00Z/11/J
+Q1020,P15,Q67
+Q1020,P16,"""MVB 5, nr 1275""",P17,Q425
+Q1020,P16,"""RG 2, col. 704, nr 04558""",P17,Q425
+Q249,P39,Q536,S3,Q1020
+Q855,P39,Q537,S3,Q1020
+Q856,P39,Q537,S3,Q1020
+Q855,P39,Q538,S3,Q1020
+Q856,P39,Q538,S3,Q1020
+Q855,P25,"""Iohanni dicto Monch, opidano opidi Opoliensis""",S3,Q1020
+Q856,P25,"""Dorothee, eius uxori, Wratislauiensis diocesis""",S3,Q1020
+Q1022,P21,"""Iac(obus). XII. de Teram(o)""",P22,Q223,P23,12,P58,Q2101
+Q856,P4,Q855,S3,Q1020
+Q855,P4,Q856,S3,Q1020
+Q856,P35,Q251,S3,Q1020
+Q855,P35,Q251,S3,Q1020
+Q855,P37,Q857,S3,Q1020
+Q855,P2,Q256,S3,Q1020
+Q856,P2,Q256,S3,Q1020
+Q1020,P24,Q249
+Q249,P26,Q1020
+Q1020,P24,Q855
+Q855,P26,Q1020
+Q1020,P24,Q856
+Q856,P26,Q1020
+,,,,,,,,,,,,,,,,
+Q1023,P7,Q950,,,,,,,,,,,,,,
+Q1023,P8,Q949
+Q1023,P57,Q1024
+Q1024,P57,Q1023
+Q1023,P9,"""Papież Bonifacy IX zezwala, by w obecności mieszczanina wrocławskiego Dietwina Daumlose można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1023,P54,Q1025
+Q1025,P53,Q1023
+Q1023,P54,Q1026
+Q1026,P53,Q1023
+Q1023,P14,+1398-11-30T00:00:00Z/11/J
+Q1023,P15,Q67
+Q1023,P16,"""MVB 5, nr 1383""",P17,Q425
+Q1023,P16,"""RG 2, col. 228, nr 01438""",P17,Q425
+Q249,P39,Q536,S3,Q1023
+Q858,P39,Q537,S3,Q1023
+Q858,P39,Q538,S3,Q1023
+Q858,P25,"""Ditwino Dawmeloze, civi Wratislauiensi""",S3,Q1023
+Q1025,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q858,P37,Q254,S3,Q1023
+Q1023,P24,Q249
+Q249,P26,Q1023
+Q1023,P24,Q858
+Q858,P26,Q1023
+,,,,,,,,,,,,,,,,
+Q1027,P7,Q950,,,,,,,,,,,,,,
+Q1027,P8,Q949
+Q1027,P57,Q1028
+Q1028,P57,Q1027
+Q1027,P9,"""Papież Bonifacy IX zezwala, by w obecności księcia oleśnickiego Konrada III i jego żony Guty można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1027,P54,Q1029
+Q1029,P53,Q1027
+Q1027,P14,+1399-03-01T00:00:00Z/11/J
+Q1027,P15,Q67
+Q1027,P16,"""MVB 5, nr 1418""",P17,Q425
+Q1027,P16,"""RG 2, col. 201, nr 01269""",P17,Q425
+Q249,P39,Q536,S3,Q1027
+Q290,P39,Q537,S3,Q1027
+Q293,P39,Q537,S3,Q1027
+Q290,P39,Q538,S3,Q1027
+Q293,P39,Q538,S3,Q1027
+Q290,P25,"""nobili viro Conrado tercio, duci Slesie nato""",S3,Q1027
+Q293,P25,"""nobili mulieri Guthe, eius uxori""",S3,Q1027
+Q1029,P21,"""De mandato""",P23,0,P58,Q2101
+Q1029,P21,"""N(icolaus) de Ben(even)to""",P22,Q66,P58,Q2101
+Q293,P4,Q290,S3,Q1027
+Q290,P4,Q293,S3,Q1027
+Q293,P35,Q251,S3,Q1027
+Q290,P35,Q251,S3,Q1027
+Q290,P32,Q862,S3,Q1027
+Q862,P40,Q290,S3,Q1027
+Q290,P37,Q108,S3,Q1027
+Q293,P37,Q108,S3,Q1027
+Q1027,P24,Q249
+Q249,P26,Q1027
+Q1027,P24,Q290
+Q290,P26,Q1027
+Q1027,P24,Q293
+Q293,P26,Q1027
+,,,,,,,,,,,,,,,,
+Q1030,P7,Q950,,,,,,,,,,,,,,
+Q1030,P8,Q949
+Q1030,P57,Q1031
+Q1031,P57,Q1030
+Q1030,P9,"""Papież Bonifacy IX zezwala, by w obecności kanonika krakowskiego Ottona syna Marcina [z Tochołowa] można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1030,P54,Q1032
+Q1032,P53,Q1030
+Q1030,P14,+1399-04-29T00:00:00Z/11/J
+Q1030,P15,Q67
+Q1030,P16,"""BP 3, nr 598""",P17,Q425
+Q249,P39,Q536,S3,Q1030
+Q329,P39,Q537,S3,Q1030
+Q329,P39,Q538,S3,Q1030
+Q329,P25,"""Ottoni Martini, canonico ecclesie Cracouiensis""",S3,Q1030
+Q1032,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q329,P32,Q301,S3,Q1030
+Q301,P40,Q329,S3,Q1030
+Q1030,P24,Q249
+Q249,P26,Q1030
+Q1030,P24,Q329
+Q329,P26,Q1030
+,,,,,,,,,,,,,,,,
+Q1100,P7,Q950,,,,,,,,,,,,,,
+Q1100,P8,Q949
+Q1100,P57,Q1103
+Q1103,P57,Q1100
+Q1100,P9,"""Papież Bonifacy IX zezwala, by w obecności Rafała Borowca można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1100,P54,Q1275
+Q1275,P53,Q1100
+Q1100,P14,+1403-03-29T00:00:00Z/11/J
+Q1100,P15,Q67
+Q1100,P16,"""BP 3, nr 889""",P17,Q425
+Q249,P39,Q536,S3,Q1100
+Q442,P39,Q537,S3,Q1100
+Q442,P39,Q538,S3,Q1100
+Q1275,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q442,P36,Q415,S3,Q1100
+Q442,P2,Q264,S3,Q1100
+Q1100,P24,Q249
+Q249,P26,Q1100
+Q1100,P24,Q442
+Q442,P26,Q1100
+,,,,,,,,,,,,,,,,
+Q1120,P7,Q950,,,,,,,,,,,,,,
+Q1120,P8,Q949
+Q1120,P57,Q1114
+Q1114,P57,Q1120
+Q1120,P9,"""Papież Bonifacy IX zezwala, by w obecności rycerza Jana z Ćwiklina i jego żony można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1120,P54,Q1123
+Q1123,P53,Q1120
+Q1120,P14,+1403-04-22T00:00:00Z/11/J
+Q1120,P15,Q67
+Q249,P39,Q536,S3,Q1120
+Q448,P39,Q537,S3,Q1120
+Q467,P39,Q537,S3,Q1120
+Q448,P39,Q538,S3,Q1120
+Q467,P39,Q538,S3,Q1120
+Q448,P25,"""nobili viro Iohanni Sassini de Czwiklino militi""",S3,Q1120
+Q1123,P21,"""N(icolaus). XII. de Ben(even)to""",P22,Q66,P23,12,P58,Q2101
+Q467,P4,Q448,S3,Q1120
+Q448,P4,Q467,S3,Q1120
+Q467,P35,Q251,S3,Q1120
+Q448,P35,Q251,S3,Q1120
+Q448,P37,Q108,S3,Q1120
+Q467,P37,Q108,S3,Q1120
+Q448,P35,Q251,S3,Q1120
+Q467,P35,Q251,S3,Q1120
+Q448,P36,Q296,S3,Q1120
+Q448,P2,Q232,S3,Q1120
+Q467,P2,Q232,S3,Q1120
+Q1120,P24,Q249
+Q249,P26,Q1120
+Q1120,P24,Q448
+Q448,P26,Q1120
+Q1120,P24,Q467
+Q467,P26,Q1120
+,,,,,,,,,,,,,,,,
+Q1126,P7,Q950,,,,,,,,,,,,,,
+Q1126,P8,Q949
+Q1126,P57,Q1111
+Q1111,P57,Q1126
+Q1126,P9,"""Papież Bonifacy IX zezwala, by w obecności wojewody poznańskiego Sędziwoja [Świdwy z Szamotuł] i jego żony Saski można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1126,P54,Q1117
+Q1117,P53,Q1126
+Q1126,P14,+1403-05-29T00:00:00Z/11/J
+Q1126,P15,Q67
+Q1126,P16,"""BP 3, nr 906""",P17,Q425
+Q1126,P16,"""RG 2, col. 1039, nr 06751""",P17,Q425
+Q249,P39,Q536,S3,Q1126
+Q457,P39,Q537,S3,Q1126
+Q459,P39,Q537,S3,Q1126
+Q457,P39,Q538,S3,Q1126
+Q459,P39,Q538,S3,Q1126
+Q457,P25,"""nobili viro Sandzywogio, palatino Poznaniensi""",S3,Q1126
+Q1117,P21,"""Iac(obus). XII. de Teram(o)""",P22,Q223,P23,12,P58,Q2101
+Q459,P4,Q457,S3,Q1126
+Q457,P4,Q459,S3,Q1126
+Q459,P35,Q251,S3,Q1126
+Q457,P35,Q251,S3,Q1126
+Q457,P37,Q108,S3,Q1126
+Q459,P37,Q108,S3,Q1126
+Q457,P35,Q251,S3,Q1126
+Q459,P35,Q251,S3,Q1126
+Q457,P36,Q463,S3,Q1126
+Q1126,P24,Q249
+Q249,P26,Q1126
+Q1126,P24,Q457
+Q457,P26,Q1126
+Q1126,P24,Q459
+Q459,P26,Q1126
+,,,,,,,,,,,,,,,,
+Q1140,P7,Q950,,,,,,,,,,,,,,
+Q1140,P8,Q949
+Q1140,P57,Q1134
+Q1134,P57,Q1140
+Q1140,P9,"""Papież Bonifacy IX zezwala, by w obecności Henryka (Heinczy) Pogorzeli z Meristau i jego żony [można było odprawiać mszę świętą w miejscach objętych interdyktem] (?)."""
+Q1140,P54,Q1129
+Q1129,P53,Q1140
+Q1140,P14,+1403-06-19T00:00:00Z/11/J
+Q1140,P15,Q67
+Q1140,P16,"""RG 2, col. 397, nr 06751""",P17,Q425
+Q249,P39,Q536,S3,Q1140
+Q471,P39,Q537,S3,Q1140
+Q472,P39,Q537,S3,Q1140
+Q471,P39,Q538,S3,Q1140
+Q472,P39,Q538,S3,Q1140
+Q471,P25,"""nobili viro Heynczoni Pogerelle de Merysstale domicello""",S3,Q1140
+Q472,P4,Q471,S3,Q1140
+Q471,P4,Q472,S3,Q1140
+Q472,P35,Q251,S3,Q1140
+Q471,P35,Q251,S3,Q1140
+Q471,P37,Q108,S3,Q1140
+Q471,P35,Q251,S3,Q1140
+Q472,P35,Q251,S3,Q1140
+Q471,P36,Q977,S3,Q1140
+Q471,P2,Q256,S3,Q1140
+Q472,P2,Q256,S3,Q1140
+Q1140,P24,Q249
+Q249,P26,Q1140
+Q1140,P24,Q471
+Q471,P26,Q1140
+Q1140,P24,Q472
+Q472,P26,Q1140
+,,,,,,,,,,,,,,,,
+Q1149,P7,Q950,,,,,,,,,,,,,,
+Q1149,P8,Q949
+Q1149,P57,Q1143
+Q1143,P57,Q1149
+Q1149,P9,"""Papież Bonifacy IX zezwala, by w obecności Ludwika [II], księcia brzeskiego, można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1149,P54,Q1137
+Q1137,P53,Q1149
+Q1149,P14,+1402-11-21T00:00:00Z/11/J
+Q1149,P15,Q67
+Q1149,P16,"""MVB 5, nr 1991""",P17,Q425
+Q1149,P16,"""RG 2, col. 829, nr 05394""",P17,Q425
+Q249,P39,Q536,S3,Q1149
+Q1257,P39,Q537,S3,Q1149
+Q1257,P39,Q538,S3,Q1149
+Q1257,P25,"""nobili viro Lodouico duci Brigensi, Wratislauiensis diocesis""",S3,Q1149
+Q1137,P21,"""N(icolaus). XX. de Ben(even)to""",P22,Q66,P23,20,P58,Q2101
+Q1257,P37,Q108,S3,Q1149
+Q1257,P2,Q256,S3,Q1149
+Q1149,P24,Q249
+Q249,P26,Q1149
+Q1149,P24,Q1257
+Q1257,P26,Q1149
+,,,,,,,,,,,,,,,,
+Q1152,P7,Q950,,,,,,,,,,,,,,
+Q1152,P8,Q949
+Q1152,P57,Q1161
+Q1161,P57,Q1152
+Q1152,P9,"""Papież Bonifacy IX zezwala, by w obecności Henryka [IX], księcia Śląska [chojnowskiego] i jego żony Anny można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1152,P54,Q1173
+Q1173,P53,Q1152
+Q1152,P14,+1403-03-10T00:00:00Z/11/J
+Q1152,P15,Q67
+Q1152,P16,"""MVB 5, nr 2061""",P17,Q425
+Q1152,P16,"""RG 2, col. 477, nr 03079""",P17,Q425
+Q249,P39,Q536,S3,Q1152
+Q1261,P39,Q537,S3,Q1152
+Q1262,P39,Q537,S3,Q1152
+Q1261,P39,Q538,S3,Q1152
+Q1262,P39,Q538,S3,Q1152
+Q1261,P25,"""nobili viro Henrico, duci Slezie""",S3,Q1152
+Q1173,P21,"""N(icolaus). XII. de Ben(even)to""",P22,Q66,P23,12,P58,Q2101
+Q1262,P4,Q1261,S3,Q1152
+Q1261,P4,Q1262,S3,Q1152
+Q1262,P35,Q251,S3,Q1152
+Q1261,P35,Q251,S3,Q1152
+Q1261,P32,Q862,S3,Q1152
+Q862,P40,Q1261,S3,Q1152
+Q1261,P37,Q108,S3,Q1152
+Q1262,P37,Q108,S3,Q1152
+Q1261,P35,Q251,S3,Q1152
+Q1262,P35,Q251,S3,Q1152
+Q1261,P2,Q256,S3,Q1152
+Q1262,P2,Q256,S3,Q1152
+Q1152,P24,Q249
+Q249,P26,Q1152
+Q1152,P24,Q1261
+Q1261,P26,Q1152
+Q1152,P24,Q1262
+Q1262,P26,Q1152
+,,,,,,,,,,,,,,,,
+Q1167,P7,Q950,,,,,,,,,,,,,,
+Q1167,P8,Q949
+Q1167,P57,Q1158
+Q1158,P57,Q1167
+Q1167,P9,"""Papież Bonifacy IX zezwala, by w obecności Zygfryda Eyermana można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1167,P54,Q1146
+Q1146,P53,Q1167
+Q1167,P14,+1402-12-11T00:00:00Z/11/J
+Q1167,P15,Q67
+Q1167,P16,"""RG 2, col. 1044, nr 06794""",P17,Q425
+Q249,P39,Q536,S3,Q1167
+Q1253,P39,Q537,S3,Q1167
+Q1253,P39,Q538,S3,Q1167
+Q1253,P25,"""Sifrido Eyerman, laico Lubucensis diocesis""",S3,Q1167
+Q1146,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q1253,P35,Q251,S3,Q1167
+Q1253,P2,Q1249,S3,Q1167
+Q1167,P24,Q249
+Q249,P26,Q1167
+Q1167,P24,Q1253
+Q1253,P26,Q1167
+,,,,,,,,,,,,,,,,
+Q1170,P7,Q950,,,,,,,,,,,,,,
+Q1170,P8,Q949
+Q1170,P57,Q1164
+Q1164,P57,Q1170
+Q1170,P9,"""Papież Bonifacy IX zezwala, by w obecności Andrzeja ze Ścinawy można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1170,P54,Q1155
+Q1155,P53,Q1170
+Q1170,P14,+1402-12-16T00:00:00Z/11/J
+Q1170,P15,Q67
+Q1170,P16,"""MVB 5, nr 2017""",P17,Q425
+Q1170,P16,"""RG 2, col. 76, nr 00503""",P17,Q425
+Q249,P39,Q536,S3,Q1170
+Q1260,P39,Q537,S3,Q1170
+Q1260,P39,Q538,S3,Q1170
+Q1260,P25,"""Andree de Scynaw, armigero Wratislauiensis diocesis""",S3,Q1170
+Q1155,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q1260,P36,Q415,S3,Q1170
+Q1260,P2,Q256,S3,Q1170
+Q1170,P24,Q249
+Q249,P26,Q1170
+Q1170,P24,Q1260
+Q1260,P26,Q1170
+,,,,,,,,,,,,,,,,
+Q1181,P7,Q950,,,,,,,,,,,,,,
+Q1181,P8,Q949
+Q1181,P57,Q1184
+Q1184,P57,Q1181
+Q1181,P9,"""Papież Bonifacy IX zezwala, by w obecności Ludwika [II], księcia Śląska [brzeskiego], można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1181,P54,Q1178
+Q1178,P53,Q1181
+Q1181,P14,+1403-03-10T00:00:00Z/11/J
+Q1181,P15,Q67
+Q1181,P16,"""MVB 5, nr 2062""",P17,Q425
+Q1181,P16,"""RG 2, col. 829, nr 05394""",P17,Q425
+Q249,P39,Q536,S3,Q1181
+Q1257,P39,Q537,S3,Q1181
+Q1257,P39,Q538,S3,Q1181
+Q1257,P25,"""nobili viro Ludowico, duci Slezie, Wratislauiensis diocesis""",S3,Q1181
+Q1178,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q1257,P32,Q1251,S3,Q1181
+Q1251,P40,Q1257,S3,Q1181
+Q1257,P37,Q108,S3,Q1181
+Q1257,P2,Q256,S3,Q1181
+Q1181,P24,Q249
+Q249,P26,Q1181
+Q1181,P24,Q1257
+Q1257,P26,Q1181
+,,,,,,,,,,,,,,,,
+Q1254,P7,Q950,,,,,,,,,,,,,,
+Q1254,P8,Q949
+Q1254,P57,Q1096
+Q1096,P57,Q1254
+Q1254,P9,"""Papież Bonifacy IX zezwala, by w obecności mieszczanina krakowskiego Michała Langa z Cierni (Zirlau) można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1254,P54,Q1106
+Q1106,P53,Q1254
+Q1254,P14,+1402-11-16 T00:00:00Z/11/J
+Q1254,P15,Q67
+Q1254,P16,"""BP 3, nr 852""",P17,Q425
+Q249,P39,Q536,S3,Q1254
+Q285,P39,Q537,S3,Q1254
+Q285,P39,Q538,S3,Q1254
+Q285,P25,"""Michaeli Nicolai Langho de Cirla, civi Cracouiensi""",S3,Q1254
+Q1106,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q285,P37,Q260,S3,Q1254
+Q1254,P24,Q249
+Q249,P26,Q1254
+Q1254,P24,Q285
+Q285,P26,Q1254
+,,,,,,,,,,,,,,,,
+Q1277,P7,Q950,,,,,,,,,,,,,,
+Q1277,P8,Q949
+Q1277,P57,Q1276
+Q1276,P57,Q1277
+Q1277,P9,"""Papież Bonifacy IX zezwala, by w obecności mieszczanina brzeskiego Piotra Holczenera i jego żony Klary można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1277,P54,Q1217
+Q1217,P53,Q1277
+Q1277,P14,+1403-03-29T00:00:00Z/11/J
+Q1277,P15,Q67
+Q1277,P16,"""MVB 5, nr 2073""",P17,Q425
+Q1277,P16,"""RG 2, col. 979, nr 06399""",P17,Q425
+Q249,P39,Q536,S3,Q1277
+Q1264,P39,Q536,S3,Q1277
+Q1266,P39,Q537,S3,Q1277
+Q1264,P39,Q538,S3,Q1277
+Q1266,P39,Q538,S3,Q1277
+Q1264,P25,"""Petro Holczener, opidano opidi Bregensis""",S3,Q1277
+Q1217,P21,"""N(icolaus). XII. de Ben(even)to""",P22,Q66,P23,12,P58,Q2101
+Q1266,P4,Q1264,S3,Q1277
+Q1264,P4,Q1266,S3,Q1277
+Q1266,P35,Q251,S3,Q1277
+Q1264,P35,Q251,S3,Q1277
+Q1264,P37,Q1263,S3,Q1277
+Q1266,P37,Q1263,S3,Q1277
+Q1264,P35,Q251,S3,Q1277
+Q1266,P35,Q251,S3,Q1277
+Q1264,P2,Q256,S3,Q1277
+Q1266,P2,Q256,S3,Q1277
+Q1277,P24,Q249
+Q249,P26,Q1277
+Q1277,P24,Q1264
+Q1264,P26,Q1277
+Q1277,P24,Q1266
+Q1266,P26,Q1277
+,,,,,,,,,,,,,,,,
+Q1280,P7,Q950,,,,,,,,,,,,,,
+Q1280,P8,Q949
+Q1280,P57,Q1279
+Q1279,P57,Q1280
+Q1280,P9,"""Papież Bonifacy IX zezwala, by w obecności mieszczanina wrocławskiego Hansa Sachse i jego żony Anny można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1280,P54,Q1278
+Q1278,P53,Q1280
+Q1280,P14,+1403-04-24T00:00:00Z/11/J
+Q1280,P15,Q67
+Q1280,P16,"""MVB 5, nr 2081""",P17,Q425
+Q1280,P16,"""RG 2, col. 745, nr 04831""",P17,Q425
+Q249,P39,Q536,S3,Q1280
+Q1267,P39,Q537,S3,Q1280
+Q1268,P39,Q537,S3,Q1280
+Q1267,P39,Q538,S3,Q1280
+Q1268,P39,Q538,S3,Q1280
+Q1267,P25,"""Iohanni Sachse, civi Wratislauiensi""",S3,Q1280
+Q1278,P21,"""N(icolaus). XII. de Ben(even)to""",P22,Q66,P23,12,P58,Q2101
+Q1268,P4,Q1267,S3,Q1280
+Q1267,P4,Q1268,S3,Q1280
+Q1268,P35,Q251,S3,Q1280
+Q1267,P35,Q251,S3,Q1280
+Q1267,P37,Q254,S3,Q1280
+Q1268,P37,Q254,S3,Q1280
+Q1267,P35,Q251,S3,Q1280
+Q1268,P35,Q251,S3,Q1280
+Q1280,P24,Q249
+Q249,P26,Q1280
+Q1280,P24,Q1267
+Q1267,P26,Q1280
+Q1280,P24,Q1268
+Q1268,P26,Q1280
+,,,,,,,,,,,,,,,,
+Q1283,P7,Q950,,,,,,,,,,,,,,
+Q1283,P8,Q949
+Q1283,P57,Q1182
+Q1182,P57,Q1283
+Q1283,P9,"""Papież Bonifacy IX zezwala, by w obecności Jana Franke i jego żony Małgorzaty można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1283,P54,Q1181
+Q1181,P53,Q1283
+Q1283,P14,+1403-05-27T00:00:00Z/11/J
+Q1283,P15,Q67
+Q1283,P16,"""BP 3, nr 903""",P17,Q425
+Q1283,P16,"""RG 2, col. 627, nr 04089""",P17,Q425
+Q249,P39,Q536,S3,Q1283
+Q1269,P39,Q537,S3,Q1283
+Q1270,P39,Q537,S3,Q1283
+Q1269,P39,Q538,S3,Q1283
+Q1270,P39,Q538,S3,Q1283
+Q1269,P25,"""Iohanni Franke laico""",S3,Q1283
+Q1181,P21,"""N(icolaus). XII. de Ben(even)to""",P22,Q66,P23,12,P58,Q2101
+Q1270,P4,Q1269,S3,Q1283
+Q1269,P4,Q1270,S3,Q1283
+Q1270,P35,Q251,S3,Q1283
+Q1269,P35,Q251,S3,Q1283
+Q1269,P35,Q251,S3,Q1283
+Q1270,P35,Q251,S3,Q1283
+Q1269,P2,Q362,S3,Q1283
+Q1270,P2,Q362,S3,Q1283
+Q1283,P24,Q249
+Q249,P26,Q1283
+Q1283,P24,Q1269
+Q1269,P26,Q1283
+Q1283,P24,Q1270
+Q1270,P26,Q1283
+,,,,,,,,,,,,,,,,
+Q1286,P7,Q950,,,,,,,,,,,,,,
+Q1286,P8,Q949
+Q1286,P57,Q1285
+Q1285,P57,Q1286
+Q1286,P9,"""Papież Bonifacy IX zezwala, by w obecności Jana Clusnicza ze Świdnicy i jego żony Katarzyny można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1286,P54,Q1284
+Q1284,P53,Q1286
+Q1286,P14,+1403-11-29T00:00:00Z/11/J
+Q1286,P15,Q67
+Q1286,P16,"""MVB 5, nr 2146""",P17,Q425
+Q1286,P16,"""RG 2, col. 591, nr 03848""",P17,Q425
+Q249,P39,Q536,S3,Q1286
+Q1271,P39,Q537,S3,Q1286
+Q1271,P39,Q538,S3,Q1286
+Q1271,P25,"""Iohanni Clusnitz de Swydenicz laico""",S3,Q1286
+Q1284,P21,"""Iac(obus). XII. de Teram(o)""",P22,Q223,P23,12,P58,Q2101
+Q1272,P4,Q1271,S3,Q1286
+Q1271,P4,Q1272,S3,Q1286
+Q1272,P35,Q251,S3,Q1286
+Q1271,P35,Q251,S3,Q1286
+Q1271,P35,Q251,S3,Q1286
+Q1272,P35,Q251,S3,Q1286
+Q1271,P2,Q256,S3,Q1286
+Q1272,P2,Q256,S3,Q1286
+,,,,,,,,,,,,,,,,
+Q1289,P7,Q950,,,,,,,,,,,,,,
+Q1289,P8,Q949
+Q1289,P57,Q1288
+Q1288,P57,Q1289
+Q1289,P9,"""Papież Bonifacy IX zezwala, by w obecności Hansa Peselera i jego żony Barbary, mieszczan wrocławskich, można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1289,P54,Q1287
+Q1287,P53,Q1289
+Q1289,P14,+1404-03-20T00:00:00Z/11/J
+Q1289,P15,Q67
+Q1289,P16,"""MVB 5, nr 2173""",P17,Q425
+Q1289,P16,"""RG 2, col. 725, nr 04692""",P17,Q425
+Q249,P39,Q536,S3,Q1289
+Q1273,P39,Q537,S3,Q1289
+Q1274,P39,Q537,S3,Q1289
+Q1273,P39,Q538,S3,Q1289
+Q1274,P39,Q538,S3,Q1289
+Q1287,P21,"""M(arinus). XII. de Sancta Agatha.""",P22,Q485,P23,12,P58,Q2101
+Q1274,P4,Q1273,S3,Q1289
+Q1273,P4,Q1274,S3,Q1289
+Q1274,P35,Q251,S3,Q1289
+Q1273,P35,Q251,S3,Q1289
+Q1273,P37,Q254,S3,Q1289
+Q1274,P37,Q254,S3,Q1289
+Q1273,P35,Q251,S3,Q1289
+Q1274,P35,Q251,S3,Q1289
+Q1289,P24,Q249
+Q249,P26,Q1289
+Q1289,P24,Q1273
+Q1273,P26,Q1289
+Q1289,P24,Q1274
+Q1274,P26,Q1289
+,,,,,,,,,,,,,,,,
+Q1292,P7,Q950,,,,,,,,,,,,,,
+Q1292,P8,Q949
+Q1292,P57,Q1291
+Q1291,P57,Q1292
+Q1292,P9,"""Papież Bonifacy IX zezwala, by w obecności Jana Domniga i jego żony Katarzyny, mieszczan wrocławskich, można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1292,P54,Q1290
+Q1290,P53,Q1292
+Q1292,P14,+1404-03-20T00:00:00Z/11/J
+Q1292,P15,Q67
+Q1292,P16,"""MVB 5, nr 2174""",P17,Q425
+Q1292,P16,"""RG 2, col. 607, nr 03960""",P17,Q425
+Q249,P39,Q536,S3,Q1292
+Q1381,P39,Q537,S3,Q1292
+Q1382,P39,Q537,S3,Q1292
+Q1381,P39,Q538,S3,Q1292
+Q1382,P39,Q538,S3,Q1292
+Q1381,P25,"""Iohanni Dominici""",S3,Q1292
+Q1382,P25,"""Catherine, eius uxori, civibus Wratislauiensibus""",S3,Q1292
+Q1290,P21,"""M(arinus). XII. de Sancta Agatha""",P22,Q485,P23,12,P58,Q2101
+Q1382,P4,Q1381,S3,Q1292
+Q1381,P4,Q1382,S3,Q1292
+Q1382,P35,Q251,S3,Q1292
+Q1381,P35,Q251,S3,Q1292
+Q1381,P37,Q254,S3,Q1292
+Q1382,P37,Q254,S3,Q1292
+Q1381,P35,Q251,S3,Q1292
+Q1382,P35,Q251,S3,Q1292
+Q1292,P24,Q249
+Q249,P26,Q1292
+Q1292,P24,Q1381
+Q1381,P26,Q1292
+Q1292,P24,Q1382
+Q1382,P26,Q1292
+,,,,,,,,,,,,,,,,
+Q1295,P7,Q950,,,,,,,,,,,,,,
+Q1295,P8,Q949
+Q1295,P57,Q1294
+Q1294,P57,Q1295
+Q1295,P9,"""Papież Bonifacy IX zezwala, by w obecności Mikołaja Merbotha i jego żony Agnieszki, mieszczan wrocławskich, można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1295,P54,Q1293
+Q1293,P53,Q1295
+Q1295,P14,+1404-03-20T00:00:00Z/11/J
+Q1295,P15,Q67
+Q1295,P16,"""MVB 5, nr 2175""",P17,Q425
+Q1295,P16,"""RG 2, col. 914, nr 05950""",P17,Q425
+Q249,P39,Q536,S3,Q1295
+Q518,P39,Q537,S3,Q1295
+Q519,P39,Q537,S3,Q1295
+Q518,P39,Q538,S3,Q1295
+Q519,P39,Q538,S3,Q1295
+Q518,P25,"""Nicolao Merebot""",S3,Q1295
+Q519,P25,"""Agneti, eius uxori, civibus Wratislauiensibus""",S3,Q1295
+Q1293,P21,"""Iac(obus). XII. de Teram(o)""",P22,Q223,P23,12,P58,Q2101
+Q519,P4,Q518,S3,Q1295
+Q518,P4,Q519,S3,Q1295
+Q519,P35,Q251,S3,Q1295
+Q518,P35,Q251,S3,Q1295
+Q518,P37,Q254,S3,Q1295
+Q519,P37,Q254,S3,Q1295
+Q518,P35,Q251,S3,Q1295
+Q519,P35,Q251,S3,Q1295
+Q1295,P24,Q249
+Q249,P26,Q1295
+Q1295,P24,Q518
+Q518,P26,Q1295
+Q1295,P24,Q519
+Q519,P26,Q1295
+,,,,,,,,,,,,,,,,
+Q1297,P7,Q950,,,,,,,,,,,,,,
+Q1297,P8,Q949
+Q1297,P57,Q1296
+Q1296,P57,Q1297
+Q1297,P9,"""Papież Bonifacy IX zezwala, by w obecności Mikołaja [IV], księcia opawskiego i raciborskiego, można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1297,P54,Q1258
+Q1258,P53,Q1297
+Q1297,P14,+1404-06-13T00:00:00Z/11/J
+Q1297,P15,Q67
+Q1297,P16,"""MVB 5, nr 2210""",P17,Q425
+Q1297,P16,"""RG 2, col. 917, nr 05976""",P17,Q425
+Q249,P39,Q536,S3,Q1297
+Q529,P39,Q537,S3,Q1297
+Q529,P39,Q538,S3,Q1297
+Q1258,P21,"""Iac(obus). X. de Teram(o)""",P22,Q223,P23,10,P58,Q2101
+Q529,P32,Q531,S3,Q1297
+Q531,P40,Q529,S3,Q1297
+Q529,P32,Q532,S3,Q1297
+Q532,P40,Q529,S3,Q1297
+Q529,P37,Q108,S3,Q1297
+Q1297,P24,Q249
+Q249,P26,Q1297
+Q1297,P24,Q529
+Q529,P26,Q1297
+,,,,,,,,,,,,,,,,
+Q1300,P7,Q950,,,,,,,,,,,,,,
+Q1300,P8,Q949
+Q1300,P57,Q1299
+Q1299,P57,Q1300
+Q1300,P9,"""Papież Bonifacy IX zezwala, by w obecności szlachetnego Zbysława z Turkowa (Turkau) i jego żony można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1300,P54,Q1298
+Q1298,P53,Q1300
+Q1300,P14,+1404-06-13T00:00:00Z/11/J
+Q1300,P15,Q67
+Q1300,P16,"""MVB 5, nr 2211""",P17,Q425
+Q1300,P16,"""RG 2, col. 1040, nr 06756""",P17,Q425
+Q249,P39,Q536,S3,Q1300
+Q200,P39,Q537,S3,Q1300
+Q201,P39,Q537,S3,Q1300
+Q200,P39,Q538,S3,Q1300
+Q201,P39,Q538,S3,Q1300
+Q200,P25,"""nobili viro Sbislao de Turkow""",S3,Q1300
+Q201,P25,"""nobili mulieri eius uxori inpresenciarum existenti, Wratislauiensis diocesis""",S3,Q1300
+Q1298,P21,"""Iac(obus). XII. de Teram(o)""",P22,Q223,P23,12,P58,Q2101
+Q201,P4,Q200,S3,Q1300
+Q200,P4,Q201,S3,Q1300
+Q201,P35,Q251,S3,Q1300
+Q200,P35,Q251,S3,Q1300
+Q200,P37,Q108,S3,Q1300
+Q201,P37,Q108,S3,Q1300
+Q200,P35,Q251,S3,Q1300
+Q201,P35,Q251,S3,Q1300
+Q200,P2,Q256,S3,Q1300
+Q201,P2,Q256,S3,Q1300
+Q1300,P24,Q249
+Q249,P26,Q1300
+Q1300,P24,Q200
+Q200,P26,Q1300
+Q1300,P24,Q201
+Q201,P26,Q1300
+,,,,,,,,,,,,,,,,
+Q1303,P7,Q950,,,,,,,,,,,,,,
+Q1303,P8,Q949
+Q1303,P57,Q1302
+Q1302,P57,Q1303
+Q1303,P9,"""Papież Bonifacy IX zezwala, by w obecności szlachetnego wojewodzica Macieja z Labiszyna i jego żony Małgorzaty można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q1303,P54,Q1301
+Q1301,P53,Q1303
+Q1303,P14,+1404-06-26T00:00:00Z/11/J
+Q1303,P15,Q67
+Q1303,P16,"""BP 3, nr 955""",P17,Q425
+Q249,P39,Q536,S3,Q1303
+Q1432,P39,Q537,S3,Q1303
+Q1433,P39,Q537,S3,Q1303
+Q1432,P39,Q538,S3,Q1303
+Q1433,P39,Q538,S3,Q1303
+Q1432,P25,"""nobili viro Mathie palatini, domino in Labissino""",S3,Q1303
+Q1433,P25,"""nobili mulieri Margarete, eius uxori, Gneznensis diocesis""",S3,Q1303
+Q1301,P21,"""Iac(obus). XII. de Teram(o)""",P22,Q223,P23,12,P58,Q2101
+Q1433,P4,Q1432,S3,Q1303
+Q1432,P4,Q1433,S3,Q1303
+Q1433,P35,Q251,S3,Q1303
+Q1432,P35,Q251,S3,Q1303
+Q1432,P37,Q108,S3,Q1303
+Q1433,P37,Q108,S3,Q1303
+Q1432,P35,Q251,S3,Q1303
+Q1433,P35,Q251,S3,Q1303
+Q1432,P2,Q362,S3,Q1303
+Q1433,P2,Q362,S3,Q1303
+Q1303,P24,Q249
+Q249,P26,Q1303
+Q1303,P24,Q1432
+Q1432,P26,Q1303
+Q1303,P24,Q1433
+Q1433,P26,Q1303
+,,,,,,,,,,,,,,,,
+Q1311,P7,Q1313,,,,,,,,,,,,,,
+Q1311,P8,Q1312
+Q1311,P57,Q1310
+Q1310,P57,Q1311
+Q1311,P9,"""Papież Bonifacy IX zezwala mistrzowi Gerardowi de Thonen, pisarzowi papieskiemu, na wybór własnego spowiednika, który będzie mógł udzielać absolucji od grzechów niezastrzeżonych dla Stolicy Apostolskiej. [wpis przekreślony]"""
+Q1311,P54,Q1309
+Q1309,P53,Q1311
+Q1311,P14,+1397-04-01T00:00:00Z/11/J
+Q1311,P15,Q67
+Q1311,P16,"""MVB 5, nr 1102""",P17,Q425
+Q1311,P16,"""RG 2, col. 331-332, nr 02140""",P17,Q425
+Q249,P39,Q536,S3,Q1311
+Q796,P39,Q537,S3,Q1311
+Q796,P39,Q538,S3,Q1311
+Q796,P25,"""magistro Gerardo de Thonen, canonico Wratislauiensi, scriptori et familiari nostro""",S3,Q1311
+Q796,P31,Q1461,S3,Q1311
+Q1309,P21,"""Pro socio""",P23,0,P58,Q2101
+Q1309,P21,"""N(icolaus) de Ben(even)to""",P22,Q66,P58,Q2101
+Q796,P32,Q835,S3,Q1311
+Q835,P40,Q796,S3,Q1311
+Q796,P32,Q959,S3,Q1311
+Q959,P40,Q796,S3,Q1311
+Q796,P36,Q967,S3,Q1311
+Q1311,P24,Q249
+Q249,P26,Q1311
+Q1311,P24,Q796
+Q796,P26,Q1311
+,,,,,,,,,,,,,,,,
+Q1399,P7,Q1313,,,,,,,,,,,,,,
+Q1399,P8,Q1396
+Q1399,P57,1398
+1398,P57,Q1399
+Q1399,P9,"""Papież Bonifacy IX zezwala mistrzowi Gerardowi de Thonen, pisarzowi papieskiemu, na wybór własnego spowiednika, który będzie mógł udzielać absolucji również od grzechów zastrzeżonych dla Stolicy Apostolskiej. Ponadto spowiednik ten będzie miał prawo do zwolnienia Gerarda ze ślubów odbycia pielgrzymki i wstrzemięźliwości [od spożywania mięsa] oraz do zdjęcia z niego cenzur kościelnych, także tych zastrzeżonych dla Stolicy Apostolskiej, o ile jakieś obecnie na nim ciążą."""
+Q1399,P54,Q1397
+Q1397,P53,Q1399
+Q1399,P14,+1397-04-01T00:00:00Z/11/J
+Q1399,P15,Q67
+Q1399,P16,"""MVB 5, nr 1102""",P17,Q425
+Q1399,P16,"""RG 2, col. 331-332, nr 02140""",P17,Q425
+Q249,P39,Q536,S3,Q1399
+Q796,P39,Q537,S3,Q1399
+Q796,P39,Q538,S3,Q1399
+Q796,P25,"""magistro Gerardo de Thonen, canonico Wratislauiensi, scriptori et familiari nostro""",S3,Q1399
+Q796,P31,Q1461,S3,Q1399
+Q1397,P21,"""Pro socio""",P23,0,P58,Q2101
+Q1397,P21,"""N(icolaus) de Ben(even)to""",P22,Q66,P58,Q2101
+Q796,P32,Q835,S3,Q1399
+Q835,P40,Q796,S3,Q1399
+Q796,P32,Q959,S3,Q1399
+Q959,P40,Q796,S3,Q1399
+Q796,P36,Q967,S3,Q1399
+Q1399,P24,Q249
+Q249,P26,Q1399
+Q1399,P24,Q796
+Q796,P26,Q1399
+,,,,,,,,,,,,,,,,
+Q1402,P7,Q1313,,,,,,,,,,,,,,
+Q1402,P8,Q1427
+Q1402,P57,Q1401
+Q1401,P57,Q1402
+Q1402,P9,"""Papież Bonifacy IX zezwala scholastykowi gnieźnieńskiemu Wojciechowi Jastrzębcowi na wybór własnego spowiednika, który będzie mógł udzielać absolucji również od grzechów zastrzeżonych dla Stolicy Apostolskiej."""
+Q1402,P54,Q1400
+Q1400,P53,Q1402
+Q1402,P14,+1394-08-12T00:00:00Z/11/J
+Q1402,P15,Q67
+Q1402,P16,"""BP 3, nr 379""",P17,Q425
+Q1402,P16,"""RG 2, col. 55, nr 00361""",P17,Q425
+Q249,P39,Q536,S3,Q1402
+Q84,P39,Q537,S3,Q1402
+Q84,P39,Q538,S3,Q1402
+Q84,P25,"""Alberto Yastrabecz, scolastico ecclesie Gneznensis""",S3,Q1402
+Q1400,P21,"""XXX""",P23,30,P58,Q2101
+Q84,P32,Q85,S3,Q1402
+Q85,P40,Q84,S3,Q1402
+Q1402,P24,Q249
+Q249,P26,Q1402
+Q1402,P24,Q84
+Q84,P26,Q1402
+,,,,,,,,,,,,,,,,
+Q1405,P7,Q1313,,,,,,,,,,,,,,
+Q1405,P8,Q1427
+Q1405,P57,Q1404
+Q1404,P57,Q1405
+Q1405,P9,"""Papież Bonifacy IX zezwala Jadwidze [Andegaweńskiej], królowej Polski, na wybór własnego spowiednika, który będzie mógł udzielać absolucji również od grzechów zastrzeżonych dla Stolicy Apostolskiej."""
+Q1405,P54,Q1403
+Q1403,P53,Q1405
+Q1405,P14,+1394-08-12T00:00:00Z/11/J
+Q1405,P15,Q67
+Q1405,P16,"""BP 3, nr 378""",P17,Q425
+Q1405,P16,"""RG 2, col. 393, nr 02530 (sub data 14 VIII 1394)""",P17,Q425
+Q249,P39,Q536,S3,Q1405
+Q1393,P39,Q537,S3,Q1405
+Q1393,P39,Q538,S3,Q1405
+Q1393,P25,"""Hedwigi, regine Polonie illustri""",S3,Q1405
+Q1403,P21,"""N(icolaus). XXX. de Ben(even)to""",P22,Q66,P23,30,P58,Q2101
+Q1393,P32,Q1429,S3,Q1405
+Q1429,P40,Q1393,S3,Q1405
+Q1393,P35,Q251,S3,Q1405
+Q1405,P24,Q249
+Q249,P26,Q1405
+Q1405,P24,Q1393
+Q1393,P26,Q1405
+,,,,,,,,,,,,,,,,
+Q1408,P7,Q1313,,,,,,,,,,,,,,
+Q1408,P8,Q1427
+Q1408,P57,Q1407
+Q1407,P57,Q1408
+Q1408,P9,"""Papież Bonifacy IX zezwala Janowi [Kropidle], biskupowi kamieńskiemu, na wybór własnego spowiednika, który będzie mógł udzielać absolucji również od grzechów zastrzeżonych dla Stolicy Apostolskiej."""
+Q1408,P54,Q1406
+Q1406,P53,Q1408
+Q1408,P14,+1394-08-08T00:00:00Z/11/J
+Q1408,P15,Q67
+Q1408,P16,"""RG 2, col. 636, nr 04144""",P17,Q425
+Q249,P39,Q536,S3,Q1408
+Q127,P39,Q537,S3,Q1408
+Q127,P39,Q538,S3,Q1408
+Q127,P25,"""Iohanni, episcopo Caminensi""",S3,Q1408
+Q1406,P21,"""N(icolaus). XXX. de Ben(even)to""",P22,Q66,P23,30,P58,Q2101
+Q127,P32,Q259,S3,Q1408
+Q259,P40,Q127,S3,Q1408
+Q1408,P24,Q249
+Q249,P26,Q1408
+Q1408,P24,Q127
+Q127,P26,Q1408
+,,,,,,,,,,,,,,,,
+Q1411,P7,Q1313,,,,,,,,,,,,,,
+Q1411,P8,Q1312
+Q1411,P57,Q1410
+Q1410,P57,Q1411
+Q1411,P9,"""Papież Bonifacy IX zezwala Marcinowi z Pragi, kanonikowi kolegiaty Świętego Krzyża we Wrocławiu, na wybór własnego spowiednika, który będzie mógł udzielać absolucji od grzechów niezastrzeżonych dla Stolicy Apostolskiej."""
+Q1411,P54,Q1409
+Q1409,P53,Q1411
+Q1411,P14,+1397-04-11T00:00:00Z/11/J
+Q1411,P15,Q67
+Q1411,P16,"""MVB 5, nr 1133""",P17,Q425
+Q249,P39,Q536,S3,Q1411
+Q1390,P39,Q537,S3,Q1411
+Q1390,P39,Q538,S3,Q1411
+Q1390,P25,"""Martino Marssonis de Praga, canonico ecclesie Sancte Crucis Wratislauiensis""",S3,Q1411
+Q1409,P21,"""N(icolaus). X. de Ben(even)to.""",P22,Q66,P23,10,P58,Q2101
+Q1390,P32,Q1428,S3,Q1411
+Q1428,P40,Q1390,S3,Q1411
+Q1411,P24,Q249
+Q249,P26,Q1411
+Q1411,P24,Q1390
+Q1390,P26,Q1411
+,,,,,,,,,,,,,,,,
+Q1414,P7,Q1313,,,,,,,,,,,,,,
+Q1414,P8,Q1312
+Q1414,P57,Q1413
+Q1413,P57,Q1414
+Q1414,P9,"""Papież Bonifacy IX zezwala Janowi synowi Filipa, plebanowi kościoła w Jezioranach (Seeburg), na wybór własnego spowiednika, który będzie mógł udzielać absolucji od grzechów niezastrzeżonych dla Stolicy Apostolskiej."""
+Q1414,P54,Q1412
+Q1412,P53,Q1414
+Q1414,P14,+1397-07-20T00:00:00Z/11/J
+Q1414,P15,Q67
+Q1414,P16,"""RG 2, col. 623, nr 04055""",P17,Q425
+Q249,P39,Q536,S3,Q1414
+Q1462,P39,Q537,S3,Q1414
+Q1462,P39,Q538,S3,Q1414
+Q1462,P25,"""Iohanni Philippi, rectori parrochialis ecclesie in Seburg, Warmiensis diocesis""",S3,Q1414
+Q1412,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q1462,P32,Q1463,S3,Q1414
+Q1463,P40,Q1462,S3,Q1414
+Q1462,P2,Q93,S3,Q1414
+Q1414,P24,Q249
+Q249,P26,Q1414
+Q1414,P24,Q1462
+Q1462,P26,Q1414
+,,,,,,,,,,,,,,,,
+Q1417,P7,Q1313,,,,,,,,,,,,,,
+Q1417,P8,Q1312
+Q1417,P57,Q1416
+Q1416,P57,Q1417
+Q1417,P9,"""Papież Bonifacy IX zezwala Mikołajowi Crossen, plebanowi kościoła w Radostowie (Freudenberg), na wybór własnego spowiednika, który będzie mógł udzielać absolucji od grzechów niezastrzeżonych dla Stolicy Apostolskiej."""
+Q1417,P54,Q1415
+Q1415,P53,Q1417
+Q1417,P14,+1397-07-18T00:00:00Z/11/J
+Q1417,P15,Q67
+Q1417,P16,"""RG 2, col. 885, nr 05784""",P17,Q425
+Q249,P39,Q536,S3,Q1417
+Q1464,P39,Q537,S3,Q1417
+Q1464,P39,Q538,S3,Q1417
+Q1464,P25,"""Nicolao Crossen, rectori parrochialis ecclesie in Vreudenberg, Warmiensis diocesis""",S3,Q1417
+Q1415,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q1464,P32,Q1467,S3,Q1417
+Q1467,P40,Q1464,S3,Q1417
+Q1464,P2,Q93,S3,Q1417
+Q1417,P24,Q249
+Q249,P26,Q1417
+Q1417,P24,Q1464
+Q1464,P26,Q1417
+,,,,,,,,,,,,,,,,
+Q1420,P7,Q1313,,,,,,,,,,,,,,
+Q1420,P8,Q1312
+Q1420,P57,Q1419
+Q1419,P57,Q1420
+Q1420,P9,"""Papież Bonifacy IX zezwala Janowi Canko, prezbiterowi diecezji chełmińskiej, na wybór własnego spowiednika, który będzie mógł udzielać absolucji od grzechów niezastrzeżonych dla Stolicy Apostolskiej."""
+Q1420,P54,Q1418
+Q1418,P53,Q1420
+Q1420,P14,+1397-11-13T00:00:00Z/11/J
+Q1420,P15,Q67
+Q1420,P16,"""BP 3, nr 510""",P17,Q425
+Q1420,P16,"""RG 2, col. 582, nr 03803""",P17,Q425
+Q249,P39,Q536,S3,Q1420
+Q65,P39,Q537,S3,Q1420
+Q65,P39,Q538,S3,Q1420
+Q65,P25,"""Iohanni Canko, presbytero Culmensis diocesis""",S3,Q1420
+Q1418,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q65,P35,Q253,S3,Q1420
+Q65,P2,Q192,S3,Q1420
+Q1420,P24,Q249
+Q249,P26,Q1420
+Q1420,P24,Q65
+Q65,P26,Q1420
+,,,,,,,,,,,,,,,,
+Q1423,P7,Q1313,,,,,,,,,,,,,,
+Q1423,P8,Q1312
+Q1423,P57,Q1422
+Q1422,P57,Q1423
+Q1423,P9,"""Papież Bonifacy IX zezwala księciu oleśnickiemu Konradowi III i jego żonie Gucie na wybór własnego spowiednika, który będzie mógł udzielać absolucji od grzechów niezastrzeżonych dla Stolicy Apostolskiej."""
+Q1423,P54,Q1421
+Q1421,P53,Q1423
+Q1423,P14,+1398-10-09T00:00:00Z/11/J
+Q1423,P15,Q67
+Q1423,P16,"""RG 2, col. 201, nr 01269""",P17,Q425
+Q249,P39,Q536,S3,Q1423
+Q290,P39,Q537,S3,Q1423
+Q293,P39,Q537,S3,Q1423
+Q290,P39,Q538,S3,Q1423
+Q293,P39,Q538,S3,Q1423
+Q290,P25,"""nobili viro Conrado iuniori, duci Olsnicensi""",S3,Q1423
+Q293,P25,"""nobili mulieri Gute domicelle, eius uxori, Wratislauiensis Wladislauiensis diocesis""",S3,Q1423
+Q1421,P21,"""De mandato""",P23,0,P58,Q2101
+Q1421,P21,"""N(icolaus) de Ben(even)to""",P22,Q66,P58,Q2101
+Q293,P4,Q290,S3,Q1423
+Q290,P4,Q293,S3,Q1423
+Q293,P35,Q251,S3,Q1423
+Q290,P35,Q251,S3,Q1423
+Q290,P32,Q292,S3,Q1423
+Q292,P40,Q290,S3,Q1423
+Q290,P37,Q108,S3,Q1423
+Q293,P37,Q108,S3,Q1423
+Q290,P35,Q251,S3,Q1423
+Q293,P35,Q251,S3,Q1423
+Q293,P36,Q1430,S3,Q1423
+Q290,P2,Q256,S3,Q1423
+Q293,P2,Q256,S3,Q1423
+Q1423,P24,Q249
+Q249,P26,Q1423
+Q1423,P24,Q290
+Q290,P26,Q1423
+Q1423,P24,Q293
+Q293,P26,Q1423
+,,,,,,,,,,,,,,,,
+Q1426,P7,Q1313,,,,,,,,,,,,,,
+Q1426,P8,Q1312
+Q1426,P57,Q1425
+Q1425,P57,Q1426
+Q1426,P9,"""Papież Bonifacy IX zezwala księciu [oleśnickiemu] Konradowi III i jego żonie Gucie na wybór własnego spowiednika, który będzie mógł udzielać absolucji od grzechów niezastrzeżonych dla Stolicy Apostolskiej."""
+Q1426,P54,Q1424
+Q1424,P53,Q1426
+Q1426,P14,+1399-03-01T00:00:00Z/11/J
+Q1426,P15,Q67
+Q1426,P16,"""MVB 5, nr 1419""",P17,Q425
+Q1426,P16,"""RG 2, col. 201, nr 01269""",P17,Q425
+Q249,P39,Q536,S3,Q1426
+Q290,P39,Q537,S3,Q1426
+Q293,P39,Q537,S3,Q1426
+Q290,P39,Q538,S3,Q1426
+Q293,P39,Q538,S3,Q1426
+Q290,P25,"""nobili viro Conrado tercio, duci Slesie nato""",S3,Q1426
+Q293,P25,"""nobili mulieri Guthe, eius uxori""",S3,Q1426
+Q1424,P21,"""De mandato""",P23,0,P58,Q2101
+Q1424,P21,"""N(icolaus) de Ben(even)to""",P22,Q66,P58,Q2101
+Q293,P4,Q290,S3,Q1426
+Q290,P4,Q293,S3,Q1426
+Q293,P35,Q251,S3,Q1426
+Q290,P35,Q251,S3,Q1426
+Q290,P32,Q862,S3,Q1426
+Q862,P40,Q290,S3,Q1426
+Q290,P37,Q108,S3,Q1426
+Q293,P37,Q108,S3,Q1426
+Q290,P35,Q251,S3,Q1426
+Q293,P35,Q251,S3,Q1426
+Q1426,P24,Q249
+Q249,P26,Q1426
+Q1426,P24,Q290
+Q290,P26,Q1426
+Q1426,P24,Q293
+Q293,P26,Q1426
+,,,,,,,,,,,,,,,,
+Q1440,P7,Q1313,,,,,,,,,,,,,,
+Q1440,P8,Q1396
+Q1440,P57,Q1439
+Q1439,P57,Q1440
+Q1440,P9,"""Papież Bonifacy IX zezwala Andrzejowi Laskarzycowi [z Gosławic], prepozytowi włocławskiemu, na wybór własnego spowiednika, który będzie mógł udzielać absolucji również od grzechów zastrzeżonych dla Stolicy Apostolskiej. Ponadto spowiednik ten będzie mógł uwolnić Andrzeja od cenzur kościelnych, także tych zastrzeżonych dla Stolicy Apostolskiej, o ile jakieś obecnie na nim ciążą."""
+Q1440,P54,Q788
+Q788,P53,Q1440
+Q1440,P14,+1399-05-04T00:00:00Z/11/J
+Q1440,P15,Q67
+Q1440,P16,"""BP 3, nr 601""",P17,Q425
+Q1440,P16,"""RG 2, col. 73, nr 00474""",P17,Q425
+Q249,P39,Q536,S3,Q1440
+Q1473,P39,Q537,S3,Q1440
+Q1473,P39,Q538,S3,Q1440
+Q1473,P25,"""Andree Laskari, preposito ecclesie Wladislauiensis""",S3,Q1440
+Q788,P21,"""N(icolaus). XXX. de Ben(even)to""",P22,Q66,P23,30,P58,Q2101
+Q1473,P32,Q1474,S3,Q1440
+Q1474,P40,Q1473,S3,Q1440
+Q1440,P24,Q249
+Q249,P26,Q1440
+Q1440,P24,Q1473
+Q1473,P26,Q1440
+,,,,,,,,,,,,,,,,
+Q1443,P7,Q1313,,,,,,,,,,,,,,
+Q1443,P8,Q1396
+Q1443,P57,Q1442
+Q1442,P57,Q1443
+Q1443,P9,"""Papież Bonifacy IX zezwala Janowi synowi Michała, prepozytowi kolegiaty św. Piotra w Kruszwicy, na wybór własnego spowiednika, który będzie mógł udzielać absolucji również od grzechów zastrzeżonych dla Stolicy Apostolskiej. Ponadto spowiednik ten będzie miał prawo do zwolnienia Jana ze ślubów odbycia pielgrzymki i wstrzemięźliwości [od spożywania mięsa] oraz do zdjęcia z niego cenzur kościelnych, także tych zastrzeżonych dla Stolicy Apostolskiej, o ile jakieś obecnie na nim ciążą."""
+Q1443,P54,Q1441
+Q1441,P53,Q1443
+Q1443,P14,+1401-03-13T00:00:00Z/11/J
+Q1443,P15,Q67
+Q1443,P16,"""BP 3, nr 737""",P17,Q425
+Q1443,P16,"""RG 2, col. 698, nr 04532""",P17,Q425
+Q249,P39,Q536,S3,Q1443
+Q1874,P39,Q537,S3,Q1443
+Q1648,P39,Q537,S3,Q1443
+Q1874,P39,Q538,S3,Q1443
+Q1648,P39,Q538,S3,Q1443
+Q1874,P25,"""Iohanni Michaelis, preposito ecclesie sancti Petri Cruszwiciensis, Wladislauiensis diocesis""",S3,Q1443
+Q1648,P25,"""preposito ecclesie sancti Petri Cruszwiciensis, Wladislauiensis diocesis""",S3,Q1443
+Q1441,P21,"""De mandato""",P23,0,P58,Q2101
+Q1441,P21,"""Iac(obus) de Teram(o)""",P22,,P58,Q2101
+Q1874,P32,Q1648,S3,Q1443
+Q1648,P40,Q1874,S3,Q1443
+,,,,,,,,,,,,,,,,
+Q1446,P7,Q1313,,,,,,,,,,,,,,
+Q1446,P8,Q1396
+Q1446,P57,Q1445
+Q1445,P57,Q1446
+Q1446,P9,"""Papież Bonifacy IX zezwala Arnoldowi [Stapilowi], biskupowi chełmińskiemu, na wybór własnego spowiednika, który będzie mógł udzielać absolucji również od grzechów zastrzeżonych dla Stolicy Apostolskiej. Ponadto spowiednik ten będzie miał prawo do zwolnienia Arnolda ze ślubów odbycia pielgrzymki i wstrzemięźliwości [od spożywania mięsa] oraz do zdjęcia z niego cenzur kościelnych, także tych zastrzeżonych dla Stolicy Apostolskiej, o ile jakieś obecnie na nim ciążą."""
+Q1446,P54,Q1444
+Q1444,P53,Q1446
+Q1446,P14,+1403-04-10T00:00:00Z/11/J
+Q1446,P15,Q67
+Q1446,P16,"""RG 2, col. 96, nr 00628""",P17,Q425
+Q249,P39,Q536,S3,Q1446
+,P39,Q537,S3,Q1446
+,P39,Q538,S3,Q1446
+,P25,"""Arnoldo, episcopo Culmensi""",S3,Q1446
+Q1444,P21,"""Iac(obus). XXX. de Teram(o)""",P22,Q223,P23,30,P58,Q2101
+,P32,Q1574,S3,Q1446
+Q1574,P40,,S3,Q1446
+Q1446,P24,Q249
+Q249,P26,Q1446
+Q1446,P24,
+,P26,Q1446
+,,,,,,,,,,,,,,,,
+Q1449,P7,Q1459,,,,,,,,,,,,,,
+Q1449,P8,Q1460
+Q1449,P57,Q1448
+Q1448,P57,Q1449
+Q1449,P9,"""Papież Bonifacy IX zezwala, by w razie potrzeby prezbiter Henryk Stekemesser lub inny kapłan w jego obecności mógł odprawiać mszę świętą przed świtem."""
+Q1449,P54,Q1147
+Q1147,P53,Q1449
+Q1449,P14,+1397-03-28T00:00:00Z/11/J
+Q1449,P15,Q67
+Q1449,P16,"""RG 2, col. 478, nr 03093""",P17,Q425
+Q249,P39,Q536,S3,Q1449
+Q199,P39,Q537,S3,Q1449
+Q199,P39,Q538,S3,Q1449
+Q199,P25,"""Henrico Stekenmesser, presbytero Warmiensis diocesis""",S3,Q1449
+Q1147,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q199,P35,Q253,S3,Q1449
+Q199,P2,Q93,S3,Q1449
+Q1449,P24,Q249
+Q249,P26,Q1449
+Q1449,P24,Q199
+Q199,P26,Q1449
+,,,,,,,,,,,,,,,,
+Q987,P7,Q950,,,,,,,,,,,,,,
+Q987,P8,Q949
+Q987,P57,Q988
+Q988,P57,Q987
+Q987,P9,"""Papież Bonifacy IX zezwala, by w obecności rycerza Piotra syna Jaszka można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q987,P54,Q989
+Q989,P53,Q987
+Q987,P14,+1394-09-12T00:00:00Z/11/J
+Q987,P15,Q67
+Q249,P39,Q536,S3,Q987
+Q834,P39,Q537,S3,Q987
+Q834,P39,Q538,S3,Q987
+Q834,P25,"""nobili viro Petro Iaszconis, militi Plocensis diocesis""",S3,Q987
+Q989,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q834,P37,Q108,S3,Q987
+Q834,P36,Q296,S3,Q987
+Q834,P2,Q232,S3,Q987
+Q987,P24,Q249
+Q249,P26,Q987
+Q987,P24,Q834
+Q834,P26,Q987
+,,,,,,,,,,,,,,,,
+Q990,P7,Q950,,,,,,,,,,,,,,
+Q990,P8,Q949
+Q990,P57,Q991
+Q991,P57,Q990
+Q990,P9,"""Papież Bonifacy IX zezwala, by w obecności mistrza Gerarda de Thonen, pisarza papieskiego, można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q990,P54,Q992
+Q992,P53,Q990
+Q990,P14,+1397-04-01T00:00:00Z/11/J
+Q990,P15,Q67
+Q990,P16,"""MVB 5, nr 1104""",P17,Q425
+Q990,P16,"""RG 2, col. 332, nr 02140""",P17,Q425
+Q249,P39,Q536,S3,Q990
+Q796,P39,Q537,S3,Q990
+Q796,P39,Q538,S3,Q990
+Q796,P25,"""magistro Gerardo de Thonen, canonico Wratislauiensi, scriptori et familiari nostro""",S3,Q990
+Q992,P21,"""Pro socio""",P23,0,P58,Q2101
+Q992,P21,"""N(icolaus) de Ben(even)to""",P22,Q66,P58,Q2101
+Q796,P32,Q835,S3,Q990
+Q835,P40,Q796,S3,Q990
+Q796,P32,Q959,S3,Q990
+Q959,P40,Q796,S3,Q990
+Q796,P36,Q967,S3,Q990
+Q990,P24,Q249
+Q249,P26,Q990
+Q990,P24,Q796
+Q796,P26,Q990
+,,,,,,,,,,,,,,,,
+Q993,P7,Q950,,,,,,,,,,,,,,
+Q993,P8,Q949
+Q993,P57,Q994
+Q994,P57,Q993
+Q993,P9,"""Papież Bonifacy IX zezwala, by w obecności szlachetnego Tomka z Węgleszyna można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q993,P54,Q995
+Q995,P53,Q993
+Q993,P14,+1397-05-03T00:00:00Z/11/J
+Q993,P15,Q67
+Q993,P16,"""BP 3, nr 489""",P17,Q425
+Q249,P39,Q536,S3,Q993
+Q802,P39,Q537,S3,Q993
+Q802,P39,Q538,S3,Q993
+Q802,P25,"""nobili viro Thomkoni de Wangleszin, armigero Cracouiensis diocesis""",S3,Q993
+Q995,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q802,P37,Q108,S3,Q993
+Q802,P36,Q415,S3,Q993
+Q802,P2,Q264,S3,Q993
+Q993,P24,Q249
+Q249,P26,Q993
+Q993,P24,Q802
+Q802,P26,Q993
+,,,,,,,,,,,,,,,,
+Q996,P7,Q950,,,,,,,,,,,,,,
+Q996,P8,Q949
+Q996,P57,Q997
+Q997,P57,Q996
+Q996,P9,"""Papież Bonifacy IX zezwala, by w obecności Tammichina (Temchina), wójta w Krapkowicach (Krappitz), można było odprawiać mszę świętą w miejscach objętych interdyktem."""
+Q996,P54,Q998
+Q998,P53,Q996
+Q996,P14,+1397-07-04T00:00:00Z/11/J
+Q996,P15,Q67
+Q996,P16,"""MVB 5, nr 1183""",P17,Q425
+Q996,P16,"""RG 2, col. 1069, nr 06974""",P17,Q425
+Q249,P39,Q536,S3,Q996
+Q837,P39,Q537,S3,Q996
+Q837,P39,Q538,S3,Q996
+Q837,P25,"""Tammichino, advocato de Crapicz, laico Wratislauiensis diocesis""",S3,Q996
+Q998,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
+Q837,P32,Q999,S3,Q996
+Q999,P40,Q837,S3,Q996
+Q837,P35,Q251,S3,Q996
+Q837,P2,Q256,S3,Q996
+Q996,P24,Q249
+Q249,P26,Q996
+Q996,P24,Q837
+Q837,P26,Q996

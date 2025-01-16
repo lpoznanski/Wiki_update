@@ -59,7 +59,8 @@ with open(f'results/result.csv', 'w', newline='') as file:
             'tytulatura': 'P25',
             'diecezja': 'P2',
             'pochodzenie_spoleczne': 'P37',
-            'rola_spoleczna': 'P36'
+            'rola_spoleczna': 'P36',
+            'lokalizacja_noty': 'P58'
             # 'protektor': '',
             # 'osoba_wystepujaca_w_dokumencie': ''
         }
@@ -87,6 +88,11 @@ with open(f'results/result.csv', 'w', newline='') as file:
             'regest': 'Q425'
         }
 
+        lokalizacje_not = {
+            'in_line': 'Q2101',
+            'end': 'Q2102',
+            'marg': ''
+        }
 
 
         # with open(f'results/{document_qid}.csv', 'w', newline='') as file:
@@ -199,15 +205,46 @@ with open(f'results/result.csv', 'w', newline='') as file:
         #     if nota['place'] in ['left_margin', 'right_margin', 'upper-margin', 'lower-margin']:
         #         writer.writerow([document_qid, p_list['nota_marginalna'], format_string(nota.string), 'S3', document_qid])
 
-        try:
-            document_fee = soup.find(type='document_fee')
-            pracownik_kurii = soup.find(ana='urzednik_kurialny')
-            taksa_dokumentu = soup.find(ana='taksa_dokumentu')['quantity']
-            zrodlo = soup_meta.sourceDesc.listWit.witness
-            for wit in zrodlo['source']:
-                writer.writerow([wit.split("-")[-1], p_list['nota_marginalna'], format_string(' '.join(''.join([element for element in document_fee.descendants if type(element)==bs4.element.NavigableString]).split())), p_list['urzednik_kurialny'], (pracownik_kurii['ref'].split('-'))[-1], p_list['taksa_dokumentu'], taksa_dokumentu])
-        except TypeError:
-            pass
+        # try:
+        #     document_fee = soup.find(type='document_fee')
+        #     pracownik_kurii = soup.find(ana='urzednik_kurialny')
+        #     taksa_dokumentu = soup.find(ana='taksa_dokumentu')['quantity']
+        #     zrodlo = soup_meta.sourceDesc.listWit.witness
+        #     for wit in zrodlo['source']:
+        #         writer.writerow([wit.split("-")[-1], p_list['nota_marginalna'], format_string(' '.join(''.join([element for element in document_fee.descendants if type(element)==bs4.element.NavigableString]).split())), p_list['urzednik_kurialny'], (pracownik_kurii['ref'].split('-'))[-1], p_list['taksa_dokumentu'], taksa_dokumentu])
+        # except TypeError:
+        #     pass
+
+        #UWAGA! Skrypt dodaje noty do wszystkich przekazów z listWit - do weryfikacji w przyszłości!
+        zrodlo = soup_meta.sourceDesc.listWit.witness
+        for wit in zrodlo['source']:
+            noty_kancelaryjne = soup.find_all(type='nota_kancelaryjna')
+            for nota in noty_kancelaryjne:
+                for elem in nota.descendants:
+                    if elem.name == 'persName' and not elem.find('measure'):
+                        writer.writerow([wit.split("-")[-1], p_list['nota_marginalna'], format_string(' '.join(''.join([element for element in elem.descendants if type(element)==bs4.element.NavigableString]).split())), p_list['urzednik_kurialny'], (elem['ref'].split('-'))[-1], p_list['lokalizacja_noty'], lokalizacje_not[nota['place']]])
+                    if elem.name == 'persName' and elem.measure:
+                        writer.writerow([wit.split("-")[-1], p_list['nota_marginalna'], format_string(' '.join(''.join(
+                            [element for element in elem.descendants if
+                             type(element) == bs4.element.NavigableString]).split())), p_list['urzednik_kurialny'],
+                                         (elem['ref'].split('-'))[-1], p_list['taksa_dokumentu'],
+                                         elem.measure['quantity'], p_list['lokalizacja_noty'], lokalizacje_not[nota['place']]])
+                    if elem.name == 'measure' and elem.parent.name != 'persName':
+                        writer.writerow([wit.split("-")[-1], p_list['nota_marginalna'], format_string(' '.join(''.join(
+                            [element for element in elem.descendants if
+                             type(element) == bs4.element.NavigableString]).split())), p_list['taksa_dokumentu'],
+                                         elem['quantity'], p_list['lokalizacja_noty'], lokalizacje_not[nota['place']]])
+
+
+        #wszystkie tagi
+        #lokalizacje end, inline, marg
+        #sprawdzić_ile_note_ma_dzieci
+
+
+
+
+
+
 
 
         malzonkowie = soup.find_all(ana='wspolmalzonek')
@@ -216,18 +253,27 @@ with open(f'results/result.csv', 'w', newline='') as file:
                 if item['type']:
                     writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['wspolmalzonek'], (item['ref'].split('-'))[-1], 'P38', format_string(item['type']), 'S3', document_qid])
                     writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list['wspolmalzonek'], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
+                    #laicus
+                    writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['stopien_swiecen'], 'Q251', 'P38', 'S3', document_qid])
+                    writer.writerow([(item['ref'].split('-'))[-1], p_list['stopien_swiecen'], 'Q251', 'S3', document_qid])
                     #charakter wystąpienia - zmarły współmałżonek
                     if item['ref'] not in wyst:
                         writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q630', 'S3', document_qid])
                 else:
                     writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['wspolmalzonek'], (item['ref'].split('-'))[-1], 'S3', document_qid])
                     writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list['wspolmalzonek'], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
+                    # laicus
+                    writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['stopien_swiecen'], 'Q251', 'S3', document_qid])
+                    writer.writerow([(item['ref'].split('-'))[-1], p_list['stopien_swiecen'], 'Q251', 'S3', document_qid])
                     #charakter wystąpienia - współmałżonek
                     if item['ref'] not in wyst:
                         writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q2074', 'S3', document_qid])
             except KeyError:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['wspolmalzonek'], (item['ref'].split('-'))[-1], 'S3', document_qid])
                 writer.writerow([(item['ref'].split('-'))[-1], reverse_p_list['wspolmalzonek'], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])#charakter wystąpienia - współmałżonek
+                # laicus
+                writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['stopien_swiecen'], 'Q251', 'S3', document_qid])
+                writer.writerow([(item['ref'].split('-'))[-1], p_list['stopien_swiecen'], 'Q251', 'S3', document_qid])
                 # charakter wystąpienia - współmałżonek (powinien się orientować, jeśli Q wystąpiło już wcześniej z charakterem wystąpienia)
                 if item['ref'] not in wyst:
                     writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q2074', 'S3', document_qid])
@@ -256,11 +302,11 @@ with open(f'results/result.csv', 'w', newline='') as file:
         for status in ['pochodzenie_spoleczne', 'stopien_swiecen', 'rola_spoleczna']:
             statusy = soup.find_all(ana=status)
             for item in statusy:
-                writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[status], (item['ref'].split('-'))[-1], 'S3', document_qid])
+                writer.writerow([(item.find_parent('persName')['ref'].split('-'))[-1], p_list[status], (item['ref'].split('-'))[-1], 'S3', document_qid])
 
         diecezje = soup.find_all(ana='diecezja')
         for item in diecezje:
-            writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['diecezja'], (item['ref'].split('-'))[-1], 'S3', document_qid])
+            writer.writerow([(item.find_parent('persName')['ref'].split('-'))[-1], p_list['diecezja'], (item['ref'].split('-'))[-1], 'S3', document_qid])
 
         #byty w dokumencie - nie dawać dzieci!! na razie bez dzieci, a potem zobaczymy
         for tag in ['persName', 'affiliation', 'settlement']:

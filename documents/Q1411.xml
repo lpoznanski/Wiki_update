@@ -1,0 +1,77 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q1411">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="label">Bulla papieża Bonifacego IX z dnia 11 kwietnia 1397</title>
+                <title type="description">Przywilej dla Marcina z Pragi, kanonika kolegiaty Świętego
+                    Krzyża we Wrocławiu, zezwalający na wybór własnego spowiednika. </title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Centrum Studiów Mediewistycznych</publisher>
+                <date when="2024"/>
+                <idno>https://va.wiki.kul.pl/wiki/Item:Q1411</idno>
+                <availability>
+                    <licence>CC....</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness ana="cop." source="va-Q1409">AAV, Reg. Lat., vol. 45, f. 198v (olim f.
+                            198)<locus scheme="modern">198v (olim f. 198)</locus>
+                    </witness>
+                </listWit>
+                <listBibl type="editions">
+                    <bibl type="regest">MVB 5, nr 1133</bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <abstract>
+                <p>Papież Bonifacy IX zezwala Marcinowi z Pragi, kanonikowi kolegiaty Świętego
+                    Krzyża we Wrocławiu, na wybór własnego spowiednika, który będzie mógł udzielać
+                    absolucji od grzechów niezastrzeżonych dla Stolicy Apostolskiej.</p>
+            </abstract>
+            <textClass>
+                <catRef scheme="forma_dokumentu" target="va-Q263"/>
+                <catRef scheme="rodzaj_sprawy" target="va-Q1313"/>
+                <catRef scheme="formularz" target="va-Q1312"/>
+                <catRef scheme="sprawa" target="va-Q1410"/>
+            </textClass>
+            <creation>
+                <date when="1397-04-11" when-custom="3 id. apr.,a. p. 8">11 aprilis 1397</date>
+                <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+            </creation>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <p>
+                    <persName ref="va-Q249" ana="wystawca" type="">Bonifacius</persName> etc.,
+                    venerabili fratri <persName ref="va-Q1390" ana="odbiorca beneficjent_laski tytulatura" type="">Martino Marssonis de
+                        Praga, <affiliation ref="va-Q1428" ana="zajmowane_stanowisko">canonico
+                            ecclesie Sancte Crucis Wratislauiensis</affiliation>
+                    </persName>, salutem
+                    etc. Benigno etc. <supplied source="Q1312" resp="edytor" cert="hipotetyczna">Hinc est, quod nos .... tibi auctoritate apostolica indulgemus, ut aliquem
+                        .... presbyterum in tuum possis eligere confessorem, qui, quociens tibi
+                        fuerit oportunum, confessionibus tuis diligenter auditis pro commissis
+                        debitam tibi absolucionem impendat et iniungat penitenciam salutarem, nisi
+                        forsan talia fuerint, propter que Sedes Apostolica sit merito consulenda.
+                        ....</supplied> Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>,
+                        <date type="data_ " when="1397-04-11">tercio id. aprilis, <supplied source="Q1312" resp="edytor" cert="hipotetyczna">pontificatus
+                            nostri</supplied> anno octavo.</date>
+                </p>
+            </div>
+            <div type="notes">
+                <p>
+                    <handShift/>
+                    <note type="nota_kancelaryjna" place="in_line" source="va-Q1411">
+                        <persName ref="va-Q66" ana="urzednik_kurialny">N(icolaus). <measure quantity="10" ana="taksa_dokumentu">X</measure>. de Ben(even)to.</persName>
+                    </note>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

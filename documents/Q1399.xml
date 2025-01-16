@@ -1,0 +1,89 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q1399">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="label">Bulla papieża Bonifacego IX z dnia 1 kwietnia 1397</title>
+                <title type="description">Przywilej dla mistrza Gerarda de Thonen, pisarza
+                    papieskiego, zezwalający na wybór własnego spowiednika.</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Centrum Studiów Mediewistycznych</publisher>
+                <date when="2024"/>
+                <idno>https://va.wiki.kul.pl/wiki/Item:Q1399</idno>
+                <availability>
+                    <licence>CC....</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness ana="cop." source="va-Q1397">AAV, Reg. Lat., vol. 45, f. 198v-199r
+                        (olim f. 198-199)<locus scheme="modern">198v-199r (olim f. 198-199)</locus>
+                    </witness>
+                </listWit>
+                <listBibl type="editions">
+                    <bibl type="regest">MVB 5, nr 1102</bibl>
+                    <bibl type="regest">RG 2, col. 331-332, nr 02140</bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <abstract>
+                <p>Papież Bonifacy IX zezwala mistrzowi Gerardowi de Thonen, pisarzowi papieskiemu,
+                    na wybór własnego spowiednika, który będzie mógł udzielać absolucji również od
+                    grzechów zastrzeżonych dla Stolicy Apostolskiej. Ponadto spowiednik ten będzie
+                    miał prawo do zwolnienia Gerarda ze ślubów odbycia pielgrzymki i
+                    wstrzemięźliwości [od spożywania mięsa] oraz do zdjęcia z niego cenzur
+                    kościelnych, także tych zastrzeżonych dla Stolicy Apostolskiej, o ile jakieś
+                    obecnie na nim ciążą.</p>
+            </abstract>
+            <textClass>
+                <catRef scheme="forma_dokumentu" target="va-Q263"/>
+                <catRef scheme="rodzaj_sprawy" target="va-Q1313"/>
+                <catRef scheme="formularz" target="va-Q1396"/>
+                <catRef scheme="sprawa" target="va-1398"/>
+            </textClass>
+            <creation>
+                <date when="1397-04-01" when-custom="kal. apr.,a. p. 8">1 aprilis 1397</date>
+                <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+            </creation>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <persName ref="va-Q249" ana="wystawca" type="">Bonifacius</persName> etc., dilecto
+                filio <persName ref="va-Q796" ana="odbiorca beneficjent_laski tytulatura" type="">
+                    <education ref="va-Q1461" ana="education">magistro</education> Gerardo de
+                    Thonen, <affiliation ref="va-Q835" ana="zajmowane_stanowisko">canonico
+                        Wratislauiensi</affiliation>, <affiliation ref="va-Q959" ana="zajmowane_stanowisko">scriptori</affiliation> et <roleName ref="va-Q967" ana="rola_spoleczna">familiari nostro</roleName>
+                </persName>,
+                salutem etc. Benigno sunt illa tibi concedenda favore, per que, sicut pie desiderare
+                videris, conscientie pacem et salutem anime Deo propicio consequi possis. Hinc est,
+                quod nos tuis devotis supplicacionibus inclinati tibi auctoritate apostolica
+                indulgemus, ut aliquem ydoneum et discretum presbyterum in tuum possis eligere
+                confessorem, qui, quociens tibi fuerit oportunum, confessione tua diligenter audita
+                pro commissis debitam tibi absolucionem impendat et iniungat penitenciam salutarem,
+                eciam si forsan talia fuerint, propter que Sedes Apostolica sit merito consulenda,
+                votaque peregrinacionis et abstinencie, si qua emisisti vel te in futurum emittere <choice>
+                    <corr>contingat</corr>
+                    <sic>continget</sic>
+                </choice>, que commode servare non poteris, quociens fuerit oportunum, tibi comutet
+                in alia opera pietatis ac te ab omnibus excommunicacionis, suspensionis et <choice>
+                    <corr>interdicti</corr>
+                    <sic>interdictis</sic>
+                </choice> sentenciis ab homine vel a iure prolatis, si quas incurristi, eciam si
+                eidem Sedi absolucio huiusmodi specialiter reservata existat, in forma Ecclesie
+                consueta hac vice dumtaxat absolvat, sic tamen, quod idem confessor de hiis, de
+                quibus fuerit alteri satisfactio iniungenda, eam tibi faciendam iniungat, quam tu
+                quantocius poteris facere, tenearis. Nulli ergo etc. nostre concessionis infringere
+                etc. Si quis autem etc. Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="data_ " when="1397-04-01">kal. aprilis, <supplied source="Q1396" resp="edytor" cert="hipotetyczna">pontificatus nostri</supplied> anno
+                    octavo</date>. <handShift/>
+                <note type="nota_kancelaryjna" place="in_line" source="va-Q1399">
+                    <measure quantity="0" ana="taksa_dokumentu">Pro
+                        socio</measure>. <persName ref="va-Q66" ana="urzednik_kurialny" type="">N(icolaus) de Ben(even)to</persName>. </note>
+            </p>
+        </body>
+    </text>
+</TEI>

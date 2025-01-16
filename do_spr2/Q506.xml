@@ -1,0 +1,60 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q506">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="label">Bulla papieża Bonifacego IX z dnia 29 maja 1403</title>
+            <title type="description">Przywilej posiadania ołtarza przenośnego dla wojewody
+               poznańskiego Sędziwoja [Świdwy z Szamotuł] i jego żony Saski </title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centrum Studiów Mediewistycznych</publisher>
+            <date when="2024"/>
+            <idno>https://va.wiki.kul.pl/wiki/Item:Q506</idno>
+            <availability>
+               <licence>CC....</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness ana="cop." source="va-Q1156">AAV, Reg. Lat., vol. 110, f. 174v<locus scheme="modern">f. 174v</locus>
+               </witness>
+            </listWit>
+            <listBibl type="editions">
+               <bibl type="regest">BP 3, nr 907</bibl>
+               <bibl type="regest">RG 2, col. 1039, nr 06751</bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Papież Bonifacy IX udziela wojewodzie poznańskiemu Sędziwojowi [Świdwie z Szamotuł] i
+               jego żonie Sasce przywileju posiadania ołtarza przenośnego.</p>
+         </abstract>
+         <textClass>
+            <catRef scheme="forma_dokumentu" target="va-Q263"/>
+            <catRef scheme="rodzaj_sprawy" target="va-Q429"/>
+            <catRef scheme="formularz" target="va-Q355"/>
+            <catRef scheme="sprawa" target="va-Q1157"/>
+         </textClass>
+         <creation>
+            <date when="1403-05-29" when-custom="4 kal. iun. a. 14">29 maii 1403</date>
+            <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+                <persName ref="va-Q249" ana="wystawca" type="">Bonifacius</persName> etc., dilecto filio <persName ref="va-Q457" ana="odbiorca beneficjent_laski tytulatura" type="">
+                    <roleName ref="va-Q108" ana="pochodzenie_spoleczne">nobili viro</roleName> Sandzywogio, <affiliation ref="va-Q463" ana="zajmowane_stanowisko">palatino Poznaniensi</affiliation>
+                </persName> et dilecte
+            in Christo filie <persName ref="va-Q459" ana="odbiorca beneficjent_laski tytulatura" type="">
+                    <roleName ref="va-Q108" ana="pochodzenie_spoleczne">nobili mulieri</roleName> Saske, <persName ref="va-Q457" ana="wspolmalzonek" type="">eius</persName> uxori</persName>, salutem etc. Sincere etc. <supplied source="Q355" resp="edytor" cert="hipotetyczna">Hinc est, quod nos ...., ut liceat
+               vobis et cuilibet vestrum habere altare portatile ...., devocioni vestre tenore
+               presencium indulgemus.</supplied> Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>, <date type="data_ " when="1403-05-29">quarto kal. iunii,
+            anno quarto decimo</date>. <handShift/> <persName ref="va-Q223" ana="urzednik_kurialny" type="">Iac(obus). <measure quantity="12" ana="taksa_dokumentu">XII</measure>. de Teram(o)</persName>.<note/> </p>
+      </body>
+   </text>
+</TEI>
