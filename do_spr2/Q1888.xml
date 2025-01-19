@@ -1,0 +1,86 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q1888">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="label">Bulla papieża Bonifacego IX z dnia 20 lipca 1398</title>
+                <title type="description">Przywilej dla Pawła, opata klasztoru benedyktynów na Lysej
+                    Górze, przyjmujący go do grona papieskich kapelanów honorowych</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Centrum Studiów Mediewistycznych</publisher>
+                <date when="2024"/>
+                <idno>https://va.wiki.kul.pl/wiki/Item:Q1888</idno>
+                <availability>
+                    <licence>CC....</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness ana="cop." source="va-Q1886">AAV, Reg. Lat., vol. 58, f. 112r (or. f.
+                            CXII)<locus scheme="modern">f. 112r (or. f. CXII)</locus>
+                        <desc type="editorial_note">Tenor secundae partis huius inscriptionis
+                            differt ab usitata forma talis bullae. Difficile decretu, utrum id
+                            indiligentia scribae factum sit, an privilegium aliquantum alium
+                            esset.</desc>
+                    </witness>
+                </listWit>
+                <listBibl type="editions">
+                    <bibl type="regest">BP 3, nr 557(regestum erroneum)</bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <abstract>
+                <p>Papież Bonifacy IX przyjmuje Pawła, opata klasztoru benedyktynów na Lysej Górze,
+                    do grona papieskich kapelanów honorowych oraz pozwala mu korzystać z pełnej
+                    egzempcji przyznanej kapelanom przez Jana XXII i Klemensa VI, z pominięciem
+                    późniejszych ograniczeń tego przywileju nałożonych przez kolejnych papieży.</p>
+            </abstract>
+            <textClass>
+                <catRef scheme="forma_dokumentu" target="va-Q263"/>
+                <catRef scheme="rodzaj_sprawy" target="va-Q1807"/>
+                <catRef scheme="formularz" target="va-Q1857"/>
+                <catRef scheme="sprawa" target="va-Q1887"/>
+            </textClass>
+            <creation>
+                <date when="1398-07-20" when-custom="13 kal. aug.,a. p. 9">20 iulii 1398</date>
+                <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+            </creation>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="łaska główna">
+                <p>
+                    <persName ref="va-Q249" ana="wystawca" type="">Bonifacius</persName> etc.,
+                    dilecto filio <persName ref="va-Q1932" ana="odbiorca beneficjent_laski tytulatura" type="">Paulo, <affiliation ref="va-Q1915" ana="zajmowane_stanowisko">abbati monasterii Calui<note resp="editor">Caluea Montis cop.</note> Montis , Ordinis Sancti
+                            Benedicti, Cracouiensis diocesis</affiliation>, <hi rend="italic">[<affiliation ref="va-Q1660" ana="przedmiot_nadania">capellano
+                                nostro</affiliation>]</hi>
+                    </persName>, salutem etc. Virtutibus clarens etc. <supplied source="va-Q1857" resp="edytor" cert="hipotetyczna">Ut igitur in effectu percipias, quod
+                        suggerit nostre mentis affectus, te in nostrum et dicte Sedis capellanum
+                        graciose recipimus ac nostrorum et ipsius Sedis capellanorum consorcio
+                        favorabiliter aggregamus ...., tibi nichilominus concedentes</supplied>,
+                    quod omnibus indulgenciis, immunitatibus, exempcionibus ac privilegiis per ....
+                    Iohannem XXII et Clementem VI .... capellanis dicte Sedis concessis uti ....
+                    valeas, .... Innocentii VI, Urbani V et Gregorii XI .... restrictionibus et
+                    aliis contrariis non obstantibus quibuscunque .... Nulli ergo etc. nostre
+                    recepcionis et aggregacionis infringere etc. Si quis autem etc. Datum Rome apud
+                        <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu"> Sanctum Petrum,
+                        tercio decimo ka</placeName>l.<date type="data_ " when="1398-07-20">
+                        augusti, <supplied source="va-Q1857" resp="edytor" cert="hipotetyczna">pontificatus nostri</supplied> anno nono. </date>
+                </p>
+            </div>
+            <div source="va-Q1886">
+                <p>
+                    <handShift/>
+                    <note type="nota_kancelaryjna" place="in_line">
+                        <persName ref="va-Q66" ana="urzednik_kurialny" type="">N(icolaus). <measure quantity="20" ana="taksa_dokumentu">XX</measure>. de
+                        Ben(even)to</persName>.</note>
+                </p>
+
+            </div>
+        </body>
+    </text>
+</TEI>

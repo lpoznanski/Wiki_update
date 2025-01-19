@@ -1,0 +1,81 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="?">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="label">Bulla papieża Urbana VI z dnia 19 czerwca 1388</title>
+                <title type="description">Przywilej dla Jana Szczekny, mnicha klasztoru cystersów w
+                    Zbraslaviu, przyjmujący go do grona papieskich kapelanów honorowych </title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Centrum Studiów Mediewistycznych</publisher>
+                <date when="2024"/>
+                <idno>https://va.wiki.kul.pl/wiki/Item:Q1698</idno>
+                <availability>
+                    <licence>CC....</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness ana="cop." source="va-Q1695">AAV, Reg. Vat., vol. 311, f. 204v (or. f.
+                            CXCV)<locus scheme="modern">f. 204v (or. f. CXCV)</locus>
+                    </witness>
+                    <witness ana="cop." source="va-Q1697">AAV, Arm. XXXI, vol. 36, f. 30r (olim f.
+                            17)<locus scheme="modern">f. 30r (olim f. 17)</locus>
+                        <desc type="editorial_note">In cop. 2 nomina officialium Cancellariae
+                            Apostolicae sub bulla desunt.</desc>
+                    </witness>
+                </listWit>
+                <listBibl type="editions">
+                    <bibl type="regest">MVB 5, nr 165</bibl>
+                    <bibl type="regest">BP 3, nr 58</bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <abstract>
+                <p>Papież Urban VI przyjmuje Jana Szczeknę, mnicha klasztoru cystersów w Zbraslaviu,
+                    do grona papieskich kapelanów honorowych.</p>
+            </abstract>
+            <textClass>
+                <catRef scheme="forma_dokumentu" target="va-Q263"/>
+                <catRef scheme="rodzaj_sprawy" target="va-Q1807"/>
+                <catRef scheme="formularz" target="va-Q1805"/>
+                <catRef scheme="sprawa" target="va-Q1697"/>
+            </textClass>
+            <creation>
+                <date when="1388-06-19" when-custom="13 kal. iul.,a. p. 11">19 iunii 1388</date>
+                <placeName ref="va-Q1641">Perugia</placeName>
+            </creation>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="łaska główna">
+                <p>
+                    <persName ref="va-Q1827" ana="wystawca" type="">Urbanus</persName> etc., dilecto filio <persName ref="va-Q1665" ana="zajmowane_stanowisko odbiorca beneficjent_laski tytulatura" type="">Iohanni dicto Stiekna, <roleName ref="va-Q1825" ana="zajmowane_stanowisko stopien_swiecen">monacho monasterii in Aula
+                    Regia, Cisterciensis ordinis, Pragensis diocesis</roleName>, <affiliation ref="va-Q366" ana="zajmowane_stanowisko">capellano nostro</affiliation>
+                    </persName>, salutem etc.
+                    Virtutibus clarens etc. <supplied source="va-Q1805" resp="edytor" cert="hipotetyczna">Ut igitur in effectu percipias, quod suggerit nostre
+                        mentis affectus, te in nostrum et dicte Sedis capellanum graciose recipimus
+                        ac nostrorum et ipsius Sedis capellanorum consorcio favorabiliter aggregamus
+                        ....</supplied> Nulli ergo etc. Si quis autem etc. Datum <placeName ref="va-Q1641" ana="zajmowane_stanowisko miejsce_wystawienia_dokumentu">Perusii</placeName>, <date when="1388-06-19" type="data_ ">XIII kal.
+                    iulii, pontificatus nostri anno undecimo</date>. </p>
+            </div>
+            <div>
+                <note source="va-Q1698">
+                    <p>X</p>
+                    <p>
+                        <persName ref="va-Q1671" ana="urzednik_kurialny">Oldradus</persName>
+                    </p>
+                    <p>
+                        <persName ref="va-Q1673" ana="urzednik_kurialny">G. Gregorii</persName>  9</p>
+                    <p>
+                        <persName ref="va-Q1669" ana="urzednik_kurialny">P. de Ingelnheim</persName>
+                    </p>
+                </note>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,94 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q1755">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="label">Bulla papieża Bonifacego IX z dnia 7 grudnia 1389</title>
+                <title type="description">Przywilej dla Jana z Minden, kanonika warmińskiego
+                    przyjmujący go do grona papieskich kapelanów honorowych </title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Centrum Studiów Mediewistycznych</publisher>
+                <date when="2024"/>
+                <idno>https://va.wiki.kul.pl/wiki/Item:Q1755</idno>
+                <availability>
+                    <licence>CC....</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness ana="cop." source="va-Q1752">AAV, Reg. Vat., vol. 313, f. 249v (or. f.
+                        CCXLIII; postea f. 247)<locus scheme="modern">f. 249v (or. f. CCXLIII;
+                            postea f. 247)</locus>
+                    </witness>
+                    <witness ana="cop." source="va-Q1753">AAV, Arm. XXXI, vol. 36, f. 50r<locus scheme="modern">f. 50r</locus>
+                        <desc type="editorial_note">In cop. 2 nomina officialium Cancellariae
+                            Apostolicae sub bulla desunt.</desc>
+                    </witness>
+                </listWit>
+                <listBibl type="editions">
+                    <bibl type="edycja">MPV 8, nr 80</bibl>
+                    <bibl type="regest">RG 2, col. 701, nr 04543</bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <abstract>
+                <p>Papież Bonifacy IX przyjmuje Jana z Minden, kanonika warmińskiego, do grona
+                    papieskich kapelanów honorowych.</p>
+            </abstract>
+            <textClass>
+                <catRef scheme="forma_dokumentu" target="va-Q263"/>
+                <catRef scheme="rodzaj_sprawy" target="va-Q1807"/>
+                <catRef scheme="formularz" target="va-Q1805"/>
+                <catRef scheme="sprawa" target="va-Q1754"/>
+            </textClass>
+            <creation>
+                <date when="1389-12-07" when-custom="non. dec.,a. p. 1">7 decembris 1389</date>
+                <placeName ref="va-Q67">Roma, apud Sanctum Petrum</placeName>
+            </creation>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="łaska główna">
+                <p>
+                    <persName ref="va-Q249" ana="wystawca" type="">Bonifacius</persName> etc.,
+                    dilecto filio<persName ref="va-Q1834" ana="odbiorca beneficjent_laski tytulatura" type=""> magistro Iohanni de
+                        Minden, <affiliation ref="va-Q298" ana="zajmowane_stanowisko">canonico
+                            Warmiensi</affiliation>, <education ref="va-Q1823" ana="education">
+                            magistro in artibus</education> et <education ref="va-Q1837" ana="education">baccallario in medicina</education>, <hi rend="italic">[</hi>
+                        <hi rend="italic">
+                            <affiliation ref="va-Q1660" ana="zajmowane_stanowisko">capellano nostro</affiliation>
+                        </hi>
+                        <hi rend="italic">]</hi>
+                    </persName>, salutem etc. Virtutibus clarens etc. <supplied source="va-Q1805" resp="edytor" cert="hipotetyczna">Ut igitur in effectu
+                        percipias, quod suggerit nostre mentis affectus, te in nostrum et dicte
+                        Sedis capellanum graciose recipimus ac nostrorum et ipsius Sedis
+                        capellanorum consorcio favorabiliter aggregamus ....</supplied> Nulli ergo
+                    etc. Si quis autem etc. Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>,
+                        <date type="data_ " when="1389-12-07">non. decembris, pontificatus nostri
+                        anno primo</date>.</p>
+            </div>
+            <div source="va-Q1755">
+                <note place="end" type="nota_kancelaryjna">
+                    <p>
+                        <measure quantity="10" ana="taksa_dokumentu">X</measure>
+                    </p>
+                    <p>
+                        <persName ref="va-Q2053" ana="urzednik_kurialny" type="">N. de Piperno</persName>
+                    </p>
+                    <p>
+                        <persName ref="va-Q2054" ana="urzednik_kurialny" type="">Io. de Malesicz</persName>
+                    </p>
+                    <p>pro <persName ref="va-Q66" ana="urzednik_kurialny" type="">N. de Benevento</persName>
+                    </p>
+                    <p>
+                        <persName ref="va-Q2055" ana="urzednik_kurialny" type="">H. Berngoys</persName>
+                    </p>
+                </note>
+            </div>
+        </body>
+    </text>
+</TEI>

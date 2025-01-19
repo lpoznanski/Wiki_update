@@ -1,0 +1,72 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q1694">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="label">Bulla papieża Urbana VI z dnia 11 listopada 1386</title>
+                <title type="description">Przywilej dla Mikołaja z Bolesławca, mnicha z klasztoru
+                    cystersów w Henrykowie, przyjmujący go do grona papieskich kapelanów honorowych
+                </title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Centrum Studiów Mediewistycznych</publisher>
+                <date when="2024"/>
+                <idno>https://va.wiki.kul.pl/wiki/Item:Q1694</idno>
+                <availability>
+                    <licence>CC....</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness ana="cop." source="va-Q1691">AAV, Reg. Vat., vol. 311, f. 50v (or. f.
+                            XLI)<locus scheme="modern">f. 50v (or. f. XLI)</locus>
+                    </witness>
+                    <witness ana="cop." source="va-Q1692">AAV, Arm. XXXI, vol. 36, f. 27v (olim f.
+                            14)<locus scheme="modern">f. 27v (olim f. 14)</locus>
+                    </witness>
+                </listWit>
+                <listBibl type="editions">
+                    <bibl type="regest">MVB 5, nr 130</bibl>
+                    <bibl type="regest">RG 2, col. 22, nr 00176</bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <abstract>
+                <p>Papież Urban VI przyjmuje Mikołaja z Bolesławca, mnicha z klasztoru cystersów w
+                    Henrykowie, do grona papieskich kapelanów honorowych.</p>
+            </abstract>
+            <textClass>
+                <catRef scheme="forma_dokumentu" target="va-Q263"/>
+                <catRef scheme="rodzaj_sprawy" target="va-Q1807"/>
+                <catRef scheme="formularz" target="va-Q1805"/>
+                <catRef scheme="sprawa" target="va-Q1693"/>
+            </textClass>
+            <creation>
+                <date when="1386-11-11" when-custom="3 id. nov.,a. p. 9">11 novembris 1386</date>
+                <placeName ref="va-Q1663">Genova</placeName>
+            </creation>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="łaska główna">
+                <p>
+                    <persName ref="va-Q1827" ana="wystawca" type="">Urbanus</persName> etc., dilecto filio <persName ref="va-Q2082" ana="odbiorca beneficjent_laski tytulatura" type="">Nicolao de Boleslauia , <roleName ref="va-Q1664" ana="rola_spoleczna">monacho monasterii in
+                    Hennechow, Cisterciensis ordinis, Wratislauiensis diocesis</roleName>,<affiliation ref="va-Q366" ana="zajmowane_stanowisko"> capellano nostro</affiliation>
+                    </persName>,
+                    salutem etc. Virtutibus clarens etc. <supplied source="va-Q1805" resp="edytor" cert="hipotetyczna">Ut igitur in effectu percipias, quod suggerit nostre
+                        mentis affectus, te in nostrum et dicte Sedis capellanum graciose recipimus
+                        ac nostrorum et ipsius Sedis capellanorum consorcio favorabiliter aggregamus
+                        ....</supplied> Nulli ergo etc. Si quis autem etc. Datum <placeName ref="va-Q1663" ana="miejsce_wystawienia_dokumentu">Ianue</placeName>, <date when="1386-11-11" type="data_ ">III id.
+                    novembris, pontificatus nostri anno nono</date>.</p>
+            </div>
+            <div>
+                <note source="va-">
+                    <p/>
+                </note>
+            </div>
+        </body>
+    </text>
+</TEI>
