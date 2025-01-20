@@ -1,20 +1,30 @@
 ,,,,,,,,,,,,,,,,
-Q129,P7,Q1313,,,,,,,,,,,,,,
-Q129,P8,Q1396
-Q129,P57,Q261
-Q261,P57,Q129
-Q129,P9,"""Papież Bonifacy IX zezwala Teofilowi Armknecht z Opola (Oppeln), klerykowi diecezji wrocławskiej, na wybór własnego spowiednika, [który będzie mógł udzielać absolucji również od grzechów zastrzeżonych dla Stolicy Apostolskiej (?)]. Ponadto spowiednik ten będzie mógł uwolnić Teofila od cenzur kościelnych, także tych zastrzeżonych dla Stolicy Apostolskiej, o ile jakieś obecnie na nim ciążą."""
-Q129,P54,Q572
-Q572,P53,Q129
-Q129,P14,+1398-10-12T00:00:00Z/11/J
-Q129,P15,Q67
-Q129,P16,"""MVB 5, nr 1363""",P17,Q425
-Q129,P16,"""col. 1106, nr 07183""",P17,Q425
-Q249,P39,Q536,S3,Q129
-Q1468,P39,Q537,S3,Q129
-Q1468,P39,Q538,S3,Q129
-Q1468,P25,"""Theophilo quondam Petri Armknecht de Opol, clerico Wratislauiensis diocesis""",S3,Q129
-Q572,P21,"""A. de Portugr(uario)""",P22,Q1470,P58,Q2102
-Q572,P21,"""N(icolaus). XXX. de Ben(even)to""",P22,Q66,P23,30,P58,Q2101
-Q1468,P35,Q1472,S3,Q129
-Q1468,P2,Q256,S3,Q129
+Q1698,P7,Q1807,,,,,,,,,,,,,,
+Q1698,P8,Q1805
+Q1698,P57,Q1697
+Q1697,P57,Q1698
+Q1698,P9,"""Papież Urban VI przyjmuje Jana Szczeknę, mnicha klasztoru cystersów w Zbraslaviu, do grona papieskich kapelanów honorowych."""
+Q1698,P54,Q1695
+Q1695,P53,Q1698
+Q1698,P54,Q1697
+Q1697,P53,Q1698
+Q1698,P14,+1388-06-19T00:00:00Z/11/J
+Q1698,P15,Q1641
+Q1698,P16,"""MVB 5, nr 165""",P17,Q425
+Q1698,P16,"""BP 3, nr 58""",P17,Q425
+Q1827,P39,Q536,S3,Q1698
+Q1665,P39,Q537,S3,Q1698
+Q1665,P39,Q538,S3,Q1698
+Q1660,P39,Q656,S3,Q1698
+Q1665,P25,"""Iohanni dicto Stiekna, monacho monasterii in Aula Regia, Cisterciensis ordinis, Pragensis diocesis, capellano nostro""",S3,Q1698
+Q1695,P21,"""X""",P23,10,P58,Q2102
+Q1695,P21,"""Oldradus""",P22,Q1671,P58,Q2102
+Q1695,P21,"""G. Gregorii""",P22,Q1673,P58,Q2102
+Q1695,P21,"""P. de Ingelnheim""",P22,Q1669,P58,Q2102
+Q1665,P32,Q1825,S3,Q1698
+Q1825,P40,Q1665,S3,Q1698
+Q1665,P35,Q1825,S3,Q1698
+Q1698,P24,Q1827
+Q1827,P26,Q1698
+Q1698,P24,Q1665
+Q1665,P26,Q1698

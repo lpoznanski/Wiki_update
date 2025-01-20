@@ -55,7 +55,7 @@
             <div type="łaska główna">
                 <p>
                     <persName ref="va-Q1827" ana="wystawca" type="">Urbanus</persName> etc., dilecto
-                    filio <persName ref="va-Q1665" ana="odbiorca beneficjent_laski tytulatura" type="">Iohanni dicto Stiekna, <roleName ref="va-Q1825" ana="zajmowane_stanowisko stopien_swiecen">monacho monasterii in Aula
+                    filio <persName ref="va-Q1665" ana=" odbiorca beneficjent_laski tytulatura" type="">Iohanni dicto Stiekna, <roleName ref="va-Q1825" ana="zajmowane_stanowisko stopien_swiecen">monacho monasterii in Aula
                             Regia, Cisterciensis ordinis, Pragensis diocesis</roleName>,
                             <affiliation ref="va-Q1660" ana="przedmiot_nadania">capellano
                             nostro</affiliation>
@@ -68,8 +68,10 @@
                         undecimo</date>. </p>
             </div>
             <div>
-                <note source="va-Q1698" type="nota_kancelaryjna">
-                    <p>X</p>
+                <note source="va-Q1698" type="nota_kancelaryjna" place="end">
+                    <p>
+                        <measure quantity="10" ana="taksa_dokumentu">X</measure>
+                    </p>
                     <p>
                         <persName ref="va-Q1671" ana="urzednik_kurialny">Oldradus</persName>
                     </p>
