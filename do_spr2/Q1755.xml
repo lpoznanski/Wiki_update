@@ -58,14 +58,11 @@
                     dilecto filio<persName ref="va-Q1834" ana="odbiorca beneficjent_laski tytulatura" type=""> magistro Iohanni de
                         Minden, <affiliation ref="va-Q298" ana="zajmowane_stanowisko">canonico
                             Warmiensi</affiliation>, <education ref="va-Q1823" ana="education">
-                            magistro in artibus</education> et <education ref="va-Q1837" ana="education">baccallario in medicina</education>, <hi rend="italic">[</hi>
-                        <hi rend="italic">
-                            <affiliation ref="va-Q1660" ana="zajmowane_stanowisko">capellano nostro</affiliation>
-                        </hi>
-                        <hi rend="italic">]</hi>
-                    </persName>, salutem etc. Virtutibus clarens etc. <supplied source="va-Q1805" resp="edytor" cert="hipotetyczna">Ut igitur in effectu
-                        percipias, quod suggerit nostre mentis affectus, te in nostrum et dicte
-                        Sedis capellanum graciose recipimus ac nostrorum et ipsius Sedis
+                            magistro in artibus</education> et <education ref="va-Q1837" ana="education">baccallario in medicina</education>, <affiliation ref="va-Q1660" ana="przedmiot_nadania">capellano nostro</affiliation>
+                    </persName>, salutem etc. Virtutibus clarens etc.
+                        <supplied source="va-Q1805" resp="edytor" cert="hipotetyczna">Ut igitur in
+                        effectu percipias, quod suggerit nostre mentis affectus, te in nostrum et
+                        dicte Sedis capellanum graciose recipimus ac nostrorum et ipsius Sedis
                         capellanorum consorcio favorabiliter aggregamus ....</supplied> Nulli ergo
                     etc. Si quis autem etc. Datum <placeName ref="va-Q67" ana="miejsce_wystawienia_dokumentu">Rome apud Sanctum Petrum</placeName>,
                         <date type="data_ " when="1389-12-07">non. decembris, pontificatus nostri
@@ -77,15 +74,19 @@
                         <measure quantity="10" ana="taksa_dokumentu">X</measure>
                     </p>
                     <p>
-                        <persName ref="va-Q2053" ana="urzednik_kurialny" type="">N. de Piperno</persName>
+                        <persName ref="va-Q2053" ana="urzednik_kurialny" type="">N. de
+                            Piperno</persName>
                     </p>
                     <p>
-                        <persName ref="va-Q2054" ana="urzednik_kurialny" type="">Io. de Malesicz</persName>
+                        <persName ref="va-Q2054" ana="urzednik_kurialny" type="">Io. de
+                            Malesicz</persName>
                     </p>
-                    <p>pro <persName ref="va-Q66" ana="urzednik_kurialny" type="">N. de Benevento</persName>
+                    <p>pro <persName ref="va-Q66" ana="urzednik_kurialny" type="">N. de
+                            Benevento</persName>
                     </p>
                     <p>
-                        <persName ref="va-Q2055" ana="urzednik_kurialny" type="">H. Berngoys</persName>
+                        <persName ref="va-Q2055" ana="urzednik_kurialny" type="">H.
+                            Berngoys</persName>
                     </p>
                 </note>
             </div>

@@ -91,7 +91,7 @@ with open(f'results/result.csv', 'w', newline='') as file:
         lokalizacje_not = {
             'in_line': 'Q2101',
             'end': 'Q2102',
-            'marg': ''
+            'in_marg': 'Q1638'
         }
 
 

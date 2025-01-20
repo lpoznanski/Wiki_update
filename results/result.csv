@@ -1,97 +1,20 @@
 ,,,,,,,,,,,,,,,,
-Q315,P7,Q428,,,,,,,,,,,,,,
-Q315,P8,Q352
-Q315,P57,Q1220
-Q1220,P57,Q315
-Q315,P9,"""Papież Bonifacy IX przyznaje Jakubowi, opatowi klasztoru cystesów w Jędrzejowie, łaskę, by w obliczu śmierci wybrany przez Jakuba spowiednik mógł jeden raz udzielić mu mocą władzy apostolskiej pełnego odpuszczenia grzechów, pod określonymi warunkami."""
-Q315,P54,1219
-1219,P53,Q315
-Q315,P14,+1399-05-02T00:00:00Z/11/J
-Q315,P15,Q67
-Q315,P16,"""BP 3, nr 600""",P17,Q425
-Q249,P39,Q536,S3,Q315
-Q331,P39,Q537,S3,Q315
-Q331,P39,Q538,S3,Q315
-Q331,P25,"""Iacobo, abbati monasterii in Andrzeyow, Cisterciensis ordinis, Cracouiensis diocesis""",S3,Q315
-1219,P21,"""N(icolaus). XIIII. de Ben(even)to""",P22,Q66,P23,14,P58,Q2101
-Q315,P24,Q249
-Q249,P26,Q315
-Q315,P24,Q331
-Q331,P26,Q315
-,,,,,,,,,,,,,,,,
-Q322,P7,Q428,,,,,,,,,,,,,,
-Q322,P8,Q354
-Q322,P57,Q1205
-Q1205,P57,Q322
-Q322,P9,"""Papież Bonifacy IX przyznaje Piotrowi Gast z Wałów (Reichwald), kanonikowi klasztoru NMP na Piasku za murami Wrocławia, łaskę, by w obliczu śmierci wybrany przez Piotra spowiednik mógł udzielać mu mocą władzy apostolskiej pełnego odpuszczenia grzechów tyle razy, ilekroć zaistnieje taka potrzeba, pod określonymi warunkami."""
-Q322,P54,1204
-1204,P53,Q322
-Q322,P14,+1399-08-26T00:00:00Z/11/J
-Q322,P15,Q67
-Q322,P16,"""MVB 5, nr 1488""",P17,Q425
-Q249,P39,Q536,S3,Q322
-Q399,P39,Q537,S3,Q322
-Q399,P39,Q538,S3,Q322
-Q399,P25,"""Petro Gast de Rechinwalde, canonico monasterii Sancte Marie extra muros Wratislauienses""",S3,Q322
-1204,P21,"""N(icolaus). XXX. de Ben(even)to""",P22,Q66,P23,30,P58,Q2101
-Q399,P32,Q384,S3,Q322
-Q384,P40,Q399,S3,Q322
-Q322,P24,Q249
-Q249,P26,Q322
-Q322,P24,Q399
-Q399,P26,Q322
-,,,,,,,,,,,,,,,,
-Q325,P7,Q429,,,,,,,,,,,,,,
-Q325,P8,Q355
-Q325,P57,1201
-1201,P57,Q325
-Q325,P9,"""Papież Bonifacy IX udziela dziekanowi krakowskiemu Janowi z Tarnowa przywileju posiadania ołtarza przenośnego."""
-Q325,P54,1200
-1200,P53,Q325
-Q325,P14,+1399-10-20T00:00:00Z/11/J
-Q325,P15,Q67
-Q325,P16,"""BP 3, nr 633 (false sub data 21 X 1399)""",P17,Q425
-Q249,P39,Q536,S3,Q325
-Q405,P39,Q537,S3,Q325
-Q405,P39,Q538,S3,Q325
-Q405,P25,"""Iohanni de Tarnow, decano ecclesie Cracouiensis""",S3,Q325
-1200,P21,"""N(icolaus). X. de Ben(even)to""",P22,Q66,P23,10,P58,Q2101
-Q405,P32,Q407,S3,Q325
-Q407,P40,Q405,S3,Q325
-Q325,P24,Q249
-Q249,P26,Q325
-Q325,P24,Q405
-Q405,P26,Q325
-,,,,,,,,,,,,,,,,
-Q58,P7,Q429,,,,,,,,,,,,,,
-Q58,P8,Q355
-Q58,P57,Q1088
-Q1088,P57,Q58
-Q58,P9,"""Papież Bonifacy IX udziela szlachetnemu Henrykowi (Heinke) Bibersteinowi i jego żonie Annie przywileju posiadania ołtarza przenośnego."""
-Q58,P54,Q1087
-Q1087,P53,Q58
-Q58,P14,+1398-07-20T00:00:00Z/11/J
-Q58,P15,Q67
-Q58,P16,"""MVB 5, nr 1326""",P17,Q425
-Q58,P16,"""RG 2, col. ....., nr 02554""",P17,Q425
-Q249,P39,Q536,S3,Q58
-Q278,P39,Q537,S3,Q58
-Q279,P39,Q537,S3,Q58
-Q278,P39,Q538,S3,Q58
-Q279,P39,Q538,S3,Q58
-Q278,P25,"""nobili viro Heyneka de Biberstey(n)""",S3,Q58
-Q279,P25,"""Anne, eius uxori, Wratislauiensis diocesis""",S3,Q58
-Q1087,P21,"""XII""",P23,12,P58,Q2101
-Q279,P4,Q278,S3,Q58
-Q278,P4,Q279,S3,Q58
-Q279,P35,Q251,S3,Q58
-Q278,P35,Q251,S3,Q58
-Q278,P37,Q108,S3,Q58
-Q278,P2,Q256,S3,Q58
-Q279,P2,Q256,S3,Q58
-Q58,P24,Q249
-Q249,P26,Q58
-Q58,P24,Q278
-Q278,P26,Q58
-Q58,P24,Q279
-Q279,P26,Q58
+Q129,P7,Q1313,,,,,,,,,,,,,,
+Q129,P8,Q1396
+Q129,P57,Q261
+Q261,P57,Q129
+Q129,P9,"""Papież Bonifacy IX zezwala Teofilowi Armknecht z Opola (Oppeln), klerykowi diecezji wrocławskiej, na wybór własnego spowiednika, [który będzie mógł udzielać absolucji również od grzechów zastrzeżonych dla Stolicy Apostolskiej (?)]. Ponadto spowiednik ten będzie mógł uwolnić Teofila od cenzur kościelnych, także tych zastrzeżonych dla Stolicy Apostolskiej, o ile jakieś obecnie na nim ciążą."""
+Q129,P54,Q572
+Q572,P53,Q129
+Q129,P14,+1398-10-12T00:00:00Z/11/J
+Q129,P15,Q67
+Q129,P16,"""MVB 5, nr 1363""",P17,Q425
+Q129,P16,"""col. 1106, nr 07183""",P17,Q425
+Q249,P39,Q536,S3,Q129
+Q1468,P39,Q537,S3,Q129
+Q1468,P39,Q538,S3,Q129
+Q1468,P25,"""Theophilo quondam Petri Armknecht de Opol, clerico Wratislauiensis diocesis""",S3,Q129
+Q572,P21,"""A. de Portugr(uario)""",P22,Q1470,P58,Q2102
+Q572,P21,"""N(icolaus). XXX. de Ben(even)to""",P22,Q66,P23,30,P58,Q2101
+Q1468,P35,Q1472,S3,Q129
+Q1468,P2,Q256,S3,Q129
