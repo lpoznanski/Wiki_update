@@ -85,7 +85,8 @@ with open(f'results/result.csv', 'w', newline='') as file:
 
         typy_edycji = {
             'edycja': 'Q426',
-            'regest': 'Q425'
+            'regest': 'Q425',
+            'wzmianka': 'Q2122'
         }
 
         lokalizacje_not = {
