@@ -8,12 +8,12 @@ from bs4 import BeautifulSoup as bs
 
 content = []
 
-with open(f'results/result.csv', 'w', newline='') as file:
+with open(f'results/result.csv', 'w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
 
     docs = os.listdir('documents/')
     for doc in docs:
-        with open('documents/' + doc, "r") as file:
+        with open('documents/' + doc, "r", encoding='utf-8') as file:
             content = file.readlines()
 
         ana_is_multi = {'*': 'ana'}

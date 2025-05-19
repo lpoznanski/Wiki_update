@@ -1,30 +1,894 @@
 ,,,,,,,,,,,,,,,,
-Q1698,P7,Q1807,,,,,,,,,,,,,,
-Q1698,P8,Q1805
-Q1698,P57,Q1697
-Q1697,P57,Q1698
-Q1698,P9,"""Papież Urban VI przyjmuje Jana Szczeknę, mnicha klasztoru cystersów w Zbraslaviu, do grona papieskich kapelanów honorowych."""
-Q1698,P54,Q1695
-Q1695,P53,Q1698
-Q1698,P54,Q1697
-Q1697,P53,Q1698
-Q1698,P14,+1388-06-19T00:00:00Z/11/J
-Q1698,P15,Q1641
-Q1698,P16,"""MVB 5, nr 165""",P17,Q425
-Q1698,P16,"""BP 3, nr 58""",P17,Q425
-Q1827,P39,Q536,S3,Q1698
-Q1665,P39,Q537,S3,Q1698
-Q1665,P39,Q538,S3,Q1698
-Q1660,P39,Q656,S3,Q1698
-Q1665,P25,"""Iohanni dicto Stiekna, monacho monasterii in Aula Regia, Cisterciensis ordinis, Pragensis diocesis, capellano nostro""",S3,Q1698
-Q1695,P21,"""X""",P23,10,P58,Q2102
-Q1695,P21,"""Oldradus""",P22,Q1671,P58,Q2102
-Q1695,P21,"""G. Gregorii""",P22,Q1673,P58,Q2102
-Q1695,P21,"""P. de Ingelnheim""",P22,Q1669,P58,Q2102
-Q1665,P32,Q1825,S3,Q1698
-Q1825,P40,Q1665,S3,Q1698
-Q1665,P35,Q1825,S3,Q1698
-Q1698,P24,Q1827
-Q1827,P26,Q1698
-Q1698,P24,Q1665
-Q1665,P26,Q1698
+Q1353,P7,Q2094,,,,,,,,,,,,,,
+Q1353,P8,Q2095
+Q1353,P57,Q2152
+Q2152,P57,Q1353
+Q1353,P9,"""Kardynał Francesco Renzio, kamerariusz Kolegium Kardynałów, udziela biskupowi chełmińskiemu Reinhardowi von Sayn prolongaty terminu zapłaty serwicjów do dnia 29 IX 1390 r."""
+Q1353,P54,Q1396
+Q1396,P53,Q1353
+Q1353,P14,+1390-04-01T00:00:00Z/11/J
+Q1353,P15,Q67
+Q1353,P16,"""MPV 8, nr 109""",P17,Q426
+Q1353,P16,"""LisPolon, nr 38""",P17,Q426
+Q1353,P16,"""RG 2, col. 1016, nr 06608""",P17,Q425
+Q2080,P39,Q536,S3,Q1353
+Q2158,P39,Q538,S3,Q1353
+Q2080,P25,"""tt. s. Eustachii diaconus cardinalis, Sacri Collegii .... cardinalium camerarius""",S3,Q1353
+Q2158,P25,"""Raynhaldi, episcopi Culmensis""",S3,Q1353
+Q1396,P21,"""flor. I""",P23,1,P58,Q2102
+Q1396,P21,"""gr. II""",P23,2,P58,Q2102
+Q2080,P32,Q2114,S3,Q1353
+Q2114,P40,Q2080,S3,Q1353
+Q2158,P32,Q1574,S3,Q1353
+Q1574,P40,Q2158,S3,Q1353
+,,,,,,,,,,,,,,,,
+Q2130,P7,Q2094,,,,,,,,,,,,,,
+Q2130,P8,Q2095
+Q2130,P57,Q2128
+Q2128,P57,Q2130
+Q2130,P9,"""Kardynał Niccolò Caracciolo, kamerariusz Kolegium Kardynałów, kwituje biskupa lubuskiego Johanna Kittlitza z zapłaty części serwicjum wspólnego i jednego serwicjum małego oraz udziela mu prolongaty terminu zapłacenia pozostałej części należności do dnia 29 IX 1386 r."""
+Q2130,P54,Q2129
+Q2129,P53,Q2130
+Q2130,P14,+1385-10-23T00:00:00Z/11/J
+Q2130,P15,Q1663
+Q2130,P16,"""LisPolon, nr 21""",P17,Q426
+Q2130,P16,"""MVB 5, nr 111""",P17,Q425
+Q2130,P16,"""RG 2, col. 17, nr 00133""",P17,Q425
+Q2076,P39,Q536,S3,Q2130
+Q2138,P39,Q538,S3,Q2130
+Q2076,P25,"""tt. s. Cyriaci presbyter cardinalis, Sacri Collegii .... cardinalium camerarius""",S3,Q2130
+Q2140,P25,"""Iohannis Yersen, licenciati in decretis, canonici Pragensis""",S3,Q2130
+Q2140,P31,Q2145,S3,Q2130
+Q2129,P21,"""flor. II""",P23,2,P58,Q2102
+Q2129,P21,"""gr. II""",P23,2,P58,Q2102
+Q2076,P32,Q2112,S3,Q2130
+Q2112,P40,Q2076,S3,Q2130
+Q2076,P32,Q2100,S3,Q2130
+Q2100,P40,Q2076,S3,Q2130
+Q2138,P32,Q1570,S3,Q2130
+Q1570,P40,Q2138,S3,Q2130
+Q2140,P32,Q1634,S3,Q2130
+Q1634,P40,Q2140,S3,Q2130
+,,,,,,,,,,,,,,,,
+Q2132,P7,Q2094,,,,,,,,,,,,,,
+Q2132,P8,Q2095
+Q2132,P57,Q2128
+Q2128,P57,Q2132
+Q2132,P9,"""Kardynał Francesco Renzio, kamerariusz Kolegium Kardynałów, kwituje biskupa lubuskiego Johanna Kittlitza z zapłaty części serwicjum wspólnego i jednego serwicjum małego oraz udziela mu prolongaty terminu zapłacenia pozostałej części należności do dnia 15 VIII 1387 r."""
+Q2132,P54,Q2131
+Q2131,P53,Q2132
+Q2132,P14,+1386-11-06T00:00:00Z/11/J
+Q2132,P15,Q1663
+Q2132,P16,"""LisPolon, nr 28""",P17,Q426
+Q2132,P16,"""MVB 5, nr 128""",P17,Q425
+Q2132,P16,"""RG 2, col. 17, nr 00133""",P17,Q425
+Q2080,P39,Q536,S3,Q2132
+Q2138,P39,Q538,S3,Q2132
+Q2080,P25,"""tt. s. Eustachii diaconus cardinalis, Sacri Collegii .... cardinalium camerarius""",S3,Q2132
+Q2138,P25,"""Iohannes, episcopus Lubucensis""",S3,Q2132
+Q1678,P25,"""Nicolay de Saluizrecte: Gliwicz, canonici ecclesie Wratislauiensis""",S3,Q2132
+Q2131,P21,"""IIII flor.""",P23,4,P58,Q2102
+Q2131,P21,"""IIII gr.""",P23,4,P58,Q2102
+Q2080,P32,Q2114,S3,Q2132
+Q2114,P40,Q2080,S3,Q2132
+Q2080,P32,Q2100,S3,Q2132
+Q2100,P40,Q2080,S3,Q2132
+Q2138,P32,Q1570,S3,Q2132
+Q1570,P40,Q2138,S3,Q2132
+Q1678,P32,Q835,S3,Q2132
+Q835,P40,Q1678,S3,Q2132
+,,,,,,,,,,,,,,,,
+Q2134,P7,Q2094,,,,,,,,,,,,,,
+Q2134,P8,Q2095
+Q2134,P57,Q2128
+Q2128,P57,Q2134
+Q2134,P9,"""Kardynał Enrico Minutolo, kamerariusz Kolegium Kardynałów, kwituje biskupa lubuskiego Johanna Kittlitza z zapłaty ostatnich części swojego serwicjum wspólnego i jednego serwicjum małego. Ponadto kamerariusz udziela mu prolongaty do dnia 15 VIII 1391 r. terminu uiszczenia zaległej należności, z tytułu serwicjów nie zapłaconych przez biskupa Wacława, księcia legnickiego, poprzednika na katedrze lubuskiej."""
+Q2134,P54,Q2133
+Q2133,P53,Q2134
+Q2134,P14,+1390-12-12T00:00:00Z/11/J
+Q2134,P15,Q67
+Q2134,P16,"""MPV 8, nr 162""",P17,Q426
+Q2134,P16,"""LisPolon, nr 193""",P17,Q426
+Q2134,P16,"""MVB 5, nr 419 (false sub data 13 XII 1390)""",P17,Q425
+Q2134,P16,"""RG 2, col. 685, nr 04458 (false „ep. Lubicensis”)""",P17,Q425
+Q2096,P39,Q536,S3,Q2134
+Q2138,P39,Q538,S3,Q2134
+Q2096,P25,"""tt. s. Anastasie presbyter cardinalis, Sacri Collegii .... cardinalium camerarius""",S3,Q2134
+Q2138,P25,"""Iohannes, episcopus Lubicensis Lubucensis""",S3,Q2134
+Q2142,P25,"""Thome Nicolai de Paulow, clerici Wratislauiensis diocesis""",S3,Q2134
+Q2079,P25,"""Wenceslaum predecessorem suum""",S3,Q2134
+Q2133,P21,"""flor. II""",P23,2,P58,Q2102
+Q2133,P21,"""gr. II""",P23,2,P58,Q2102
+Q2096,P32,Q2116,S3,Q2134
+Q2116,P40,Q2096,S3,Q2134
+Q2096,P32,Q2100,S3,Q2134
+Q2100,P40,Q2096,S3,Q2134
+Q2138,P32,Q1570,S3,Q2134
+Q1570,P40,Q2138,S3,Q2134
+Q2142,P35,Q1472,S3,Q2134
+Q2142,P2,Q256,S3,Q2134
+,,,,,,,,,,,,,,,,
+Q2137,P7,Q2094,,,,,,,,,,,,,,
+Q2137,P8,Q2095
+Q2137,P57,Q2135
+Q2135,P57,Q2137
+Q2137,P9,"""Kardynał Niccolò Caracciolo, kamerariusz Kolegium Kardynałów, kwituje biskupa krakowskiego Jana Radlicę z zapłaty części serwicjum wspólnego i jednego serwicjum małego."""
+Q2137,P54,Q2136
+Q2136,P53,Q2137
+Q2137,P14,+1365-11-04T00:00:00Z/11/J
+Q2137,P15,Q1663
+Q2137,P16,"""LisPolon, nr 23""",P17,Q426
+Q2076,P39,Q536,S3,Q2137
+Q2143,P39,Q538,S3,Q2137
+Q2076,P25,"""tt. s. Cyriaci presbyter cardinalis, Sacri Collegii .... cardinalium camerarius""",S3,Q2137
+Q2143,P25,"""Iohannes, episcopus Cracouiensis""",S3,Q2137
+Q2136,P21,"""flor. I""",P23,1,P58,Q2102
+Q2136,P21,"""gr. II""",P23,2,P58,Q2102
+Q2076,P32,Q2112,S3,Q2137
+Q2112,P40,Q2076,S3,Q2137
+Q2076,P32,Q2100,S3,Q2137
+Q2100,P40,Q2076,S3,Q2137
+Q2143,P32,Q1563,S3,Q2137
+Q1563,P40,Q2143,S3,Q2137
+,,,,,,,,,,,,,,,,
+Q2147,P7,Q2094,,,,,,,,,,,,,,
+Q2147,P8,Q2095
+Q2147,P57,Q2135
+Q2135,P57,Q2147
+Q2147,P9,"""Kardynał Niccolò Caracciolo, kamerariusz Kolegium Kardynałów, kwituje biskupa krakowskiego Jana Radlicę z zapłaty całości należnego serwicjum małego oraz kwituje go z zapłaty części zaległych serwicjów (wspólnego i jednego małego), których nie zapłacił niegdyś biskup Zawisza z Kurozwęk, poprzednik Radlicy na katedrze krakowskiej. Ponadto udziela Janowi prolongaty terminu zapłaty pozostałej części należności do 1 XI 1386 r."""
+Q2147,P54,Q2146
+Q2146,P53,Q2147
+Q2147,P14,+1386-03-15T00:00:00Z/11/J
+Q2147,P15,Q1663
+Q2147,P16,"""LisPolon, nr 24""",P17,Q426
+Q2076,P39,Q536,S3,Q2147
+Q2143,P39,Q538,S3,Q2147
+Q2076,P25,"""tt. s. Cyriaci presbyter cardinalis, Sacri Collegii .... cardinalium camerarius""",S3,Q2147
+Q2143,P25,"""Iohannes, Dei gracia episcopus Cracouiensis""",S3,Q2147
+Q2155,P25,"""Zauisii, predecessoris sui""",S3,Q2147
+Q2157,P25,"""Bertoldi Hamerer, civis Cracouiensis""",S3,Q2147
+Q2146,P21,"""flor. VI""",P23,6,P58,Q2102
+Q2146,P21,"""gr. VI""",P23,6,P58,Q2102
+Q2076,P32,Q2112,S3,Q2147
+Q2112,P40,Q2076,S3,Q2147
+Q2076,P32,Q2100,S3,Q2147
+Q2100,P40,Q2076,S3,Q2147
+Q2143,P32,Q1563,S3,Q2147
+Q1563,P40,Q2143,S3,Q2147
+Q2157,P37,Q260,S3,Q2147
+,,,,,,,,,,,,,,,,
+Q2150,P7,Q2094,,,,,,,,,,,,,,
+Q2150,P8,Q2095
+Q2150,P57,Q2149
+Q2149,P57,Q2150
+Q2150,P9,"""Kardynał Francesco Renzio, kamerariusz Kolegium Kardynałów, kwituje biskupa włocławskiego Jana Kropidłę z zapłaty ostatniej części serwicjum wspólnego i jednego serwicjum małego."""
+Q2150,P54,Q2148
+Q2148,P53,Q2150
+Q2150,P14,+1386-09-18T00:00:00Z/11/J
+Q2150,P15,Q1663
+Q2150,P16,"""LisPolon, nr 26""",P17,Q426
+Q2150,P16,"""RG 2, col. 19, nr 00151""",P17,Q425
+Q2080,P39,Q536,S3,Q2150
+Q2080,P25,"""tt. s. Eustachii diaconus cardinalis, Sacri Collegii .... cardinalium camerarius""",S3,Q2150
+Q2166,P25,"""Nicolai de Antiqua Pascua de Polonia""",S3,Q2150
+Q2148,P21,"""flor. II""",P23,2,P58,Q2102
+Q2148,P21,"""gr. II""",P23,2,P58,Q2102
+Q2080,P32,Q2114,S3,Q2150
+Q2114,P40,Q2080,S3,Q2150
+Q2080,P32,Q2100,S3,Q2150
+Q2100,P40,Q2080,S3,Q2150
+Q127,P32,Q1568,S3,Q2150
+Q1568,P40,Q127,S3,Q2150
+,,,,,,,,,,,,,,,,
+Q2153,P7,Q2094,,,,,,,,,,,,,,
+Q2153,P8,Q2095
+Q2153,P57,Q2152
+Q2152,P57,Q2153
+Q2153,P9,"""Kardynał Francesco Renzio, kamerariusz Kolegium Kardynałów, kwituje biskupa chełmińskiego Reincharda von Sayn z zapłaty części serwicjum wspólnego i jednego serwicjum małego oraz udziela mu prolongaty terminu zapłaty pozostałej części należności do 7 IV 1387 r."""
+Q2153,P54,Q2151
+Q2151,P53,Q2153
+Q2153,P14,+1386-09-11T00:00:00Z/11/J
+Q2153,P15,Q1663
+Q2153,P16,"""LisPolon, nr 25""",P17,Q426
+Q2153,P16,"""RG 2, col. 25, nr 00204""",P17,Q425
+Q2080,P39,Q536,S3,Q2153
+Q2158,P39,Q538,S3,Q2153
+Q2080,P25,"""tt. s. Eustachii diaconus cardinalis, Sacri Collegii .... cardinalium camerarius""",S3,Q2153
+Q2158,P25,"""Reynhardus, .... episcopus Culmensis""",S3,Q2153
+Q1924,P25,"""Petri Lyse, canonici Crusuiciensis, Wladislauiensis diocesis""",S3,Q2153
+Q2151,P21,"""flor. IIII""",P23,4,P58,Q2102
+Q2151,P21,"""gr. IIII""",P23,4,P58,Q2102
+Q2080,P32,Q2114,S3,Q2153
+Q2114,P40,Q2080,S3,Q2153
+Q2080,P32,Q2100,S3,Q2153
+Q2100,P40,Q2080,S3,Q2153
+Q2158,P32,Q1574,S3,Q2153
+Q1574,P40,Q2158,S3,Q2153
+Q1924,P32,Q2159,S3,Q2153
+Q2159,P40,Q1924,S3,Q2153
+Q1924,P2,Q180,S3,Q2153
+,,,,,,,,,,,,,,,,
+Q2163,P7,Q2094,,,,,,,,,,,,,,
+Q2163,P8,Q2095
+Q2163,P57,Q2152
+Q2152,P57,Q2163
+Q2163,P9,"""Kardynał Francesco Renzio, kamerariusz Kolegium Kardynałów, udziela biskupowi chełmińskiemu Reinhardowi von Sayn prolongaty terminu zapłaty serwicjów do dnia 3 IV 1390 r."""
+Q2163,P54,Q1912
+Q1912,P53,Q2163
+Q2163,P14,+1389-27-11T00:00:00Z/11/J
+Q2163,P15,Q67
+Q2163,P16,"""MPV 8, nr 76""",P17,Q426
+Q2163,P16,"""LisPolon, nr 34""",P17,Q426
+Q2163,P16,"""RG 2, col. 1016, nr 06608""",P17,Q425
+Q2080,P39,Q536,S3,Q2163
+Q2158,P39,Q538,S3,Q2163
+Q2080,P25,"""tt. s. Eustachii diaconus cardinalis, Sacri Collegii .... cardinalium camerarius""",S3,Q2163
+Q2158,P25,"""Raynhardi, Dei gracia episcopi Culmensis""",S3,Q2163
+Q1912,P21,"""flor. III""",P23,3,P58,Q2102
+Q1912,P21,"""gr. III""",P23,3,P58,Q2102
+Q2080,P32,Q2114,S3,Q2163
+Q2114,P40,Q2080,S3,Q2163
+Q2080,P32,Q2100,S3,Q2163
+Q2100,P40,Q2080,S3,Q2163
+Q2158,P32,Q1574,S3,Q2163
+Q1574,P40,Q2158,S3,Q2163
+,,,,,,,,,,,,,,,,
+Q2169,P7,Q1616,,,,,,,,,,,,,,
+Q2169,P8,Q1609
+Q2169,P57,Q2168
+Q2168,P57,Q2169
+Q2169,P9,"""Bonifacy IX, na suplikę Filipa biskupa Ostii, udziela ekspektatywy na kanonię wrocławską mistrzowi Alardo Iohannis Alardi de Molendino, abreviatorowi papieskiemu, który ponadto posiada już kanonię w Utrechcie, toczy spór w Kurii o kościół św. Sebastiana w Magdeburgu, posiada prowizję na kanonię katedralną w Paderborn, a dziś otrzymał także ekspektatywę na kanonię warmińską."""
+Q2169,P54,Q2167
+Q2167,P53,Q2169
+Q2169,P14,+1389-11-09T00:00:00Z/11/J
+Q2169,P15,Q67
+Q2169,P16,"""MPV 8, nr 14""",P17,Q426
+Q2169,P16,"""MVB 5, nr 206""",P17,Q426
+Q249,P39,Q536,S3,Q2169
+Q1530,P39,Q537,S3,Q2169
+,P39,Q537,S3,Q2169
+,P39,Q537,S3,Q2169
+,P39,Q537,S3,Q2169
+Q1530,P39,Q538,S3,Q2169
+Q1530,P39,Q538,S3,Q2169
+Q2244,P39,Q656,S3,Q2169
+,P39,Q424,S3,Q2169
+,P39,Q424,S3,Q2169
+,P39,Q424,S3,Q2169
+Q1530,P25,"""magistro Alardo Iohannis Alardi de Molendino, canonico Wratislauiensi, scriptori et familiari nostro""",S3,Q2169
+,P25,"""abbati monasterii Sancte Marie in Ave Arena extra muros Wratislauienses""",S3,Q2169
+,P25,"""preposito ecclesie Brixinensis""",S3,Q2169
+,P25,"""officiali Wratislauiensi""",S3,Q2169
+Q1530,P25,"""magistri Alardi Iohannis Alardi de Molendino, canonici Wratislauiensis, scriptoris et familiaris nostri""",S3,Q2169
+Q1530,P31,Q1461,S3,Q2169
+Q1530,P31,Q1461,S3,Q2169
+Q1530,P32,Q959,S3,Q2169
+Q959,P40,Q1530,S3,Q2169
+Q1530,P32,Q1534,S3,Q2169
+Q1534,P40,Q1530,S3,Q2169
+Q1532,P32,Q1561,S3,Q2169
+Q1561,P40,Q1532,S3,Q2169
+Q1530,P32,Q2240,S3,Q2169
+Q2240,P40,Q1530,S3,Q2169
+Q1530,P32,Q2241,S3,Q2169
+Q2241,P40,Q1530,S3,Q2169
+,P32,Q1545,S3,Q2169
+Q1545,P40,,S3,Q2169
+,P32,Q1550,S3,Q2169
+Q1550,P40,,S3,Q2169
+,P32,,S3,Q2169
+,P40,,S3,Q2169
+Q1530,P32,Q959,S3,Q2169
+Q959,P40,Q1530,S3,Q2169
+Q1530,P36,Q967,S3,Q2169
+Q1530,P36,Q967,S3,Q2169
+Q2169,P24,Q249
+Q249,P26,Q2169
+Q2169,P24,Q1530
+Q1530,P26,Q2169
+Q2169,P24,Q1532
+Q1532,P26,Q2169
+Q2169,P24,Q2452
+Q2452,P26,Q2169
+,,,,,,,,,,,,,,,,
+Q2172,P7,Q1616,,,,,,,,,,,,,,
+Q2172,P8,Q1609
+Q2172,P57,Q2171
+Q2171,P57,Q2172
+Q2172,P9,"""Bonifacy IX udziela ekspektatywy na kanonię w Eichstät szlachetnemu Ottonowi Milcz, który ponadto posiada probostwo w Bettingen (diecezja Würzburg) oraz kanonie katedralne w Würzburgu i Bambergu, a tegoż dnia (9 XI 1389) otrzymał także ekspektatywy na kanonie lub prałatury w katedrach we Wrocławiu i Moguncji lub w jednej z kolegiat diecezji mogunckiej."""
+Q2172,P54,Q2170
+Q2170,P53,Q2172
+Q2172,P14,+1389-11-09T00:00:00Z/11/J
+Q2172,P15,Q67
+Q2172,P16,"""RG 2, kol. 953-954""",P17,Q425
+Q249,P39,Q536,S3,Q2172
+Q1555,P39,Q537,S3,Q2172
+,P39,Q537,S3,Q2172
+,P39,Q537,S3,Q2172
+,P39,Q537,S3,Q2172
+Q1555,P39,Q538,S3,Q2172
+,P39,Q424,S3,Q2172
+,P39,Q424,S3,Q2172
+,P39,Q424,S3,Q2172
+Q1555,P25,"""Ottoni de Milcz, canonico Eystetensi""",S3,Q2172
+,P25,"""episcopo Tudensi""",S3,Q2172
+,P25,"""Brixinensi""",S3,Q2172
+,P25,"""Sancti Stephani Bambergensis""",S3,Q2172
+Q1555,P32,Q2440,S3,Q2172
+Q2440,P40,Q1555,S3,Q2172
+Q1555,P32,Q2443,S3,Q2172
+Q2443,P40,Q1555,S3,Q2172
+Q1555,P32,Q1592,S3,Q2172
+Q1592,P40,Q1555,S3,Q2172
+,P32,Q1599,S3,Q2172
+Q1599,P40,,S3,Q2172
+,P32,Q1550,S3,Q2172
+Q1550,P40,,S3,Q2172
+,P32,Q2451,S3,Q2172
+Q2451,P40,,S3,Q2172
+Q1555,P37,Q108,S3,Q2172
+Q1555,P35,Q2439,S3,Q2172
+Q2172,P24,Q249
+Q249,P26,Q2172
+Q2172,P24,Q1555
+Q1555,P26,Q2172
+Q2172,P24,Q2448
+Q2448,P26,Q2172
+,,,,,,,,,,,,,,,,
+Q2175,P7,Q1616,,,,,,,,,,,,,,
+Q2175,P8,Q1609
+Q2175,P57,Q2174
+Q2174,P57,Q2175
+Q2175,P9,"""Bonifacy IX udziela ekspektatywy na kanonię wrocławską Janowi Weingershusen, który ponadto posiada ekspektatywę na beneficjum należące do kollacji biskupa lub kapituły we Wrocławiu."""
+Q2175,P54,Q2173
+Q2173,P53,Q2175
+Q2175,P14,+1389-11-09T00:00:00Z/11/J
+Q2175,P15,Q67
+Q2175,P16,"""MPV 8, nr 11""",P17,Q426
+Q2175,P16,"""MVB 5, nr 208""",P17,Q426
+Q249,P39,Q536,S3,Q2175
+Q1600,P39,Q537,S3,Q2175
+,P39,Q537,S3,Q2175
+,P39,Q537,S3,Q2175
+Q1600,P39,Q538,S3,Q2175
+,P39,Q424,S3,Q2175
+,P39,Q424,S3,Q2175
+Q1600,P25,"""Iohanni Weingershusen, canonico ecclesie sancti Iohannis Wratislauiensi""",S3,Q2175
+,P25,"""patriarche Gradensi""",S3,Q2175
+,P25,"""decano ecclesie Sanct e i Crucis extra muros Wratislauienses""",S3,Q2175
+Q2173,P21,"""Pro Deo""",P23,0,P58,Q2101
+Q2173,P21,"""Nicolaus de Benevento""",P22,Q66,P58,Q2101
+,P32,Q1605,S3,Q2175
+Q1605,P40,,S3,Q2175
+Q2175,P24,Q249
+Q249,P26,Q2175
+Q2175,P24,Q1600
+Q1600,P26,Q2175
+,,,,,,,,,,,,,,,,
+Q2180,P7,Q1616,,,,,,,,,,,,,,
+Q2180,P8,Q1609
+Q2180,P57,Q2177
+Q2177,P57,Q2180
+Q2180,P9,"""Bonifacy IX nadaje ekspektatywę na kanonię wrocławską mistrzowi (sztuk/medycyny) Detwynowi z Wrocława, który ponadto posiada już kanonię w kościele św. Piotra w Brnie i altarię w kościele św. Elżbiety we Wrocławiu."""
+Q2180,P54,Q2179
+Q2179,P53,Q2180
+Q2180,P14,+1389-11-09T00:00:00Z/11/J
+Q2180,P15,Q67
+Q2180,P16,"""MPV 8, nr 12""",P17,Q426
+Q2180,P16,"""MVB 5, nr 209""",P17,Q425
+Q249,P39,Q536,S3,Q2180
+Q1610,P39,Q537,S3,Q2180
+,P39,Q537,S3,Q2180
+,P39,Q537,S3,Q2180
+,P39,Q537,S3,Q2180
+Q1610,P39,Q538,S3,Q2180
+Q1610,P39,Q538,S3,Q2180
+,P39,Q424,S3,Q2180
+,P39,Q424,S3,Q2180
+,P39,Q424,S3,Q2180
+Q1610,P25,"""Dyetwino de Wratislavia, canonico Wratislauiensi, magistro in medicina""",S3,Q2180
+,P25,"""episcopo Tudensi""",S3,Q2180
+,P25,"""abbati monasterii Sancte Marie in Arena extra muros Wratislauienses""",S3,Q2180
+,P25,"""officiali Wratislauiensi""",S3,Q2180
+Q1610,P25,"""Dyetwinus de Wratislavia, canonicus Wratislauiensis, magister in medicina""",S3,Q2180
+Q1610,P31,Q2455,S3,Q2180
+Q1610,P31,Q2455,S3,Q2180
+Q2179,P21,"""Iacobus. X ½, XII ½. de Teramo""",P22,Q223,P23,"10,5",P58,Q2101
+Q1610,P32,Q2456,S3,Q2180
+Q2456,P40,Q1610,S3,Q2180
+Q1610,P32,Q1655,S3,Q2180
+Q1655,P40,Q1610,S3,Q2180
+,P32,Q1599,S3,Q2180
+Q1599,P40,,S3,Q2180
+,P32,Q1545,S3,Q2180
+Q1545,P40,,S3,Q2180
+,P32,Q1552,S3,Q2180
+Q1552,P40,,S3,Q2180
+Q2180,P24,Q249
+Q249,P26,Q2180
+Q2180,P24,Q1610
+Q1610,P26,Q2180
+,,,,,,,,,,,,,,,,
+Q2183,P7,Q1616,,,,,,,,,,,,,,
+Q2183,P8,Q1609
+Q2183,P57,Q2182
+Q2182,P57,Q2183
+Q2183,P9,"""Bonifacy IX, na suplikę Filipa biskupa Ostii, udziela ekspektatywy na kanonię warmińską mistrzowi Alardo Iohannis Alardi de Molendino, abreviatorowi papieskiemu, który ponadto posiada kanonię katedralną w Utrechcie, toczy spór w Kurii o kościół św. Sebastiana w Magdeburgu, posiada prowizję na kanonię katedralną w Paderborn, a dziś otrzymał także ekspektatywę na kanonię wrocławską."""
+Q2183,P54,Q2181
+Q2181,P53,Q2183
+Q2183,P14,+1389-11-09T00:00:00Z/11/J
+Q2183,P15,Q67
+Q2183,P16,"""MPV 8, nr 15""",P17,Q426
+Q2183,P16,"""MVB 5, nr 207""",P17,Q425
+Q249,P39,Q536,S3,Q2183
+Q1530,P39,Q537,S3,Q2183
+,P39,Q537,S3,Q2183
+,P39,Q537,S3,Q2183
+,P39,Q537,S3,Q2183
+Q1530,P39,Q538,S3,Q2183
+Q1530,P39,Q538,S3,Q2183
+Q1532,P39,Q2077,S3,Q2183
+Q2244,P39,Q656,S3,Q2183
+,P39,Q424,S3,Q2183
+,P39,Q424,S3,Q2183
+,P39,Q424,S3,Q2183
+Q1530,P25,"""magistro Alardo Iohannis Alardi de Molendino, canonico Warmiensi, scriptori et familiari nostro""",S3,Q2183
+,P25,"""Brixinensis""",S3,Q2183
+,P25,"""Pomezaniensis ecclesiarum prepositis""",S3,Q2183
+,P25,"""officiali Pomezaniensi""",S3,Q2183
+Q1530,P25,"""magistri Alardi Iohannis Alardi de Molendino, canonici Wratislauiensis, scriptoris et familiaris nostri""",S3,Q2183
+Q2181,P21,"""Pro socio""",P23,0,P58,Q2101
+Q2181,P21,"""Nicolaus de Benevento""",P22,Q66,P58,Q2101
+Q1530,P32,Q959,S3,Q2183
+Q959,P40,Q1530,S3,Q2183
+Q1532,P32,Q1561,S3,Q2183
+Q1561,P40,Q1532,S3,Q2183
+Q1530,P32,Q2240,S3,Q2183
+Q2240,P40,Q1530,S3,Q2183
+,P32,Q1550,S3,Q2183
+Q1550,P40,,S3,Q2183
+,P32,Q1527,S3,Q2183
+Q1527,P40,,S3,Q2183
+,P32,Q1845,S3,Q2183
+Q1845,P40,,S3,Q2183
+Q1530,P32,Q959,S3,Q2183
+Q959,P40,Q1530,S3,Q2183
+Q1530,P36,Q967,S3,Q2183
+Q1530,P36,Q967,S3,Q2183
+Q2183,P24,Q249
+Q249,P26,Q2183
+Q2183,P24,Q1530
+Q1530,P26,Q2183
+Q2183,P24,Q1532
+Q1532,P26,Q2183
+Q2183,P24,Q2241
+Q2241,P26,Q2183
+Q2183,P24,Q2243
+Q2243,P26,Q2183
+Q2183,P24,Q2244
+Q2244,P26,Q2183
+,,,,,,,,,,,,,,,,
+Q2192,P7,Q1616,,,,,,,,,,,,,,
+Q2192,P8,Q1609
+Q2192,P57,Q2191
+Q2191,P57,Q2192
+Q2192,P9,"""Bonifacy IX udziela swojemu familiarisowi Mikołajowi z Wołowa ekspektatywy na kanonię większą w kapitule praskiej należącą do kollacji arcybiskupa i kapituły katedralnej praskiej oraz na beneficjum sine cura, należące do kollacji arcybiskupa i kapituły kolegiaty św. Piotra w Wyszehradzie pomimo, że Mikołaj otrzymał tego dnia również papieskie ekspektatywy na kanonie katedralne lub prałatury we Wrocławiu i Krakowie oraz ekspektatywy na kanonie katedralne w Ołomuńcu i na Warmii, oraz niegdyś otrzymał papieską ekspektatywę na dwa dowolne beneficja w diecezji wrocławskiej wraz z dyspensą na kumulację przez 2 lata z prawem zamiany dwóch beneficjów niekompatybilnych. Niniejszym dokumentem Bonifacy IX udzielił Mikołajowi dożywotniej dyspensy dwa dowolne benefcija niekompatybilne. Papież uchyla przywilej Urbana V stanowiący, że nikt nie może posiadać równocześnie dwóch kanonii w katedrze i kolegiatach w mieście Pradze i jego przedmieściach."""
+Q2192,P54,Q2190
+Q2190,P53,Q2192
+Q2192,P14,+1389-11-09T00:00:00Z/11/J
+Q2192,P15,Q67
+Q249,P39,Q536,S3,Q2192
+Q1620,P39,Q537,S3,Q2192
+Q1620,P39,Q538,S3,Q2192
+Q1620,P39,Q538,S3,Q2192
+Q1620,P25,"""Nicolao de Wolavia, canonico Pragensi, familiari nostro""",S3,Q2192
+Q1620,P25,"""Nicolai de Wolavia, canonici Pragensis""",S3,Q2192
+Q2190,P21,"""De mandato""",P23,0,P58,Q2101
+Q2190,P21,"""Nicolaus de Benevento""",P22,Q66,P58,Q2101
+Q1620,P32,Q1634,S3,Q2192
+Q1634,P40,Q1620,S3,Q2192
+,P32,Q1628,S3,Q2192
+Q1628,P40,,S3,Q2192
+,P32,Q1615,S3,Q2192
+Q1615,P40,,S3,Q2192
+,P32,Q1570,S3,Q2192
+Q1570,P40,,S3,Q2192
+Q1620,P36,Q967,S3,Q2192
+Q2192,P24,Q249
+Q249,P26,Q2192
+Q2192,P24,Q1620
+Q1620,P26,Q2192
+,,,,,,,,,,,,,,,,
+Q2195,P7,Q1616,,,,,,,,,,,,,,
+Q2195,P8,Q1609
+Q2195,P57,Q2194
+Q2194,P57,Q2195
+Q2195,P9,"""Bonifacy IX udziela ekspektatywy na kanonię w kolegiacie w Głogowie mistrzowi Mikołajowi Gliwicz, pisarzowi i abbreviatorowi papieskiemu, który ponadto posiada już kanonię wrocławską i kapelanię w kościele parafialnym w Nysie, a tegoż dnia otrzymał papieską ekspektatywę na kanonię w Ołomuńcu, a niedawno otrzymał papieską ekspektatywę na kanonię lub prałaturę w kapitule praskiej."""
+Q2195,P54,Q2193
+Q2193,P53,Q2195
+Q2195,P14,+1389-11-12T00:00:00Z/11/J
+Q2195,P15,Q67
+Q2195,P16,"""MPV 8, nr 22""",P17,Q426
+Q2195,P16,"""MVB 5, nr 222""",P17,Q425
+Q249,P39,Q536,S3,Q2195
+Q1678,P39,Q537,S3,Q2195
+,P39,Q537,S3,Q2195
+,P39,Q537,S3,Q2195
+,P39,Q537,S3,Q2195
+Q1678,P39,Q538,S3,Q2195
+Q1678,P39,Q538,S3,Q2195
+,P39,Q424,S3,Q2195
+,P39,Q424,S3,Q2195
+,P39,Q424,S3,Q2195
+Q1678,P25,"""magistro Nicolao de Glywicz, canonico ecclesie Sancte Marie Glogouiensis, Wratislauiensis diocesis , scriptori et familiari nostro""",S3,Q2195
+,P25,""". . episcopo Tudensi""",S3,Q2195
+,P25,"""cancellario ecclesie Wratislauiensis""",S3,Q2195
+,P25,"""officiali Wratislauiensi""",S3,Q2195
+Q1678,P25,"""magistri Nicolai de Glywicz, canonici ecclesie Sancte Marie Glogouiensis, Wratislauiensis diocesis , scriptoris et familiaris nostri""",S3,Q2195
+Q1678,P31,Q1461,S3,Q2195
+Q1678,P31,Q1461,S3,Q2195
+Q2193,P21,"""Pro socio""",P23,0,P58,Q2101
+Q2193,P21,"""Nicolaus de Benevento""",P22,Q66,P58,Q2101
+Q1678,P32,Q959,S3,Q2195
+Q959,P40,Q1678,S3,Q2195
+Q1678,P32,Q835,S3,Q2195
+Q835,P40,Q1678,S3,Q2195
+Q1678,P32,Q1682,S3,Q2195
+Q1682,P40,Q1678,S3,Q2195
+,P32,Q1599,S3,Q2195
+Q1599,P40,,S3,Q2195
+,P32,Q1685,S3,Q2195
+Q1685,P40,,S3,Q2195
+,P32,Q1552,S3,Q2195
+Q1552,P40,,S3,Q2195
+Q1678,P32,Q959,S3,Q2195
+Q959,P40,Q1678,S3,Q2195
+Q1678,P36,Q967,S3,Q2195
+Q1678,P36,Q967,S3,Q2195
+Q1678,P2,Q256,S3,Q2195
+Q1678,P2,Q256,S3,Q2195
+Q2195,P24,Q249
+Q249,P26,Q2195
+Q2195,P24,Q1678
+Q1678,P26,Q2195
+,,,,,,,,,,,,,,,,
+Q2198,P7,Q1616,,,,,,,,,,,,,,
+Q2198,P8,Q1609
+Q2198,P57,Q2197
+Q2197,P57,Q2198
+Q2198,P9,"""Bonifacy IX udziela Janowi Wildenberg ekspektatywy na beneficjum należące do kollacji biskupa lub kapituły warmińskiej."""
+Q2198,P54,Q2196
+Q2196,P53,Q2198
+Q2198,P14,+1389-11-12T00:00:00Z/11/J
+Q2198,P15,Q67
+Q249,P39,Q536,S3,Q2198
+Q1637,P39,Q537,S3,Q2198
+,P39,Q537,S3,Q2198
+,P39,Q537,S3,Q2198
+,P39,Q537,S3,Q2198
+Q1637,P39,Q538,S3,Q2198
+Q1640,P39,Q2077,S3,Q2198
+,P39,Q424,S3,Q2198
+,P39,Q424,S3,Q2198
+,P39,Q424,S3,Q2198
+Q1637,P25,"""Iohanni Wildenberg, clerico Pomezaniensis diocesis""",S3,Q2198
+,P25,"""episcopo Perusino""",S3,Q2198
+Q2196,P21,"""Nicolaus. XI, XIII. de Benevento""",P22,Q66,P23,11,P58,Q2101
+Q1640,P32,Q2104,S3,Q2198
+Q2104,P40,Q1640,S3,Q2198
+,P32,Q1643,S3,Q2198
+Q1643,P40,,S3,Q2198
+,P32,Q1647,S3,Q2198
+Q1647,P40,,S3,Q2198
+,P32,Q1649,S3,Q2198
+Q1649,P40,,S3,Q2198
+Q1637,P35,Q1472,S3,Q2198
+Q1637,P2,Q1657,S3,Q2198
+Q2198,P24,Q249
+Q249,P26,Q2198
+Q2198,P24,Q1637
+Q1637,P26,Q2198
+Q2198,P24,Q1640
+Q1640,P26,Q2198
+Q2198,P24,Q1600
+Q1600,P26,Q2198
+,,,,,,,,,,,,,,,,
+Q2201,P7,Q1616,,,,,,,,,,,,,,
+Q2201,P8,Q1609
+Q2201,P57,Q2200
+Q2200,P57,Q2201
+Q2201,P9,"""Bonifacy IX potwierdza ważność ekspektatywy na kanonię lubuską i ekspektatywy na beneficjum należące do kollacji biskupa i kapituły wrocławskiej, wystawionych dla Piotra Rosentala."""
+Q2201,P54,Q2199
+Q2199,P53,Q2201
+Q2201,P14,+1389-11-12T00:00:00Z/11/J
+Q2201,P15,Q67
+Q2201,P16,"""MPV 8, nr 26""",P17,Q426
+Q2201,P16,"""MVB 5, nr 238""",P17,Q425
+Q249,P39,Q536,S3,Q2201
+Q1651,P39,Q537,S3,Q2201
+Q1651,P39,Q538,S3,Q2201
+Q1651,P25,"""Petro Rosental, canonico Lubucensi""",S3,Q2201
+Q2199,P21,"""Pro Deo""",P23,0,P58,Q2101
+Q2199,P21,"""Nicolaus de Benevento""",P22,Q66,P58,Q2101
+Q2201,P24,Q249
+Q249,P26,Q2201
+Q2201,P24,Q1651
+Q1651,P26,Q2201
+,,,,,,,,,,,,,,,,
+Q2204,P7,Q1616,,,,,,,,,,,,,,
+Q2204,P8,Q1609
+Q2204,P57,Q2203
+Q2203,P57,Q2204
+Q2204,P9,"""Bonifacy IX udziela ekspektatywy na kanonię katedralną w Ołomuńcu mistrzowi Mikołajowi Gliwicz, pisarzowi i abbreviatorowi papieskiemu, który ponadto posiada już kanonię wrocławską i kapelanię w kościele parafialnym w Nysie, a tegoż dnia otrzymał papieską ekspektatywę na kanonię w Głogowie, a niedawno otrzymał papieską ekspektatywę na kanonię lub prałaturę w kapitule praskiej."""
+Q2204,P54,Q2202
+Q2202,P53,Q2204
+Q2204,P14,+1389-11-12T00:00:00Z/11/J
+Q2204,P15,Q67
+Q2204,P16,"""MPV 8, nr 23""",P17,Q426
+Q2204,P16,"""MVB 5, nr 223""",P17,Q425
+Q249,P39,Q536,S3,Q2204
+Q1678,P39,Q537,S3,Q2204
+,P39,Q537,S3,Q2204
+,P39,Q537,S3,Q2204
+,P39,Q537,S3,Q2204
+Q1678,P39,Q538,S3,Q2204
+Q1678,P39,Q538,S3,Q2204
+,P39,Q424,S3,Q2204
+,P39,Q424,S3,Q2204
+,P39,Q424,S3,Q2204
+Q1678,P25,"""magistro Nicolao de Glywicz, canonico Olomucensi, scriptori et familiari nostro""",S3,Q2204
+,P25,""". . episcopo Tudensi""",S3,Q2204
+,P25,"""cancellario ecclesie Wratislauiensis""",S3,Q2204
+,P25,"""officiali Wratislauiensi""",S3,Q2204
+Q1678,P25,"""magistri Nicolai de Glywicz, canonici Olomucensis, scriptoris et familiaris nostri""",S3,Q2204
+Q1678,P31,Q1461,S3,Q2204
+Q1678,P31,Q1461,S3,Q2204
+Q2202,P21,"""Pro socio""",P23,0,P58,Q2101
+Q2202,P21,"""Nicolaus de Benevento""",P22,Q66,P58,Q2101
+Q1678,P32,Q959,S3,Q2204
+Q959,P40,Q1678,S3,Q2204
+Q1678,P32,Q835,S3,Q2204
+Q835,P40,Q1678,S3,Q2204
+Q1678,P32,Q1682,S3,Q2204
+Q1682,P40,Q1678,S3,Q2204
+,P32,Q1599,S3,Q2204
+Q1599,P40,,S3,Q2204
+,P32,Q1685,S3,Q2204
+Q1685,P40,,S3,Q2204
+,P32,Q1552,S3,Q2204
+Q1552,P40,,S3,Q2204
+Q1678,P32,Q959,S3,Q2204
+Q959,P40,Q1678,S3,Q2204
+Q1678,P36,Q967,S3,Q2204
+Q1678,P36,Q967,S3,Q2204
+Q2204,P24,Q249
+Q249,P26,Q2204
+Q2204,P24,Q1678
+Q1678,P26,Q2204
+,,,,,,,,,,,,,,,,
+Q2210,P7,Q1616,,,,,,,,,,,,,,
+Q2210,P8,Q1609
+Q2210,P57,Q2209
+Q2209,P57,Q2210
+Q2210,P9,"""Bonifacy IX, na prośbę kardynała Poncelli, tituli sancti Clementis presbyteri cardinalis, przyznaje Janowi synowi Mikołaja z Buska, familiarisowi tegoż kardynała, ekspektatywę na kanonię krakowską, pomimo że Jan toczy już spór w Kurii o kanonię wiślicką i uzyskał w tej sprawie pierwszy korzystny wyrok, choć nie jest w posiadaniu spornej prebendy."""
+Q2210,P54,Q2208
+Q2208,P53,Q2210
+Q2210,P14,+1389-11-12T00:00:00Z/11/J
+Q2210,P15,Q67
+Q2210,P16,"""MPV 8, nr 25""",P17,Q426
+Q2210,P16,"""BP 3, nr 106""",P17,Q425
+Q249,P39,Q536,S3,Q2210
+Q301,P39,Q536,S3,Q2210
+Q1720,P39,Q536,S3,Q2210
+Q2111,P39,Q536,S3,Q2210
+Q1719,P39,Q537,S3,Q2210
+,P39,Q537,S3,Q2210
+,P39,Q537,S3,Q2210
+,P39,Q537,S3,Q2210
+Q1719,P39,Q538,S3,Q2210
+Q1720,P39,Q2077,S3,Q2210
+,P39,Q424,S3,Q2210
+,P39,Q424,S3,Q2210
+,P39,Q424,S3,Q2210
+Q1719,P25,"""Iohanni Nicolai de Buska, canonico Cracouiensi""",S3,Q2210
+,P25,"""episcopo Perusino""",S3,Q2210
+,P25,"""preposito""",S3,Q2210
+,P25,"""decano ecclesie sancti Floriani extra muros Cracouienses""",S3,Q2210
+Q2208,P21,"""Pro Deo""",P23,0,P58,Q2101
+Q2208,P21,"""Iacobus de Theramo""",P22,Q223,P58,Q2101
+Q1720,P32,Q2111,S3,Q2210
+Q2111,P40,Q1720,S3,Q2210
+,P32,Q1643,S3,Q2210
+Q1643,P40,,S3,Q2210
+,P32,Q1723,S3,Q2210
+Q1723,P40,,S3,Q2210
+,P32,Q1722,S3,Q2210
+Q1722,P40,,S3,Q2210
+Q2210,P24,Q249
+Q249,P26,Q2210
+Q2210,P24,Q1719
+Q1719,P26,Q2210
+Q2210,P24,Q1720
+Q1720,P26,Q2210
+,,,,,,,,,,,,,,,,
+Q2213,P7,Q1616,,,,,,,,,,,,,,
+Q2213,P8,Q1396
+Q2213,P57,Q2212
+Q2212,P57,Q2213
+Q2213,P9,"""Bonifacy IX poleca oficjałowi wrocławskiemu, by nadał on ekspektatywę na kanonię lub prałaturę wrocławską (z wyjątkiem najwyższej prałatury w katedrze) Henrykowi Spilner."""
+Q2213,P54,Q2211
+Q2211,P53,Q2213
+Q2213,P14,+1389-11-09T00:00:00Z/11/J
+Q2213,P15,Q67
+Q2213,P16,"""MPV 8, nr 16""",P17,Q426
+Q2213,P16,"""MVB 5, nr 214""",P17,Q426
+Q249,P39,Q536,S3,Q2213
+,P39,Q537,S3,Q2213
+Q1501,P39,Q538,S3,Q2213
+Q1501,P25,"""Henricum dictum Spilner, clericum Wratislauiensis diocesis""",S3,Q2213
+Q2211,P21,"""Nicolaus. XXIII. de Benevento""",P22,Q66,P23,23,P58,Q2101
+,P32,Q1552,S3,Q2213
+Q1552,P40,,S3,Q2213
+Q1501,P35,Q1472,S3,Q2213
+Q1501,P2,Q256,S3,Q2213
+Q2213,P24,Q249
+Q249,P26,Q2213
+Q2213,P24,
+,P26,Q2213
+Q2213,P24,Q1501
+Q1501,P26,Q2213
+,,,,,,,,,,,,,,,,
+Q2216,P7,Q1616,,,,,,,,,,,,,,
+Q2216,P8,Q1396
+Q2216,P57,Q2215
+Q2215,P57,Q2216
+Q2216,P9,"""Bonifacy IX poleca oficjałowi praskiemu, by Marcinowi Hiszpanowi de Bor, udzielił ekspektatywy na kanonię i prałaturę wrocławską, pomimo że Marcina ma już kanonię praską i probostwo kościoła parafialnego w Chuchel."""
+Q2216,P54,Q2214
+Q2214,P53,Q2216
+Q2216,P14,+1389-11-13T00:00:00Z/11/J
+Q2216,P15,Q67
+Q2216,P16,"""MPV 8, nr 45""",P17,Q426
+Q2216,P16,"""MVB 5, nr 260 (false f. 75r indicatur, quia numerus folii 15
+                        apparet sicut 75)""",P17,Q425
+Q249,P39,Q536,S3,Q2216
+,P39,Q537,S3,Q2216
+Q1725,P39,Q538,S3,Q2216
+Q1725,P25,"""Martinum Hispan, canonicum Pragensem""",S3,Q2216
+Q2214,P21,"""Nicolaus. XXV. de Benevento""",P22,Q66,P23,25,P58,Q2101
+,P32,Q1508,S3,Q2216
+Q1508,P40,,S3,Q2216
+Q1725,P32,Q1634,S3,Q2216
+Q1634,P40,Q1725,S3,Q2216
+Q1725,P32,Q1634,S3,Q2216
+Q1634,P40,Q1725,S3,Q2216
+Q1725,P32,Q1728,S3,Q2216
+Q1728,P40,Q1725,S3,Q2216
+Q1725,P2,Q1511,S3,Q2216
+Q2216,P24,Q249
+Q249,P26,Q2216
+Q2216,P24,
+,P26,Q2216
+Q2216,P24,Q1725
+Q1725,P26,Q2216
+,,,,,,,,,,,,,,,,
+Q2219,P7,Q1616,,,,,,,,,,,,,,
+Q2219,P8,Q1396
+Q2219,P57,Q2218
+Q2218,P57,Q2219
+Q2219,P9,"""Bonifacy IX, na suplikę króla Władysława, poleca oficjałowi poznańskiemu, by szlachetnemu Mikołajowi synowi Wojciecha z Górki udzielił ekspektatywy na kanonię gnieźnieńską."""
+Q2219,P54,Q2217
+Q2217,P53,Q2219
+Q2219,P14,+1389-11-13T00:00:00Z/11/J
+Q2219,P15,Q67
+Q2219,P16,"""MPV 8, nr 27""",P17,Q426
+Q2219,P16,"""BP 3, nr 107""",P17,Q425
+Q249,P39,Q536,S3,Q2219
+,P39,Q537,S3,Q2219
+Q1731,P39,Q538,S3,Q2219
+Q1819,P39,Q2077,S3,Q2219
+Q1731,P25,"""Nicolaum Alberti de Gorka, clericum Poznaniensis diocesis, qui – ut asseritur – ex utroque parenti parente de nobili genere procreatus existit""",S3,Q2219
+Q2217,P21,"""Nicolaus. XXI. de Benevento""",P22,Q66,P23,21,P58,Q2101
+,P32,Q1729,S3,Q2219
+Q1729,P40,,S3,Q2219
+Q1819,P32,Q1821,S3,Q2219
+Q1821,P40,Q1819,S3,Q2219
+Q1731,P37,Q108,S3,Q2219
+Q1731,P35,Q1472,S3,Q2219
+Q1731,P2,Q218,S3,Q2219
+Q2219,P24,Q249
+Q249,P26,Q2219
+Q2219,P24,
+,P26,Q2219
+Q2219,P24,Q1731
+Q1731,P26,Q2219
+Q2219,P24,Q1819
+Q1819,P26,Q2219
+,,,,,,,,,,,,,,,,
+Q2222,P7,Q1616,,,,,,,,,,,,,,
+Q2222,P8,Q1396
+Q2222,P57,Q2221
+Q2221,P57,Q2222
+Q2222,P9,"""Bonifacy IX poleca oficjałowi włocławskiemu, by udzielił ekspektatywy na prałaturę (z wyjątkiem najwyższej) w katedrze włocławskiej szlachetnemu Janowi synowi Szczepana z Koźla, który ponadto posiada kanonię gracjalną w kapitule katedralnej włocławskiej i kanonię gracjalną w kapitule kolegiackiej w Lęczycy."""
+Q2222,P54,Q2220
+Q2220,P53,Q2222
+Q2222,P14,+1389-11-13T00:00:00Z/11/J
+Q2222,P15,Q67
+Q2222,P16,"""MPV 8, nr 40""",P17,Q426
+Q2222,P16,"""BP 3, nr 117""",P17,Q425
+Q249,P39,Q536,S3,Q2222
+,P39,Q537,S3,Q2222
+Q1733,P39,Q538,S3,Q2222
+Q1733,P39,Q538,S3,Q2222
+Q1733,P25,"""Iohannem Stephani de Coszel/Gszel, canonicum ecclesie Wladislauiensis, qui – ut asseritur – ex utroque parente de nobili genere procreatus existit""",S3,Q2222
+Q2220,P21,"""Nicolaus. XXI. de Benevento""",P22,Q66,P23,21,P58,Q2101
+,P32,Q1735,S3,Q2222
+Q1735,P40,,S3,Q2222
+Q1733,P32,Q484,S3,Q2222
+Q484,P40,Q1733,S3,Q2222
+Q1733,P32,Q2457,S3,Q2222
+Q2457,P40,Q1733,S3,Q2222
+Q1733,P32,Q2458,S3,Q2222
+Q2458,P40,Q1733,S3,Q2222
+Q1733,P37,Q108,S3,Q2222
+Q2222,P24,Q249
+Q249,P26,Q2222
+Q2222,P24,
+,P26,Q2222
+Q2222,P24,Q1733
+Q1733,P26,Q2222
+,,,,,,,,,,,,,,,,
+Q2227,P7,Q2094,,,,,,,,,,,,,,
+Q2227,P8,Q2095
+Q2227,P57,Q2225
+Q2225,P57,Q2227
+Q2227,P9,"""Kardynał Francesco Renzio, kamerariusz Kolegium Kardynałów, kwituje arcybiskupa gnieźnieńskiego Jana Kropidłę z terminowej zapłaty części serwicjum wspólnego."""
+Q2227,P54,Q2226
+Q2226,P53,Q2227
+Q2227,P14,+1389-04-03T00:00:00Z/11/J
+Q2227,P15,Q67
+Q2227,P16,"""LisPolon, nr 32""",P17,Q426
+Q2227,P16,"""MVB 5, nr 179""",P17,Q425
+Q2227,P16,"""RG 2, col. 19, nr 00151""",P17,Q425
+Q2080,P39,Q536,S3,Q2227
+Q127,P39,Q538,S3,Q2227
+Q2080,P25,"""tt. s. Eustachii diaconus cardinalis, Sacri Collegii .... cardinalium camerarius""",S3,Q2227
+Q127,P25,"""Iohannes, Dei gracia archiepiscopus Gneznensis""",S3,Q2227
+Q2235,P25,"""Mathie de Schurgast, layci diocesis Wratislauiensis""",S3,Q2227
+Q2226,P21,"""II flor.""",P23,2,P58,Q2102
+Q2226,P21,"""II gr.""",P23,2,P58,Q2102
+Q2080,P32,Q2114,S3,Q2227
+Q2114,P40,Q2080,S3,Q2227
+Q2080,P32,Q2100,S3,Q2227
+Q2100,P40,Q2080,S3,Q2227
+Q127,P32,Q1565,S3,Q2227
+Q1565,P40,Q127,S3,Q2227
+Q2235,P35,Q251,S3,Q2227
+Q2235,P2,Q256,S3,Q2227
+,,,,,,,,,,,,,,,,
+Q2230,P7,Q2094,,,,,,,,,,,,,,
+Q2230,P8,Q2095
+Q2230,P57,Q2228
+Q2228,P57,Q2230
+Q2230,P9,"""Kardynał Francesco Renzio, kamerariusz Kolegium Kardynałów, kwituje biskupa sambijskiego Heinricha Kuwala z zapłaty (za pośrednictwem Jana Pesa, kanonika warmińskiego) części zaległego serwicjum wspólnego, którego nie zapłacił niegdyś biskup Tilo (Dietrich) Stobenhain, poprzednik Heinricha na katedrze sambijskiej. Ponadto udziela Heinrichowi prolongaty terminu zapłaty pozostałej części należności do dnia 15 VIII 1389 r."""
+Q2230,P54,Q2229
+Q2229,P53,Q2230
+Q2230,P14,+1389-03-10T00:00:00Z/11/J
+Q2230,P15,Q67
+Q2230,P16,"""LisPolon, nr 30""",P17,Q426
+Q2230,P16,"""RG 2, col. 11, nr 00088""",P17,Q425
+Q2080,P39,Q536,S3,Q2230
+Q2236,P39,Q538,S3,Q2230
+Q2080,P25,"""tt. s. Eustachii diaconus cardinalis, Sacri Collegii …. cardinalium camerarius""",S3,Q2230
+Q2236,P25,"""Henricus, Dei gracia episcopus Sambiensis""",S3,Q2230
+Q2232,P25,"""Tylonis, predecessoris sui""",S3,Q2230
+Q2231,P25,"""Iohannis Pedis, canonici Warmiensis""",S3,Q2230
+Q2229,P21,"""III flor.""",P23,3,P58,Q2102
+Q2229,P21,"""III gr.""",P23,3,P58,Q2102
+Q2080,P32,Q2114,S3,Q2230
+Q2114,P40,Q2080,S3,Q2230
+Q2080,P32,Q2100,S3,Q2230
+Q2100,P40,Q2080,S3,Q2230
+Q2236,P32,Q2239,S3,Q2230
+Q2239,P40,Q2236,S3,Q2230
+Q2231,P32,Q298,S3,Q2230
+Q298,P40,Q2231,S3,Q2230
