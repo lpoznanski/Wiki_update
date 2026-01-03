@@ -11,11 +11,11 @@ content = []
 with open(f'results/result.csv', 'w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
 
-    docs = os.listdir('documents/')
-    # docs = os.listdir('transza5/')
+    # docs = os.listdir('documents/')
+    docs = os.listdir('final/')
     for doc in docs:
-        with open('documents/' + doc, "r", encoding='utf-8') as file:
-        # with open('transza5/' + doc, "r", encoding='utf-8') as file:
+        # with open('documents/' + doc, "r", encoding='utf-8') as file:
+        with open('final/' + doc, "r", encoding='utf-8') as file:
             content = file.readlines()
 
         ana_is_multi = {'*': 'ana'}
@@ -72,13 +72,18 @@ with open(f'results/result.csv', 'w', newline='', encoding='utf-8') as file:
             'injured_party': 'Q4665',
             'judge': 'Q4666',
             'procurator': 'Q1513',
-            'public_notary': 'Q2529',
+            'public_notary': 'Q1521',
             'suplicant': 'Q2752',
             'witness': 'Q4667',
             'has_a_conservator': 'Q4668',
             'releasing_office': 'Q4669',
             'issuer_of_inserted_document': 'Q4670',
-            'object_of_incorporation': 'Q2775'
+            'object_of_incorporation': 'Q2775',
+            'sentenced': 'Q4879',
+            'acknowledger': 'Q5107',
+            'payer': 'Q5108',
+            'intermediary': 'Q5109',
+            'tithe_title': 'Q5110'
         }
 
         reverse_p_list = {
@@ -107,7 +112,8 @@ with open(f'results/result.csv', 'w', newline='', encoding='utf-8') as file:
         typy_edycji = {
             'edition': 'Q426',
             'regest': 'Q425',
-            'mentio': 'Q2122'
+            'mentio': 'Q2122',
+            'editorial_note': 'editorial_note jako typ edycji... do usunięcia'
         }
 
         lokalizacje_not = {
@@ -139,9 +145,12 @@ with open(f'results/result.csv', 'w', newline='', encoding='utf-8') as file:
         writer.writerow([case.split("-")[-1], 'P1', 'Q867'])
 
 
-        rodzaj_laski = soup.find(scheme="case_type")['target']
-        writer.writerow([case.split("-")[-1], 'P7', rodzaj_laski.split("-")[-1], '', '', '', '', '', '', '', '', '', '', '', '', '', ''])
-
+        rodzaj_laski_1 = soup.find(scheme="case_type")
+        if rodzaj_laski_1 and rodzaj_laski_1.has_attr("target"):
+            rodzaj_laski = rodzaj_laski_1["target"]
+            writer.writerow([case.split("-")[-1], 'P7', rodzaj_laski.split("-")[-1], '', '', '', '', '', '', '', '', '', '', '', '', '', ''])
+        else:
+            pass
 
         form_el = soup.find(scheme="form")
         if form_el and form_el.has_attr("target"):
@@ -156,8 +165,9 @@ with open(f'results/result.csv', 'w', newline='', encoding='utf-8') as file:
 
 
         regest = soup.teiHeader.profileDesc.abstract.p.string
-        regest = ' '.join(regest.split())
-        writer.writerow([document_qid, 'P9', format_string(regest)])
+        if regest:
+            regest = ' '.join(regest.split())
+            writer.writerow([document_qid, 'P9', format_string(regest)])
 
 
         rodzaj_dokumentu = soup.find(scheme="source_type")['target']
@@ -172,13 +182,17 @@ with open(f'results/result.csv', 'w', newline='', encoding='utf-8') as file:
                 writer.writerow([wit.split("-")[-1], 'P1', rodzaje_swiadkow[zrodlo['ana']]])
 
 
-        data_dokumentu = soup.teiHeader.profileDesc.creation.date['when']
-        formatted_date = '+' + data_dokumentu + 'T00:00:00Z/11/J'
-        writer.writerow([document_qid, 'P14', formatted_date])
+        date_tag = soup.teiHeader.profileDesc.creation.date
+        if date_tag and date_tag.has_attr('when'):
+            data_dokumentu = date_tag['when']
+            formatted_date = f'+{data_dokumentu}T00:00:00Z/11/J'
+            writer.writerow([document_qid, 'P14', formatted_date])
 
 
-        miejsce_wystawienia = soup.teiHeader.profileDesc.creation.placeName['ref']
-        writer.writerow([document_qid, 'P15', miejsce_wystawienia.split('-')[-1]])
+        place_tag = soup.teiHeader.profileDesc.creation.placeName
+        if place_tag and place_tag.has_attr('ref'):
+            miejsce_wystawienia = place_tag['ref']
+            writer.writerow([document_qid, 'P15', miejsce_wystawienia.split('-')[-1]])
 
 
         wydania = soup.find_all('bibl')
@@ -258,14 +272,14 @@ with open(f'results/result.csv', 'w', newline='', encoding='utf-8') as file:
         wystawcy = soup.find_all(ana='issuer')
         for item in wystawcy:
             writer.writerow([document_qid, p_list['issuer'], (item['ref'].split('-'))[-1]])
-            # writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q536', 'S3', document_qid])
+            writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q536', 'S3', document_qid])
             # wyst.append(item['ref'])
 
 
         odbiorcy = soup.find_all(ana='recipient')
         for item in odbiorcy:
             writer.writerow([document_qid, p_list['recipient'], (item['ref'].split('-'))[-1]])
-            # writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q537', 'S3', document_qid])
+            writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q537', 'S3', document_qid])
             # wyst.append(item['ref'])
 
 
@@ -280,9 +294,14 @@ with open(f'results/result.csv', 'w', newline='', encoding='utf-8') as file:
                         'suplicant',
                         'witness',
                         'has_a_conservator',
-                        'Releasing_benefice',
+                        'releasing_office',
                         'issuer_of_inserted_document',
-                        'object_of_incorporation'
+                        'object_of_incorporation',
+                        'sentenced',
+                        'acknowledger',
+                        'payer',
+                        'intermediary',
+                        'tithe_title'
                     ]:
             properties = soup.find_all(ana=prop)
             for item in properties:
@@ -334,9 +353,18 @@ with open(f'results/result.csv', 'w', newline='', encoding='utf-8') as file:
 
 
         indulgence_day = soup.find_all(ana='indulgence_day')
+        # for item in indulgence_day:
+        #     writer.writerow([(item.parent['ref'].split('-'))[-1], 'P73', (item['ref'].split('-'))[-1], 'S3', document_qid])
         for item in indulgence_day:
-            writer.writerow([(item.parent['ref'].split('-'))[-1], 'P73', (item['ref'].split('-'))[-1], 'S3', document_qid])
-
+            rs = item.find_parent('rs')
+            if rs and rs.has_attr('ref'):
+                writer.writerow([
+                    rs['ref'].split('-')[-1],
+                    'P73',
+                    item['ref'].split('-')[-1],
+                    'S3',
+                    document_qid
+                ])
 
         przedmioty_sporu = soup.find_all(ana='object_of_dispute')
         for item in przedmioty_sporu:
@@ -409,7 +437,7 @@ with open(f'results/result.csv', 'w', newline='', encoding='utf-8') as file:
             for item in znalezione_dalsze_relacje:
                 writer.writerow([(item.parent['ref'].split('-'))[-1], p_list[dalsza_relacja], (item['ref'].split('-'))[-1], 'S3', document_qid])
                 writer.writerow(
-                    [((item['ref'].split('-'))[-1], reverse_p_list[dalsza_relacja], item.parent['ref'].split('-'))[-1], 'S3',
+                    [(item['ref'].split('-'))[-1], reverse_p_list[dalsza_relacja], (item.parent['ref'].split('-'))[-1], 'S3',
                      document_qid])
 
         nepos = soup.find_all(ana='nepos')
@@ -422,6 +450,19 @@ with open(f'results/result.csv', 'w', newline='', encoding='utf-8') as file:
         for item in rodzenstwo:
             writer.writerow([(item.parent['ref'].split('-'))[-1], p_list['sibling'], (item['ref'].split('-'))[-1], 'S3', document_qid])
             writer.writerow([(item['ref'].split('-'))[-1], p_list['sibling'], (item.parent['ref'].split('-'))[-1], 'S3', document_qid])
+
+
+        for founders in ['founder']:
+            found = soup.find_all(ana=founders)
+            for i in found:
+                writer.writerow(
+                    [(item.parent['ref'].split('-'))[-1], 'P79', (item['ref'].split('-'))[-1], 'S3',
+                     document_qid])
+                writer.writerow(
+                    [(item['ref'].split('-'))[-1], 'P70', (item.parent['ref'].split('-'))[-1],
+                     'S3',
+                     document_qid])
+
 
 
         suplikant = soup.find_all('suplicant')
@@ -454,24 +495,34 @@ with open(f'results/result.csv', 'w', newline='', encoding='utf-8') as file:
         for item in byt_wspomniany:
             if item.get('type'):
                 writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q2078', 'S3', document_qid])
-                writer.writerow([document_qid, 'P24', (item['ref'].split('-'))[-1], 'P38', format_string(item['type'])])
+                # writer.writerow([document_qid, 'P24', (item['ref'].split('-'))[-1], 'P38', format_string(item['type'])])
             else:
                 writer.writerow([(item['ref'].split('-'))[-1], 'P39', 'Q2078', 'S3', document_qid])
-                writer.writerow([document_qid, 'P24', (item['ref'].split('-'))[-1]])
+                # writer.writerow([document_qid, 'P24', (item['ref'].split('-'))[-1]])
         # mentioned_entity - wszystkie elementy bez described_as
 
 
         #byty w dokumencie
-        p_tags = soup.find_all('p')
-        for p in p_tags:
-            for child in p.children:
-                # sprawdź, czy to jest tag <rs>
-                if getattr(child, 'name', None) == 'rs':
-                    # dodatkowe zabezpieczenie: upewnij się, że ten <rs> nie jest w innym <rs>
-                    if not child.find_parent('rs'):
-                        # tutaj robisz, co chcesz, np. zapis do CSV
-                        writer.writerow([document_qid, 'P24', (child['ref'].split('-'))[-1]])
+        # p_tags = soup.find_all('p')
+        # for p in p_tags:
+        #     for child in p.children:
+        #         # sprawdź, czy to jest tag <rs>
+        #         if getattr(child, 'name', None) == 'rs':
+        #             # dodatkowe zabezpieczenie: upewnij się, że ten <rs> nie jest w innym <rs>
+        #             if not child.find_parent('rs'):
+        #                 # tutaj robisz, co chcesz, np. zapis do CSV
+        #                 writer.writerow([document_qid, 'P24', (child['ref'].split('-'))[-1]])
 
+        rs_tags = soup.select('p rs:not(rs rs)')
+
+        for rs in rs_tags:
+            if rs.get('ref'):
+                writer.writerow([
+                    document_qid,
+                    'P24',
+                    rs['ref'].split('-')[-1]
+                ])
+                writer.writerow([rs['ref'].split('-')[-1], 'P26', document_qid])
 
 #zapisywanie do xls
 cvsDataframe = pd.read_csv('results/result.csv')
